@@ -3,6 +3,15 @@ REPORT: "Prompting" section. Rubric: >= 2 user prompts, system prompts, and an e
 prompting technique used for each (persona, format constraint, few-shot, ...) + observed behaviour.
 """
 
+import json
+from urllib.error import HTTPError, URLError
+from urllib.request import Request, urlopen
+import config
+
+
+
+
+
 def call_llm(system, user):
     """Ollama chat using MODEL / TEMPERATURE / NUM_CTX / current seed from config. Same for baseline and agent."""
     ...

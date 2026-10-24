@@ -1,4 +1,12 @@
 """All settings in one place.   REPORT: "Implementation" + "Dataset and Experimental Setup"."""
+
+
+from pathlib import Path
+ROOT = Path(__file__).resolve().parent
+DATA_DIR = ROOT / "data"
+
+
+
 MODEL = "llama3.1:8b"      # run through Ollama
 TEMPERATURE = 0.7          # not 0, otherwise the 3 runs per condition are identical
 NUM_CTX = 8192             # Ollama's default context is too small for 90 tweets
