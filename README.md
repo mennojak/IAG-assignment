@@ -19,7 +19,7 @@ summary with SPARQL queries, writes it sentence by sentence, then checks and rep
 ## Setup
 
     pip install -r requirements.txt
-    ollama pull qwen2.5:7b-instruct        # or set ANTHROPIC_API_KEY / use --model openai:gpt-4o
+    ollama pull qwen2.5:7b-instruct  
     # Java on PATH is needed for the Pellet reasoner; without it only the SPARQL checks run
     # (use --require-reasoner to make main.py abort instead).
 
