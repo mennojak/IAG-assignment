@@ -136,20 +136,20 @@ def annotate_all(topics: list[str] | None = None, *, force: bool = False) -> Non
         path.write_text(json.dumps(opinions, indent=2, ensure_ascii=False), encoding="utf-8")
         print(f"Saved {path}")
 
-def load_opinions(topic: str) -> list[dict]:
-    path = config.DATA_DIR / f"opinions_{topic}.json"
-    if not path.exists():
-        raise FileNotFoundError(f"No opinion cache at {path}. Run: python main.py --annotate --topics {topic}")
-    opinions = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(opinions, list):
-        raise ValueError("Opinion cache must be a JSON list")
-    return opinions
+# def load_opinions(topic: str) -> list[dict]:
+#     path = config.DATA_DIR / f"opinions_{topic}.json"
+#     if not path.exists():
+#         raise FileNotFoundError(f"No opinion cache at {path}. {topic}")
+#     opinions = json.loads(path.read_text(encoding="utf-8"))
+#     if not isinstance(opinions, list):
+#         raise ValueError("Opinion cache must be a JSON list")
+#     return opinions
 
 if __name__ == "__main__":
     from pprint import pprint
 
     TOPIC = "49ers"
-    RUN_ANNOTATION = False  # True calls Ollama and writes the opinion cache.
+    RUN_ANNOTATION = True  # True calls Ollama and writes the opinion cache.
 
     def heading(label):
         print(f"\n{'=' * 15} {label} {'=' * 15}")
@@ -197,14 +197,14 @@ if __name__ == "__main__":
     else:
         print("Skipped (set RUN_ANNOTATION = True to call Ollama).")
 
-    heading("load_opinions")
-    try:
-        opinions = load_opinions(TOPIC)
-        print("Number of opinions:", len(opinions))
-        if opinions:
-            print("First opinion:")
-            pprint(opinions[0])
-    except (FileNotFoundError, ValueError) as exc:
-        print("ERROR:", exc)
+    # heading("load_opinions")
+    # try:
+    #     opinions = load_opinions(TOPIC)
+    #     print("Number of opinions:", len(opinions))
+    #     if opinions:
+    #         print("First opinion:")
+    #         pprint(opinions[0])
+    # except (FileNotFoundError, ValueError) as exc:
+    #     print("ERROR:", exc)
 
     heading("DATA TESTS FINISHED")

@@ -1,0 +1,632 @@
+[
+  {
+    "tweet_id": "t1",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "Medium",
+    "kind": "Prediction"
+  },
+  {
+    "tweet_id": "t2",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "Medium",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t3",
+    "team": "San Francisco 49ers",
+    "polarity": "Neutral",
+    "intensity": "Low",
+    "kind": "FactualClaim"
+  },
+  {
+    "tweet_id": "t4",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "Medium",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t5",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "Medium",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t6",
+    "team": "San Francisco 49ers",
+    "polarity": "Neutral",
+    "intensity": "Low",
+    "kind": "Prediction"
+  },
+  {
+    "tweet_id": "t7",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "Medium",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t8",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "High",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t9",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "High",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t10",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "High",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t11",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "High",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t12",
+    "team": "San Francisco 49ers",
+    "polarity": "Neutral",
+    "intensity": "Low",
+    "kind": "FactualClaim"
+  },
+  {
+    "tweet_id": "t13",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "Medium",
+    "kind": "Prediction"
+  },
+  {
+    "tweet_id": "t14",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "Medium",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t15",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "High",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t16",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "Medium",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t17",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "Medium",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t18",
+    "team": "San Francisco 49ers",
+    "polarity": "Neutral",
+    "intensity": "Medium",
+    "kind": "Prediction"
+  },
+  {
+    "tweet_id": "t19",
+    "team": "San Francisco 49ers",
+    "polarity": "Neutral",
+    "intensity": "Low",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t20",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "High",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t21",
+    "team": "San Francisco 49ers",
+    "polarity": "Neutral",
+    "intensity": "Low",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t22",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "High",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t23",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "High",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t24",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "High",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t25",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "Medium",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t26",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "Medium",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t27",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "High",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t28",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "Medium",
+    "kind": "Prediction"
+  },
+  {
+    "tweet_id": "t29",
+    "team": "San Francisco 49ers",
+    "polarity": "Neutral",
+    "intensity": "Low",
+    "kind": "FactualClaim"
+  },
+  {
+    "tweet_id": "t30",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "Medium",
+    "kind": "Prediction"
+  },
+  {
+    "tweet_id": "t31",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "High",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t32",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "High",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t33",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "Medium",
+    "kind": "Prediction"
+  },
+  {
+    "tweet_id": "t34",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "High",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t35",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "Medium",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t36",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "High",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t37",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "Medium",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t38",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "High",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t39",
+    "team": "San Francisco 49ers",
+    "polarity": "Neutral",
+    "intensity": "Low",
+    "kind": "FactualClaim"
+  },
+  {
+    "tweet_id": "t40",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "Medium",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t41",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "High",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t42",
+    "team": "San Francisco 49ers",
+    "polarity": "Neutral",
+    "intensity": "Low",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t43",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "Medium",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t44",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "High",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t45",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "Medium",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t46",
+    "team": "San Francisco 49ers",
+    "polarity": "Neutral",
+    "intensity": "Low",
+    "kind": "FactualClaim"
+  },
+  {
+    "tweet_id": "t47",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "High",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t48",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "Low",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t49",
+    "team": "San Francisco 49ers",
+    "polarity": "Neutral",
+    "intensity": "Low",
+    "kind": "FactualClaim"
+  },
+  {
+    "tweet_id": "t50",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "High",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t51",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "High",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t52",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "High",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t53",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "Low",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t54",
+    "team": "San Francisco 49ers",
+    "polarity": "Neutral",
+    "intensity": "Low",
+    "kind": "Prediction"
+  },
+  {
+    "tweet_id": "t55",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "Medium",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t56",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "High",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t57",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "Low",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t58",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "Medium",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t59",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "High",
+    "kind": "Prediction"
+  },
+  {
+    "tweet_id": "t60",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "Medium",
+    "kind": "Prediction"
+  },
+  {
+    "tweet_id": "t61",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "High",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t62",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "Medium",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t63",
+    "team": "San Francisco 49ers",
+    "polarity": "Neutral",
+    "intensity": "High",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t64",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "Medium",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t65",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "Medium",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t66",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "Medium",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t67",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "Medium",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t68",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "High",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t69",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "Low",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t70",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "Low",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t71",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "High",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t72",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "Medium",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t73",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "Medium",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t74",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "High",
+    "kind": "Prediction"
+  },
+  {
+    "tweet_id": "t75",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "High",
+    "kind": "Prediction"
+  },
+  {
+    "tweet_id": "t76",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "Medium",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t77",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "Medium",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t78",
+    "team": "San Francisco 49ers",
+    "polarity": "Neutral",
+    "intensity": "Low",
+    "kind": "Prediction"
+  },
+  {
+    "tweet_id": "t79",
+    "team": "San Francisco 49ers",
+    "polarity": "Neutral",
+    "intensity": "Medium",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t80",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "Medium",
+    "kind": "FactualClaim"
+  },
+  {
+    "tweet_id": "t81",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "High",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t82",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "Medium",
+    "kind": "Prediction"
+  },
+  {
+    "tweet_id": "t83",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "Medium",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t84",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "Medium",
+    "kind": "Prediction"
+  },
+  {
+    "tweet_id": "t85",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "High",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t86",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "Low",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t87",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "Medium",
+    "kind": "Support"
+  },
+  {
+    "tweet_id": "t88",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "Medium",
+    "kind": "Criticism"
+  },
+  {
+    "tweet_id": "t89",
+    "team": "San Francisco 49ers",
+    "polarity": "Positive",
+    "intensity": "Medium",
+    "kind": "FactualClaim"
+  },
+  {
+    "tweet_id": "t90",
+    "team": "San Francisco 49ers",
+    "polarity": "Negative",
+    "intensity": "Medium",
+    "kind": "Criticism"
+  }
+]
