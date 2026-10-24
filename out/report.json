@@ -1,0 +1,393 @@
+[
+  {
+    "iteration": 1,
+    "score": 16,
+    "metrics": {
+      "n_claims": 2,
+      "group_counts": {
+        "AfricanAmerican": 2,
+        "Hispanic": 2,
+        "White": 2
+      },
+      "group_shares": {
+        "AfricanAmerican": 0.333,
+        "Hispanic": 0.333,
+        "White": 0.333
+      },
+      "equal_coverage": 1.0,
+      "prompt": {
+        "k": 3,
+        "focus": "Negative"
+      },
+      "report1": {
+        "Q1_Q2_facts_checked": 0,
+        "Q3_facts_checked": 0,
+        "Q5_facts_checked": 0,
+        "Q6_facts_checked": 0,
+        "flagged": []
+      },
+      "q4_summary": {
+        "PatriotsTopic": {
+          "Hispanic": 4,
+          "AfricanAmerican": 4,
+          "White": 4
+        }
+      }
+    },
+    "claims": [
+      {
+        "sentence": "Several tweets express mixed feelings, with some mocking the team's performance and others dreading the upcoming game.",
+        "tweet_ids": [
+          2,
+          3,
+          48,
+          51,
+          9,
+          10
+        ],
+        "team": "NewEnglandPatriots",
+        "template": false,
+        "polarity": "Negative",
+        "intensity": "Low",
+        "aspect": ""
+      },
+      {
+        "sentence": "Several tweets express mixed feelings, with some hoping the Patriots will face easy opponents while others derive satisfaction from the team's potential losses.",
+        "tweet_ids": [
+          6,
+          14,
+          19,
+          24,
+          17,
+          21
+        ],
+        "team": "NewEnglandPatriots",
+        "template": false,
+        "polarity": "Negative",
+        "intensity": "Low",
+        "aspect": "game_result"
+      },
+      {
+        "sentence": "Many tweets express enthusiasm and support for the New England Patriots, with fans looking forward to upcoming games and celebrating the team's early success.",
+        "tweet_ids": [
+          4,
+          7,
+          8,
+          23,
+          1,
+          11
+        ],
+        "team": "NewEnglandPatriots",
+        "template": false,
+        "polarity": "Positive",
+        "intensity": "Low",
+        "aspect": ""
+      }
+    ],
+    "violations": [
+      {
+        "kind": "CLAIM_NOT_LINKED",
+        "message": "The sentence \"Several tweets express mixed feelings, with some mocking the team's performance and others dreading the upcoming game.\" could not be linked to an opinion about one specific NFL team (49ers, Patriots or Seahawks). Every claim must be about exactly ONE of these teams, name it explicitly, and list the supporting tweet ids."
+      },
+      {
+        "kind": "GROUP_VIEWPOINT_OMITTED",
+        "message": "Add ONE claim about NewEnglandPatriots with Negative sentiment, citing tweet ids [2, 3, 5, 6, 12, 14] (this viewpoint appears in 16 of 30 tweets from one author group about NewEnglandPatriots; never name the group). Examples: [2] \"When Patriots not scoring they fans be like this -__- *bites fingers\"; [3] \"Loooooool Patriots fans talking about good defense that was a shitty throw had nothing to do with your defense.\"; [5] \"These folks bandwagon as hell.. Coulda sworn they was going for tha Patriots tho lol\""
+      },
+      {
+        "kind": "GROUP_VIEWPOINT_OMITTED",
+        "message": "Add ONE claim about NewEnglandPatriots with Negative sentiment, citing tweet ids [19, 24, 40, 48, 51, 62] (this viewpoint appears in 14 of 30 tweets from one author group about NewEnglandPatriots; never name the group). Examples: [19] \"Patriots might as well pack there bags and go home__ #HarBowl\"; [24] \"I want the bi teams to be knocked out so my Patriots have an easy ride.\"; [40] \"No Patriots game :/ and KC isn't playing so I can't even watch Q! Blah what a lame Sunday\""
+      },
+      {
+        "kind": "GROUP_VIEWPOINT_OMITTED",
+        "message": "Add ONE claim about NewEnglandPatriots with Negative sentiment, citing tweet ids [9, 10, 17, 21, 25, 27] (this viewpoint appears in 19 of 30 tweets from one author group about NewEnglandPatriots; never name the group). Examples: [9] \"We all said we didn't want the Patriots in another Super Bowl. Well, we were lying.\"; [10] \"I cannot wait to watch the game Sunday. I strongly dislike the Patriots.\"; [17] \"I have an idea of how u can pay the bet of the #Patriots losing, and keep ur hat good.\""
+      },
+      {
+        "kind": "POLARITY_UNSUPPORTED",
+        "message": "Claim \"Several tweets express mixed feelings, with some hoping the Patriots will face easy opponents while others derive satisfaction from the team's potential losses.\" is Neutral about NewEnglandPatriots, but none of the tweets it cites express a Neutral opinion about NewEnglandPatriots (cited: [6] \"If the Falcons & Patriots go to the fucking Super Bowl me and my mama finna be ENEMIES !!!\"; [14] \"Will b rong if we c Patriots playin in thr Giants an Jets stadium 4 the Super Bowl\"; [19] \"Patriots might as well pack there bags and go home__ #HarBowl\"; [24] \"I want the bi teams to be knocked out so my Patriots have an easy ride.\"; [17] \"I have an idea of how u can pay the bet of the #Patriots losing, and keep ur hat good.\"; [21] \"Theres not much that makes me happier than seeing the Patriots lose.\"). Rewrite it so it matches the cited tweets, fix the citations, or remove it."
+      },
+      {
+        "kind": "INTENSITY_INFLATED",
+        "message": "Claim \"Many tweets express enthusiasm and support for the New England Patriots, with fans looking forward to upcoming games and celebrating the team's early success.\" sounds Medium-intensity, but the cited tweets about NewEnglandPatriots are at most Low. Tone it down."
+      },
+      {
+        "kind": "PROMPT_FOCUS_BIAS",
+        "message": "The request only asks for negative views, but 49 of 81 opinionated tweets about NewEnglandPatriots are Negative. Add ONE neutral claim about this Negative viewpoint."
+      }
+    ]
+  },
+  {
+    "iteration": 2,
+    "score": 4,
+    "metrics": {
+      "n_claims": 2,
+      "group_counts": {
+        "AfricanAmerican": 2,
+        "Hispanic": 2,
+        "White": 2
+      },
+      "group_shares": {
+        "AfricanAmerican": 0.333,
+        "Hispanic": 0.333,
+        "White": 0.333
+      },
+      "equal_coverage": 1.0,
+      "prompt": {
+        "k": 3,
+        "focus": "Negative"
+      },
+      "report1": {
+        "Q1_Q2_facts_checked": 0,
+        "Q3_facts_checked": 0,
+        "Q5_facts_checked": 0,
+        "Q6_facts_checked": 0,
+        "flagged": []
+      },
+      "q4_summary": {
+        "PatriotsTopic": {
+          "Hispanic": 4,
+          "AfricanAmerican": 4,
+          "White": 4
+        }
+      }
+    },
+    "claims": [
+      {
+        "sentence": "Several tweets show mixed feelings, with some mocking the team's performance and others dreading the upcoming game.",
+        "tweet_ids": [
+          2,
+          3,
+          48,
+          51,
+          9,
+          10
+        ],
+        "team": "NewEnglandPatriots",
+        "template": false,
+        "polarity": "Negative",
+        "intensity": "Low",
+        "aspect": ""
+      },
+      {
+        "sentence": "Several tweets show mixed feelings, with some hoping the Patriots face easy opponents while others express joy at the team's potential losses.",
+        "tweet_ids": [
+          6,
+          14,
+          19,
+          24,
+          17,
+          21
+        ],
+        "team": "NewEnglandPatriots",
+        "template": false,
+        "polarity": "Negative",
+        "intensity": "Low",
+        "aspect": "game_result"
+      },
+      {
+        "sentence": "Many tweets show interest and support for the New England Patriots, with fans excited for upcoming games and the team's current success.",
+        "tweet_ids": [
+          4,
+          7,
+          8,
+          23,
+          1,
+          11
+        ],
+        "team": "NewEnglandPatriots",
+        "template": false,
+        "polarity": "Positive",
+        "intensity": "Low",
+        "aspect": ""
+      }
+    ],
+    "violations": [
+      {
+        "kind": "CLAIM_NOT_LINKED",
+        "message": "The sentence \"Several tweets show mixed feelings, with some mocking the team's performance and others dreading the upcoming game.\" could not be linked to an opinion about one specific NFL team (49ers, Patriots or Seahawks). Every claim must be about exactly ONE of these teams, name it explicitly, and list the supporting tweet ids."
+      },
+      {
+        "kind": "INTENSITY_INFLATED",
+        "message": "Claim \"Many tweets show interest and support for the New England Patriots, with fans excited for upcoming games and the team's current success.\" sounds Medium-intensity, but the cited tweets about NewEnglandPatriots are at most Low. Tone it down."
+      }
+    ]
+  },
+  {
+    "iteration": 3,
+    "score": 3,
+    "metrics": {
+      "n_claims": 3,
+      "group_counts": {
+        "AfricanAmerican": 3,
+        "Hispanic": 3,
+        "White": 3
+      },
+      "group_shares": {
+        "AfricanAmerican": 0.333,
+        "Hispanic": 0.333,
+        "White": 0.333
+      },
+      "equal_coverage": 1.0,
+      "prompt": {
+        "k": 3,
+        "focus": "Negative"
+      },
+      "report1": {
+        "Q1_Q2_facts_checked": 0,
+        "Q3_facts_checked": 0,
+        "Q5_facts_checked": 0,
+        "Q6_facts_checked": 0,
+        "flagged": []
+      },
+      "q4_summary": {
+        "PatriotsTopic": {
+          "Hispanic": 6,
+          "AfricanAmerican": 6,
+          "White": 6
+        }
+      }
+    },
+    "claims": [
+      {
+        "sentence": "Several tweets express mildly negative views about the New England Patriots.",
+        "tweet_ids": [
+          2,
+          3,
+          48,
+          51,
+          9,
+          10
+        ],
+        "team": "NewEnglandPatriots",
+        "template": true,
+        "polarity": "Negative",
+        "intensity": "Low",
+        "aspect": ""
+      },
+      {
+        "sentence": "Several tweets show mixed feelings, with some hoping the Patriots face easy opponents while others express joy at the team's potential losses.",
+        "tweet_ids": [
+          6,
+          14,
+          19,
+          24,
+          17,
+          21
+        ],
+        "team": "NewEnglandPatriots",
+        "template": false,
+        "polarity": "Negative",
+        "intensity": "Low",
+        "aspect": "game_result"
+      },
+      {
+        "sentence": "Many tweets express mildly positive views about the New England Patriots.",
+        "tweet_ids": [
+          4,
+          7,
+          8,
+          23,
+          1,
+          11
+        ],
+        "team": "NewEnglandPatriots",
+        "template": true,
+        "polarity": "Positive",
+        "intensity": "Low",
+        "aspect": ""
+      }
+    ],
+    "violations": [
+      {
+        "kind": "POLARITY_UNSUPPORTED",
+        "message": "Claim \"Several tweets show mixed feelings, with some hoping the Patriots face easy opponents while others express joy at the team's potential losses.\" is Neutral about NewEnglandPatriots, but none of the tweets it cites express a Neutral opinion about NewEnglandPatriots (cited: [6] \"If the Falcons & Patriots go to the fucking Super Bowl me and my mama finna be ENEMIES !!!\"; [14] \"Will b rong if we c Patriots playin in thr Giants an Jets stadium 4 the Super Bowl\"; [19] \"Patriots might as well pack there bags and go home__ #HarBowl\"; [24] \"I want the bi teams to be knocked out so my Patriots have an easy ride.\"; [17] \"I have an idea of how u can pay the bet of the #Patriots losing, and keep ur hat good.\"; [21] \"Theres not much that makes me happier than seeing the Patriots lose.\"). Rewrite it so it matches the cited tweets, fix the citations, or remove it."
+      }
+    ]
+  },
+  {
+    "iteration": 4,
+    "score": 0,
+    "metrics": {
+      "n_claims": 3,
+      "group_counts": {
+        "AfricanAmerican": 3,
+        "Hispanic": 3,
+        "White": 3
+      },
+      "group_shares": {
+        "AfricanAmerican": 0.333,
+        "Hispanic": 0.333,
+        "White": 0.333
+      },
+      "equal_coverage": 1.0,
+      "prompt": {
+        "k": 3,
+        "focus": "Negative"
+      },
+      "report1": {
+        "Q1_Q2_facts_checked": 0,
+        "Q3_facts_checked": 0,
+        "Q5_facts_checked": 0,
+        "Q6_facts_checked": 0,
+        "flagged": []
+      },
+      "q4_summary": {
+        "PatriotsTopic": {
+          "Hispanic": 6,
+          "AfricanAmerican": 6,
+          "White": 6
+        }
+      }
+    },
+    "claims": [
+      {
+        "sentence": "Several tweets express mildly negative views about the New England Patriots.",
+        "tweet_ids": [
+          2,
+          3,
+          48,
+          51,
+          9,
+          10
+        ],
+        "team": "NewEnglandPatriots",
+        "template": true,
+        "polarity": "Negative",
+        "intensity": "Low",
+        "aspect": ""
+      },
+      {
+        "sentence": "Several tweets express mildly negative views about recent game results of the New England Patriots.",
+        "tweet_ids": [
+          6,
+          14,
+          19,
+          24,
+          17,
+          21
+        ],
+        "team": "NewEnglandPatriots",
+        "template": true,
+        "polarity": "Negative",
+        "intensity": "Low",
+        "aspect": "game_result"
+      },
+      {
+        "sentence": "Many tweets express mildly positive views about the New England Patriots.",
+        "tweet_ids": [
+          4,
+          7,
+          8,
+          23,
+          1,
+          11
+        ],
+        "team": "NewEnglandPatriots",
+        "template": true,
+        "polarity": "Positive",
+        "intensity": "Low",
+        "aspect": ""
+      }
+    ],
+    "violations": []
+  }
+]

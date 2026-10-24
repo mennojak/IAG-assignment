@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "Several tweets express mildly negative views about the New England Patriots.",
+    "team": "NewEnglandPatriots",
+    "tweet_ids": [
+      2,
+      3,
+      48,
+      51,
+      9,
+      10
+    ]
+  },
+  {
+    "claim": "Several tweets express mildly negative views about recent game results of the New England Patriots.",
+    "team": "NewEnglandPatriots",
+    "tweet_ids": [
+      6,
+      14,
+      19,
+      24,
+      17,
+      21
+    ]
+  },
+  {
+    "claim": "Many tweets express mildly positive views about the New England Patriots.",
+    "team": "NewEnglandPatriots",
+    "tweet_ids": [
+      4,
+      7,
+      8,
+      23,
+      1,
+      11
+    ]
+  }
+]
