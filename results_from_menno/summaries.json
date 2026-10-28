@@ -1,0 +1,2820 @@
+[
+  {
+    "topic": "49ers",
+    "prompt": "strongest_opinions",
+    "run": 1,
+    "system": "baseline",
+    "summary": "Opinions are overwhelmingly positive, with many fans expressing strong support for the 49ers, crediting them with strong performances and predicting their success in the Super Bowl. Some tweets highlight specific player performances or team strategies, while a few express skepticism or dislike for the team. Fans also show mixed feelings towards rival teams, with support for the Ravens and criticism of the Falcons. Overall, the 49ers have a dedicated and enthusiastic fan base.",
+    "citations": null
+  },
+  {
+    "topic": "49ers",
+    "prompt": "strongest_opinions",
+    "run": 1,
+    "system": "agent",
+    "summary": "Many tweets express strong confidence in the 49ers' success this season. Several tweets express strongly negative views about recent game results of the San Francisco 49ers. Some tweets express mildly negative views about the San Francisco 49ers. Some tweets discuss the 49ers' chances and mention player movements. Some tweets mention the San Francisco 49ers and recent game results without taking a clear side.",
+    "citations": [
+      {
+        "claim": "Many tweets express strong confidence in the 49ers' success this season.",
+        "tweet_ids": [
+          9,
+          17,
+          1,
+          2,
+          5,
+          13
+        ]
+      },
+      {
+        "claim": "Several tweets express strongly negative views about recent game results of the San Francisco 49ers.",
+        "tweet_ids": [
+          8,
+          30,
+          10,
+          64,
+          7,
+          11
+        ]
+      },
+      {
+        "claim": "Some tweets express mildly negative views about the San Francisco 49ers.",
+        "tweet_ids": [
+          25,
+          35,
+          43,
+          29,
+          37
+        ]
+      },
+      {
+        "claim": "Some tweets discuss the 49ers' chances and mention player movements.",
+        "tweet_ids": [
+          33,
+          39,
+          3,
+          6,
+          12
+        ]
+      },
+      {
+        "claim": "Some tweets mention the San Francisco 49ers and recent game results without taking a clear side.",
+        "tweet_ids": [
+          19,
+          21,
+          48,
+          26,
+          46
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "49ers",
+    "prompt": "strongest_opinions",
+    "run": 1,
+    "system": "ablation_no_plan",
+    "summary": "Several tweets praise the San Francisco 49ers' defense and quarterback, with fans expressing confidence in their team's performance. (tweets [1, 2, 4, 16, 32, 34, 36, 44, 54, 71, 84]) Some tweets express strong support for the San Francisco 49ers, with hopes for a Super Bowl victory. (tweets [9, 18, 20, 38, 53, 60, 64, 80, 88]) A few tweets express skepticism about the San Francisco 49ers' chances, believing they will lose to the Falcons. (tweets [30, 53, 64, 80, 88]) White fans are skeptical about the San Francisco 49ers, citing recent losses and questioning their future success. (tweets [7, 35, 37, 52, 65, 85, 87]) Several tweets acknowledge the San Francisco 49ers' strong players, but hope for a different outcome. (tweets [14, 31, 49, 62, 83, 89])",
+    "citations": [
+      {
+        "claim": "Several tweets praise the San Francisco 49ers' defense and quarterback, with fans expressing confidence in their team's performance. (tweets [1, 2, 4, 16, 32, 34, 36, 44, 54, 71, 84])",
+        "tweet_ids": [
+          1,
+          2,
+          4,
+          16,
+          32,
+          34,
+          36,
+          44,
+          54,
+          71,
+          84
+        ]
+      },
+      {
+        "claim": "Some tweets express strong support for the San Francisco 49ers, with hopes for a Super Bowl victory. (tweets [9, 18, 20, 38, 53, 60, 64, 80, 88])",
+        "tweet_ids": [
+          9,
+          18,
+          20,
+          38,
+          53,
+          60,
+          64,
+          80,
+          88
+        ]
+      },
+      {
+        "claim": "A few tweets express skepticism about the San Francisco 49ers' chances, believing they will lose to the Falcons. (tweets [30, 53, 64, 80, 88])",
+        "tweet_ids": [
+          30,
+          53,
+          64,
+          80,
+          88
+        ]
+      },
+      {
+        "claim": "White fans are skeptical about the San Francisco 49ers, citing recent losses and questioning their future success. (tweets [7, 35, 37, 52, 65, 85, 87])",
+        "tweet_ids": [
+          7,
+          35,
+          37,
+          52,
+          65,
+          85,
+          87
+        ]
+      },
+      {
+        "claim": "Several tweets acknowledge the San Francisco 49ers' strong players, but hope for a different outcome. (tweets [14, 31, 49, 62, 83, 89])",
+        "tweet_ids": [
+          14,
+          31,
+          49,
+          62,
+          83,
+          89
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "49ers",
+    "prompt": "strongest_opinions",
+    "run": 2,
+    "system": "baseline",
+    "summary": "Opinions about the 49ers are overwhelmingly positive, with fans expressing strong support and confidence in their team, especially in the lead-up to the Super Bowl. Many tweets highlight the team's recent performance and express hope for a strong showing against the Falcons. Some users also show frustration or disbelief at the strength of the 49ers' play. A few tweets sarcastically express dislike for the 49ers, but these are vastly outnumbered by the enthusiastic support. Overall, the sentiment is highly positive and supportive.",
+    "citations": null
+  },
+  {
+    "topic": "49ers",
+    "prompt": "strongest_opinions",
+    "run": 2,
+    "system": "agent",
+    "summary": "Many tweets express strong support and confidence in the 49ers' success. Several tweets express strongly negative views about recent game results of the San Francisco 49ers. Some tweets express mildly negative views about the San Francisco 49ers. Some tweets mention the San Francisco 49ers without taking a clear side. Some tweets reflect mixed interest in the 49ers' recent game, with mixed opinions on the outcome and varying levels of engagement from followers.",
+    "citations": [
+      {
+        "claim": "Many tweets express strong support and confidence in the 49ers' success.",
+        "tweet_ids": [
+          9,
+          17,
+          1,
+          2,
+          5,
+          13
+        ]
+      },
+      {
+        "claim": "Several tweets express strongly negative views about recent game results of the San Francisco 49ers.",
+        "tweet_ids": [
+          8,
+          30,
+          10,
+          64,
+          7,
+          11
+        ]
+      },
+      {
+        "claim": "Some tweets express mildly negative views about the San Francisco 49ers.",
+        "tweet_ids": [
+          25,
+          35,
+          43,
+          29,
+          37
+        ]
+      },
+      {
+        "claim": "Some tweets mention the San Francisco 49ers without taking a clear side.",
+        "tweet_ids": [
+          33,
+          39,
+          3,
+          6,
+          12
+        ]
+      },
+      {
+        "claim": "Some tweets reflect mixed interest in the 49ers' recent game, with mixed opinions on the outcome and varying levels of engagement from followers.",
+        "tweet_ids": [
+          19,
+          21,
+          48,
+          26,
+          46
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "49ers",
+    "prompt": "strongest_opinions",
+    "run": 2,
+    "system": "ablation_no_plan",
+    "summary": "Several tweets express strong support for the San Francisco 49ers, with one stating, 'Lmaooo hes a 49ers fan so i showed up to his house in my #Cowboys sweater lmaooooo', and another exclaiming, 'S/O to the 49ers mane!!! We going all the way!!' (tweets [9, 17, 18, 20, 27, 36]). Several tweets express neutral opinions about the San Francisco 49ers, with one stating, 'Wow anquan boldion is leaving the ravens and is going to the 49ers o:', and another adding, 'So the #49ers have to get a #Revis deal done now right?' (tweets [3, 6, 15, 21, 48, 51]). Several tweets express mixed opinions about the San Francisco 49ers, with one hoping, 'S/O to the 49ers mane!!! We going all the way!!', while another expresses doubt, '49ers r gonna lose in the Super Bowl anyways __' (tweets [9, 38, 85]). Several tweets express strong support for the San Francisco 49ers, with one stating, 'Lmaooo hes a 49ers fan so i showed up to his house in my #Cowboys sweater lmaooooo', and another exclaiming, 'S/O to the 49ers mane!!! We going all the way!!' (tweets [9, 17, 18, 20, 27, 36]). Several tweets express neutral opinions about the San Francisco 49ers, with one stating, 'Wow anquan boldion is leaving the ravens and is going to the 49ers o:', and another adding, 'So the #49ers have to get a #Revis deal done now right?' (tweets [3, 6, 15, 21, 48, 51]).",
+    "citations": [
+      {
+        "claim": "Several tweets express strong support for the San Francisco 49ers, with one stating, 'Lmaooo hes a 49ers fan so i showed up to his house in my #Cowboys sweater lmaooooo', and another exclaiming, 'S/O to the 49ers mane!!! We going all the way!!' (tweets [9, 17, 18, 20, 27, 36]).",
+        "tweet_ids": [
+          9,
+          17,
+          18,
+          20,
+          27,
+          36
+        ]
+      },
+      {
+        "claim": "Several tweets express neutral opinions about the San Francisco 49ers, with one stating, 'Wow anquan boldion is leaving the ravens and is going to the 49ers o:', and another adding, 'So the #49ers have to get a #Revis deal done now right?' (tweets [3, 6, 15, 21, 48, 51]).",
+        "tweet_ids": [
+          3,
+          6,
+          15,
+          21,
+          48,
+          51
+        ]
+      },
+      {
+        "claim": "Several tweets express mixed opinions about the San Francisco 49ers, with one hoping, 'S/O to the 49ers mane!!! We going all the way!!', while another expresses doubt, '49ers r gonna lose in the Super Bowl anyways __' (tweets [9, 38, 85]).",
+        "tweet_ids": [
+          9,
+          38,
+          85
+        ]
+      },
+      {
+        "claim": "Several tweets express strong support for the San Francisco 49ers, with one stating, 'Lmaooo hes a 49ers fan so i showed up to his house in my #Cowboys sweater lmaooooo', and another exclaiming, 'S/O to the 49ers mane!!! We going all the way!!' (tweets [9, 17, 18, 20, 27, 36]).",
+        "tweet_ids": [
+          9,
+          17,
+          18,
+          20,
+          27,
+          36
+        ]
+      },
+      {
+        "claim": "Several tweets express neutral opinions about the San Francisco 49ers, with one stating, 'Wow anquan boldion is leaving the ravens and is going to the 49ers o:', and another adding, 'So the #49ers have to get a #Revis deal done now right?' (tweets [3, 6, 15, 21, 48, 51]).",
+        "tweet_ids": [
+          3,
+          6,
+          15,
+          21,
+          48,
+          51
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "49ers",
+    "prompt": "strongest_opinions",
+    "run": 3,
+    "system": "baseline",
+    "summary": "Opinions about the 49ers are largely positive, with many fans expressing strong support and confidence in their team, often referencing Colin Kaepernick. Some tweets reflect long-term loyalty and the belief that the 49ers will win the Super Bowl. There are also mixed feelings, with a few fans acknowledging the team's recent performance issues. A few detractors suggest the 49ers may not live up to expectations, especially when facing strong teams like the Falcons. Overall, the sentiment is predominantly enthusiastic and supportive.",
+    "citations": null
+  },
+  {
+    "topic": "49ers",
+    "prompt": "strongest_opinions",
+    "run": 3,
+    "system": "agent",
+    "summary": "Many tweets express strong confidence and support for the San Francisco 49ers, believing they will win. Several tweets express strongly negative views about recent game results of the San Francisco 49ers. Some tweets express mildly negative views about the San Francisco 49ers. Some tweets mention the San Francisco 49ers without taking a clear side. Some tweets show mixed opinions, with a few fans rooting for the 49ers and some indifference towards their performance.",
+    "citations": [
+      {
+        "claim": "Many tweets express strong confidence and support for the San Francisco 49ers, believing they will win.",
+        "tweet_ids": [
+          9,
+          17,
+          1,
+          2,
+          5,
+          13
+        ]
+      },
+      {
+        "claim": "Several tweets express strongly negative views about recent game results of the San Francisco 49ers.",
+        "tweet_ids": [
+          8,
+          30,
+          10,
+          64,
+          7,
+          11
+        ]
+      },
+      {
+        "claim": "Some tweets express mildly negative views about the San Francisco 49ers.",
+        "tweet_ids": [
+          25,
+          35,
+          43,
+          29,
+          37
+        ]
+      },
+      {
+        "claim": "Some tweets mention the San Francisco 49ers without taking a clear side.",
+        "tweet_ids": [
+          33,
+          39,
+          3,
+          6,
+          12
+        ]
+      },
+      {
+        "claim": "Some tweets show mixed opinions, with a few fans rooting for the 49ers and some indifference towards their performance.",
+        "tweet_ids": [
+          19,
+          21,
+          48,
+          26,
+          46
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "49ers",
+    "prompt": "strongest_opinions",
+    "run": 3,
+    "system": "ablation_no_plan",
+    "summary": "Several tweets express strong support for the San Francisco 49ers, with sentiments ranging from confident predictions of victory to praise for the teamís players and performance. (tweets [1, 2, 16, 32, 44, 60, 81]) A few tweets are skeptical or critical of the 49ers, suggesting the team may not perform well. (tweets [8, 25, 30, 34, 35, 41]) Several tweets highlight Anquan Boldinís move to the 49ers and express interest in the teamís upcoming performance. (tweets [3, 6, 15, 21, 48, 51]) Several tweets are neutral about the San Francisco 49ers, discussing the teamís upcoming games without strong opinions. (tweets [3, 6, 15, 21, 48, 51])",
+    "citations": [
+      {
+        "claim": "Several tweets express strong support for the San Francisco 49ers, with sentiments ranging from confident predictions of victory to praise for the teamís players and performance. (tweets [1, 2, 16, 32, 44, 60, 81])",
+        "tweet_ids": [
+          1,
+          2,
+          16,
+          32,
+          44,
+          60,
+          81
+        ]
+      },
+      {
+        "claim": "A few tweets are skeptical or critical of the 49ers, suggesting the team may not perform well. (tweets [8, 25, 30, 34, 35, 41])",
+        "tweet_ids": [
+          8,
+          25,
+          30,
+          34,
+          35,
+          41
+        ]
+      },
+      {
+        "claim": "Several tweets highlight Anquan Boldinís move to the 49ers and express interest in the teamís upcoming performance. (tweets [3, 6, 15, 21, 48, 51])",
+        "tweet_ids": [
+          3,
+          6,
+          15,
+          21,
+          48,
+          51
+        ]
+      },
+      {
+        "claim": "Several tweets are neutral about the San Francisco 49ers, discussing the teamís upcoming games without strong opinions. (tweets [3, 6, 15, 21, 48, 51])",
+        "tweet_ids": [
+          3,
+          6,
+          15,
+          21,
+          48,
+          51
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "49ers",
+    "prompt": "fair_equal_weight",
+    "run": 1,
+    "system": "baseline",
+    "summary": "Opinions on the 49ers vary widely, with fans expressing both strong support and criticism. Many are excited for upcoming games and the Super Bowl, while others are skeptical. Some appreciate the team's performance and talent, while a few express disappointment. The discussions highlight a mix of optimism and realism, balancing hopes for success with acknowledgment of challenges.",
+    "citations": null
+  },
+  {
+    "topic": "49ers",
+    "prompt": "fair_equal_weight",
+    "run": 1,
+    "system": "agent",
+    "summary": "Many tweets express strong support and confidence in the San Francisco 49ers' success. Several tweets express strongly negative views about recent game results of the San Francisco 49ers. Some tweets express mildly negative views about the San Francisco 49ers. Some tweets discuss the 49ers' upcoming games and potential moves, including coaching matchups and free agency. Some tweets reflect mixed feelings about the 49ers' recent performance, with some rooting for them and others showing indifference.",
+    "citations": [
+      {
+        "claim": "Many tweets express strong support and confidence in the San Francisco 49ers' success.",
+        "tweet_ids": [
+          9,
+          17,
+          1,
+          2,
+          5,
+          13
+        ]
+      },
+      {
+        "claim": "Several tweets express strongly negative views about recent game results of the San Francisco 49ers.",
+        "tweet_ids": [
+          8,
+          30,
+          10,
+          64,
+          7,
+          11
+        ]
+      },
+      {
+        "claim": "Some tweets express mildly negative views about the San Francisco 49ers.",
+        "tweet_ids": [
+          25,
+          35,
+          43,
+          29,
+          37
+        ]
+      },
+      {
+        "claim": "Some tweets discuss the 49ers' upcoming games and potential moves, including coaching matchups and free agency.",
+        "tweet_ids": [
+          33,
+          39,
+          3,
+          6,
+          12
+        ]
+      },
+      {
+        "claim": "Some tweets reflect mixed feelings about the 49ers' recent performance, with some rooting for them and others showing indifference.",
+        "tweet_ids": [
+          19,
+          21,
+          48,
+          26,
+          46
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "49ers",
+    "prompt": "fair_equal_weight",
+    "run": 1,
+    "system": "ablation_no_plan",
+    "summary": "Several tweets express enthusiasm about the San Francisco 49ers, with some fans hoping they will win the Super Bowl and others seeing them as a strong team. Some fans root for the 49ers, while others hope the Falcons will win, despite seeing the 49ers as a strong team. Fans generally support the 49ers, with some hoping for a Super Bowl win and others predicting victory for them in upcoming games. Several tweets express negative sentiment about the 49ers, with fans hoping the Falcons will win and predicting the 49ers will lose in the upcoming game. Some tweets provide neutral views, discussing the 49ers' strong defense or recent performances without strong sentiment. Several tweets express negative sentiment about the 49ers, with fans hoping the Falcons will win and predicting the 49ers will lose in the upcoming game. Several tweets mention the 49ers' strong defense and recent performances without strong positive or negative sentiment.",
+    "citations": [
+      {
+        "claim": "Several tweets express enthusiasm about the San Francisco 49ers, with some fans hoping they will win the Super Bowl and others seeing them as a strong team.",
+        "tweet_ids": [
+          2,
+          16,
+          20,
+          24,
+          32,
+          33,
+          39,
+          42,
+          44,
+          46,
+          47,
+          48,
+          50,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          59,
+          60,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90
+        ]
+      },
+      {
+        "claim": "Some fans root for the 49ers, while others hope the Falcons will win, despite seeing the 49ers as a strong team.",
+        "tweet_ids": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          21,
+          25,
+          27,
+          30,
+          34,
+          35,
+          40,
+          41,
+          43,
+          45,
+          49,
+          50,
+          53,
+          58,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90
+        ]
+      },
+      {
+        "claim": "Fans generally support the 49ers, with some hoping for a Super Bowl win and others predicting victory for them in upcoming games.",
+        "tweet_ids": [
+          1,
+          4,
+          6,
+          9,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          22,
+          23,
+          24,
+          26,
+          28,
+          29,
+          31,
+          32,
+          33,
+          36,
+          37,
+          38,
+          39,
+          40,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90
+        ]
+      },
+      {
+        "claim": "Several tweets express negative sentiment about the 49ers, with fans hoping the Falcons will win and predicting the 49ers will lose in the upcoming game.",
+        "tweet_ids": [
+          8,
+          25,
+          30,
+          34,
+          35,
+          41
+        ]
+      },
+      {
+        "claim": "Some tweets provide neutral views, discussing the 49ers' strong defense or recent performances without strong sentiment.",
+        "tweet_ids": [
+          3,
+          6,
+          15,
+          21,
+          48,
+          51
+        ]
+      },
+      {
+        "claim": "Several tweets express negative sentiment about the 49ers, with fans hoping the Falcons will win and predicting the 49ers will lose in the upcoming game.",
+        "tweet_ids": [
+          7,
+          11,
+          28,
+          29,
+          37,
+          68
+        ]
+      },
+      {
+        "claim": "Several tweets mention the 49ers' strong defense and recent performances without strong positive or negative sentiment.",
+        "tweet_ids": [
+          10,
+          14,
+          16,
+          17,
+          18,
+          20,
+          22,
+          23,
+          24,
+          26,
+          27,
+          30,
+          31,
+          32,
+          33,
+          35,
+          36,
+          39,
+          40,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "49ers",
+    "prompt": "fair_equal_weight",
+    "run": 2,
+    "system": "baseline",
+    "summary": "Opinions about the 49ers vary, with some fans showing strong support and optimism, while others express skepticism and concern. Positive sentiments focus on the team's recent performance and potential Super Bowl prospects. Negative views include criticism of recent losses and doubts about future success. Neutral perspectives often highlight the team's strength and potential. Overall, the fan base is diverse, with a mix of faith, skepticism, and excitement surrounding the team's upcoming games and playoff chances.",
+    "citations": null
+  },
+  {
+    "topic": "49ers",
+    "prompt": "fair_equal_weight",
+    "run": 2,
+    "system": "agent",
+    "summary": "Many tweets express strong support and confidence in the San Francisco 49ers' ability to succeed. Several tweets express strongly negative views about recent game results of the San Francisco 49ers. Some tweets express mildly negative views about the San Francisco 49ers. Some tweets mention the San Francisco 49ers without taking a clear side. Some tweets express mixed feelings about the 49ers, with both support and some indifference noted.",
+    "citations": [
+      {
+        "claim": "Many tweets express strong support and confidence in the San Francisco 49ers' ability to succeed.",
+        "tweet_ids": [
+          9,
+          17,
+          1,
+          2,
+          5,
+          13
+        ]
+      },
+      {
+        "claim": "Several tweets express strongly negative views about recent game results of the San Francisco 49ers.",
+        "tweet_ids": [
+          8,
+          30,
+          10,
+          64,
+          7,
+          11
+        ]
+      },
+      {
+        "claim": "Some tweets express mildly negative views about the San Francisco 49ers.",
+        "tweet_ids": [
+          25,
+          35,
+          43,
+          29,
+          37
+        ]
+      },
+      {
+        "claim": "Some tweets mention the San Francisco 49ers without taking a clear side.",
+        "tweet_ids": [
+          33,
+          39,
+          3,
+          6,
+          12
+        ]
+      },
+      {
+        "claim": "Some tweets express mixed feelings about the 49ers, with both support and some indifference noted.",
+        "tweet_ids": [
+          19,
+          21,
+          48,
+          26,
+          46
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "49ers",
+    "prompt": "fair_equal_weight",
+    "run": 2,
+    "system": "ablation_no_plan",
+    "summary": "Several tweets express a neutral sentiment about the San Francisco 49ers, focusing on upcoming games and Super Bowl predictions. Tweets: [24, 33, 39, 40, 48, 53, 55, 67, 70, 71, 72, 79, 80, 81, 83, 84] Several tweets praise the San Francisco 49ers and their players. Tweets: [1, 2, 16, 21, 22, 23, 26, 31, 32, 36, 38, 42, 44, 46, 47, 49, 50, 52, 56, 57, 59, 60, 61, 62, 63, 66, 73, 78, 87, 89, 90] Several tweets express a negative sentiment about the San Francisco 49ers, focusing on their recent struggles. Tweets: [8, 30, 34, 35, 41] Several tweets express disappointment in the San Francisco 49ers' recent game performance. Tweets: [7, 11, 28, 29, 37, 68]",
+    "citations": [
+      {
+        "claim": "Several tweets express a neutral sentiment about the San Francisco 49ers, focusing on upcoming games and Super Bowl predictions. Tweets: [24, 33, 39, 40, 48, 53, 55, 67, 70, 71, 72, 79, 80, 81, 83, 84]",
+        "tweet_ids": [
+          24,
+          33,
+          39,
+          40,
+          48,
+          53,
+          55,
+          67,
+          70,
+          71,
+          72,
+          79,
+          80,
+          81,
+          83,
+          84
+        ]
+      },
+      {
+        "claim": "Several tweets praise the San Francisco 49ers and their players. Tweets: [1, 2, 16, 21, 22, 23, 26, 31, 32, 36, 38, 42, 44, 46, 47, 49, 50, 52, 56, 57, 59, 60, 61, 62, 63, 66, 73, 78, 87, 89, 90]",
+        "tweet_ids": [
+          1,
+          2,
+          16,
+          21,
+          22,
+          23,
+          26,
+          31,
+          32,
+          36,
+          38,
+          42,
+          44,
+          46,
+          47,
+          49,
+          50,
+          52,
+          56,
+          57,
+          59,
+          60,
+          61,
+          62,
+          63,
+          66,
+          73,
+          78,
+          87,
+          89,
+          90
+        ]
+      },
+      {
+        "claim": "Several tweets express a negative sentiment about the San Francisco 49ers, focusing on their recent struggles. Tweets: [8, 30, 34, 35, 41]",
+        "tweet_ids": [
+          8,
+          30,
+          34,
+          35,
+          41
+        ]
+      },
+      {
+        "claim": "Several tweets express disappointment in the San Francisco 49ers' recent game performance. Tweets: [7, 11, 28, 29, 37, 68]",
+        "tweet_ids": [
+          7,
+          11,
+          28,
+          29,
+          37,
+          68
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "49ers",
+    "prompt": "fair_equal_weight",
+    "run": 3,
+    "system": "baseline",
+    "summary": "Opinions about the 49ers vary, with fans expressing both enthusiasm and skepticism. Some are confident in the team's performance and potential Super Bowl win, while others doubt their ability to defeat stronger opponents like the Falcons. The team's defense and quarterback play are subjects of discussion, with mixed reactions. Overall, the conversation balances positive support and critical thoughts, reflecting a diverse range of fan perspectives.",
+    "citations": null
+  },
+  {
+    "topic": "49ers",
+    "prompt": "fair_equal_weight",
+    "run": 3,
+    "system": "agent",
+    "summary": "Many tweets express enthusiastic support and confidence in the San Francisco 49ers' upcoming success. Several tweets express strongly negative views about recent game results of the San Francisco 49ers. Some tweets express mild disappointment in the San Francisco 49ers, noting their struggles and suggesting they may face challenges in upcoming games. Some tweets mention the San Francisco 49ers without taking a clear side. Some tweets express mixed feelings about the San Francisco 49ers' recent game, with some supporting the team and others showing indifference.",
+    "citations": [
+      {
+        "claim": "Many tweets express enthusiastic support and confidence in the San Francisco 49ers' upcoming success.",
+        "tweet_ids": [
+          9,
+          17,
+          1,
+          2,
+          5,
+          13
+        ]
+      },
+      {
+        "claim": "Several tweets express strongly negative views about recent game results of the San Francisco 49ers.",
+        "tweet_ids": [
+          8,
+          30,
+          10,
+          64,
+          7,
+          11
+        ]
+      },
+      {
+        "claim": "Some tweets express mild disappointment in the San Francisco 49ers, noting their struggles and suggesting they may face challenges in upcoming games.",
+        "tweet_ids": [
+          25,
+          35,
+          43,
+          29,
+          37
+        ]
+      },
+      {
+        "claim": "Some tweets mention the San Francisco 49ers without taking a clear side.",
+        "tweet_ids": [
+          33,
+          39,
+          3,
+          6,
+          12
+        ]
+      },
+      {
+        "claim": "Some tweets express mixed feelings about the San Francisco 49ers' recent game, with some supporting the team and others showing indifference.",
+        "tweet_ids": [
+          19,
+          21,
+          48,
+          26,
+          46
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "49ers",
+    "prompt": "fair_equal_weight",
+    "run": 3,
+    "system": "ablation_no_plan",
+    "summary": "Several tweets express strong support for the San Francisco 49ers, with one hoping they 'go all the way' and another tweeting 'S/O to the 49ers mane!!!' Some tweets praise the San Francisco 49ers, noting their recent performance and expressing hope they will win the Super Bowl, as seen in tweets [5, 13, 22, 23, 24, 40]. Several tweets express concern about the San Francisco 49ers' defense, with one fan suggesting 'Run O, feed it to Gore. #49ers Come on D. Wake Up!!!!!!!!' Several tweets express negative sentiments towards the San Francisco 49ers, with one fan wishing for a loss and another admitting disappointment with their recent performance. Several tweets show indifference towards the San Francisco 49ers, with one fan noting they do not care about the team's Super Bowl prospects and another expressing frustration with their recent games.",
+    "citations": [
+      {
+        "claim": "Several tweets express strong support for the San Francisco 49ers, with one hoping they 'go all the way' and another tweeting 'S/O to the 49ers mane!!!'",
+        "tweet_ids": [
+          2,
+          9,
+          16,
+          32,
+          49,
+          50,
+          52,
+          57,
+          58,
+          63,
+          66,
+          67,
+          75
+        ]
+      },
+      {
+        "claim": "Some tweets praise the San Francisco 49ers, noting their recent performance and expressing hope they will win the Super Bowl, as seen in tweets [5, 13, 22, 23, 24, 40].",
+        "tweet_ids": [
+          5,
+          13,
+          22,
+          23,
+          24,
+          40
+        ]
+      },
+      {
+        "claim": "Several tweets express concern about the San Francisco 49ers' defense, with one fan suggesting 'Run O, feed it to Gore. #49ers Come on D. Wake Up!!!!!!!!'",
+        "tweet_ids": [
+          31,
+          41,
+          61
+        ]
+      },
+      {
+        "claim": "Several tweets express negative sentiments towards the San Francisco 49ers, with one fan wishing for a loss and another admitting disappointment with their recent performance.",
+        "tweet_ids": [
+          8,
+          7,
+          28,
+          29,
+          11,
+          25,
+          30,
+          34,
+          35,
+          41
+        ]
+      },
+      {
+        "claim": "Several tweets show indifference towards the San Francisco 49ers, with one fan noting they do not care about the team's Super Bowl prospects and another expressing frustration with their recent games.",
+        "tweet_ids": [
+          3,
+          6,
+          15,
+          21,
+          48,
+          51,
+          64,
+          68,
+          73,
+          78,
+          82,
+          84,
+          85,
+          86,
+          89
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "Patriots",
+    "prompt": "strongest_opinions",
+    "run": 1,
+    "system": "baseline",
+    "summary": "Strong opinions about the Patriots are mixed. Many fans express intense support, viewing them as a formidable team and eagerly awaiting games. Conversely, some strongly dislike the team, hoping they lose or criticizing their performance. A few users mention the Patriots' dominance and the frustration of seeing them win easily. Overall, the tweets reflect both passionate support and fierce opposition.",
+    "citations": null
+  },
+  {
+    "topic": "Patriots",
+    "prompt": "strongest_opinions",
+    "run": 1,
+    "system": "agent",
+    "summary": "Many tweets show enthusiasm for the Patriots and their upcoming games. Many tweets express mildly negative views about the New England Patriots. Several tweets express disappointment with the Patriots' recent performance, noting their loss to the Ravens and suggesting they may struggle in the upcoming Super Bowl. Some tweets mention the New England Patriots without taking a clear side.",
+    "citations": [
+      {
+        "claim": "Many tweets show enthusiasm for the Patriots and their upcoming games.",
+        "tweet_ids": [
+          4,
+          7,
+          8,
+          23,
+          1,
+          11
+        ]
+      },
+      {
+        "claim": "Many tweets express mildly negative views about the New England Patriots.",
+        "tweet_ids": [
+          2,
+          3,
+          48,
+          51,
+          9,
+          10
+        ]
+      },
+      {
+        "claim": "Several tweets express disappointment with the Patriots' recent performance, noting their loss to the Ravens and suggesting they may struggle in the upcoming Super Bowl.",
+        "tweet_ids": [
+          6,
+          14,
+          19,
+          24,
+          17,
+          34
+        ]
+      },
+      {
+        "claim": "Some tweets mention the New England Patriots without taking a clear side.",
+        "tweet_ids": [
+          47,
+          65,
+          61,
+          62,
+          13,
+          89
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "Patriots",
+    "prompt": "strongest_opinions",
+    "run": 1,
+    "system": "ablation_no_plan",
+    "summary": "Several tweets from the African American community express disappointment in the Patriots. For example, tweets [19], [40], and [67] show frustration, while [32] highlights the team's strong performance. White individuals are divided in their opinions, with some anticipating the games and others hoping the Patriots lose. Tweets [1], [11], and [25] reflect excitement, while [21] and [37] express disappointment. Several tweets from the Hispanic community express positive support for the Patriots. For instance, tweets [23], [29], and [31] celebrate being Patriots fans, while [84] expresses disappointment in the lack of Patriots games. Hispanics show a mix of sentiments, with some positive support and others expressing disappointment. For example, tweets [23] and [84] express enthusiasm, while [39] and [44] show disinterest or frustration. Several tweets from the White community express dislike for the Patriots, with some hoping the team loses. For example, tweets [34] and [46] show frustration with the team's performance and outcomes. Hispanics exhibit a range of sentiments, with some positive support and others expressing disappointment. For example, tweets [23] and [84] express enthusiasm, while [39] and [44] show disinterest or frustration.",
+    "citations": [
+      {
+        "claim": "Several tweets from the African American community express disappointment in the Patriots. For example, tweets [19], [40], and [67] show frustration, while [32] highlights the team's strong performance.",
+        "tweet_ids": [
+          19,
+          40,
+          67,
+          32
+        ]
+      },
+      {
+        "claim": "White individuals are divided in their opinions, with some anticipating the games and others hoping the Patriots lose. Tweets [1], [11], and [25] reflect excitement, while [21] and [37] express disappointment.",
+        "tweet_ids": [
+          1,
+          11,
+          25,
+          21,
+          37
+        ]
+      },
+      {
+        "claim": "Several tweets from the Hispanic community express positive support for the Patriots. For instance, tweets [23], [29], and [31] celebrate being Patriots fans, while [84] expresses disappointment in the lack of Patriots games.",
+        "tweet_ids": [
+          23,
+          29,
+          31,
+          84
+        ]
+      },
+      {
+        "claim": "Hispanics show a mix of sentiments, with some positive support and others expressing disappointment. For example, tweets [23] and [84] express enthusiasm, while [39] and [44] show disinterest or frustration.",
+        "tweet_ids": [
+          23,
+          84,
+          39,
+          44
+        ]
+      },
+      {
+        "claim": "Several tweets from the White community express dislike for the Patriots, with some hoping the team loses. For example, tweets [34] and [46] show frustration with the team's performance and outcomes.",
+        "tweet_ids": [
+          34,
+          46
+        ]
+      },
+      {
+        "claim": "Hispanics exhibit a range of sentiments, with some positive support and others expressing disappointment. For example, tweets [23] and [84] express enthusiasm, while [39] and [44] show disinterest or frustration.",
+        "tweet_ids": [
+          23,
+          84,
+          39,
+          44
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "Patriots",
+    "prompt": "strongest_opinions",
+    "run": 2,
+    "system": "baseline",
+    "summary": "Opinions about the New England Patriots are mixed but strongly divided. Some fans are eagerly anticipating the game, while others strongly dislike the team, especially after their loss. There's a significant group of Patriots fans who are committed and optimistic, as well as those who admit to liking Tom Brady and the team despite their rivalry. Conversely, many fans express frustration and disappointment with the team's performance and strategy.",
+    "citations": null
+  },
+  {
+    "topic": "Patriots",
+    "prompt": "strongest_opinions",
+    "run": 2,
+    "system": "agent",
+    "summary": "Many tweets show positive interest in the New England Patriots, discussing team unity and upcoming games. Many tweets express mildly negative views about the New England Patriots. Several tweets express disappointment with the Patriots' performance, with some hoping for them to face easier opponents in the playoffs. Some tweets show indifference and mild interest in the Patriots' upcoming games.",
+    "citations": [
+      {
+        "claim": "Many tweets show positive interest in the New England Patriots, discussing team unity and upcoming games.",
+        "tweet_ids": [
+          4,
+          7,
+          8,
+          23,
+          1,
+          11
+        ]
+      },
+      {
+        "claim": "Many tweets express mildly negative views about the New England Patriots.",
+        "tweet_ids": [
+          2,
+          3,
+          48,
+          51,
+          9,
+          10
+        ]
+      },
+      {
+        "claim": "Several tweets express disappointment with the Patriots' performance, with some hoping for them to face easier opponents in the playoffs.",
+        "tweet_ids": [
+          6,
+          14,
+          19,
+          24,
+          17,
+          34
+        ]
+      },
+      {
+        "claim": "Some tweets show indifference and mild interest in the Patriots' upcoming games.",
+        "tweet_ids": [
+          47,
+          65,
+          61,
+          62,
+          13,
+          89
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "Patriots",
+    "prompt": "strongest_opinions",
+    "run": 2,
+    "system": "ablation_no_plan",
+    "summary": "Several tweets express strong support for the New England Patriots, hoping they will continue their winning streak and make it to the Super Bowl. Several tweets indicate mixed feelings among fans regarding the New England Patriots, with some strongly supporting the team and others expressing disapproval. Several White fans express strong support for the New England Patriots, while others hope their team will lose or watch with frustration. When the Patriots are not scoring, some fans express frustration, as seen in tweets [2, 3, 5, 6, 12, 14]. Some fans express disappointment in the New England Patriots' performance, as seen in tweets [19, 24, 40, 48, 51, 67]. Several White fans strongly dislike the New England Patriots, as seen in tweets [9, 10, 17, 21, 27, 28]. Several tweets express hope for the New England Patriots to win, as seen in tweets [1, 11, 25, 31, 33, 35]. Several tweets highlight the New England Patriots' strong performance and their consistent success, as seen in tweets [30, 32, 71, 80, 83]. Some fans are critical of the New England Patriots, as seen in tweets [19, 24, 40, 48, 51, 67], expressing disappointment with their performance.",
+    "citations": [
+      {
+        "claim": "Several tweets express strong support for the New England Patriots, hoping they will continue their winning streak and make it to the Super Bowl.",
+        "tweet_ids": [
+          23,
+          29,
+          39,
+          59,
+          61,
+          67,
+          70,
+          71,
+          73,
+          77,
+          80,
+          83,
+          84,
+          90
+        ]
+      },
+      {
+        "claim": "Several tweets indicate mixed feelings among fans regarding the New England Patriots, with some strongly supporting the team and others expressing disapproval.",
+        "tweet_ids": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          12,
+          14,
+          16,
+          18,
+          28,
+          32,
+          36,
+          40,
+          42,
+          45,
+          48,
+          52,
+          54,
+          57,
+          60,
+          62,
+          66,
+          75,
+          79
+        ]
+      },
+      {
+        "claim": "Several White fans express strong support for the New England Patriots, while others hope their team will lose or watch with frustration.",
+        "tweet_ids": [
+          1,
+          11,
+          27,
+          34,
+          35,
+          37,
+          41,
+          43,
+          46,
+          49,
+          50,
+          52,
+          55,
+          58,
+          64,
+          68,
+          75,
+          79,
+          80,
+          83,
+          84,
+          89
+        ]
+      },
+      {
+        "claim": "When the Patriots are not scoring, some fans express frustration, as seen in tweets [2, 3, 5, 6, 12, 14].",
+        "tweet_ids": [
+          2,
+          3,
+          5,
+          6,
+          12,
+          14
+        ]
+      },
+      {
+        "claim": "Some fans express disappointment in the New England Patriots' performance, as seen in tweets [19, 24, 40, 48, 51, 67].",
+        "tweet_ids": [
+          19,
+          24,
+          40,
+          48,
+          51,
+          67
+        ]
+      },
+      {
+        "claim": "Several White fans strongly dislike the New England Patriots, as seen in tweets [9, 10, 17, 21, 27, 28].",
+        "tweet_ids": [
+          9,
+          10,
+          17,
+          21,
+          27,
+          28
+        ]
+      },
+      {
+        "claim": "Several tweets express hope for the New England Patriots to win, as seen in tweets [1, 11, 25, 31, 33, 35].",
+        "tweet_ids": [
+          1,
+          11,
+          25,
+          31,
+          33,
+          35
+        ]
+      },
+      {
+        "claim": "Several tweets highlight the New England Patriots' strong performance and their consistent success, as seen in tweets [30, 32, 71, 80, 83].",
+        "tweet_ids": [
+          30,
+          32,
+          71,
+          80,
+          83
+        ]
+      },
+      {
+        "claim": "Some fans are critical of the New England Patriots, as seen in tweets [19, 24, 40, 48, 51, 67], expressing disappointment with their performance.",
+        "tweet_ids": [
+          19,
+          24,
+          40,
+          48,
+          51,
+          67
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "Patriots",
+    "prompt": "strongest_opinions",
+    "run": 3,
+    "system": "baseline",
+    "summary": "Opinions about the Patriots are mixed but strong. Some fans are highly supportive, excited for games, and hope for a Super Bowl victory. Others are strongly against them, hoping for losses and even expressing dislike for the team's players. There are also mixed feelings, with some acknowledging the team's talent but hoping for better performance. Overall, the Patriots remain a significant talking point and emotional subject among fans.",
+    "citations": null
+  },
+  {
+    "topic": "Patriots",
+    "prompt": "strongest_opinions",
+    "run": 3,
+    "system": "agent",
+    "summary": "Many tweets show mild support for the New England Patriots and look forward to upcoming games. Many tweets express mildly negative views about the New England Patriots. Several tweets express disappointment with the Patriots' performance, suggesting they may not fare well in upcoming games or the Super Bowl. Some tweets express mild interest in Patriots games but show no strong attachment, while others note their strategy and its impact on the game.",
+    "citations": [
+      {
+        "claim": "Many tweets show mild support for the New England Patriots and look forward to upcoming games.",
+        "tweet_ids": [
+          4,
+          7,
+          8,
+          23,
+          1,
+          11
+        ]
+      },
+      {
+        "claim": "Many tweets express mildly negative views about the New England Patriots.",
+        "tweet_ids": [
+          2,
+          3,
+          48,
+          51,
+          9,
+          10
+        ]
+      },
+      {
+        "claim": "Several tweets express disappointment with the Patriots' performance, suggesting they may not fare well in upcoming games or the Super Bowl.",
+        "tweet_ids": [
+          6,
+          14,
+          19,
+          24,
+          17,
+          34
+        ]
+      },
+      {
+        "claim": "Some tweets express mild interest in Patriots games but show no strong attachment, while others note their strategy and its impact on the game.",
+        "tweet_ids": [
+          47,
+          65,
+          61,
+          62,
+          13,
+          89
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "Patriots",
+    "prompt": "strongest_opinions",
+    "run": 3,
+    "system": "ablation_no_plan",
+    "summary": "Several tweets express strong support for the Patriots, with sentiments ranging from excitement to admiration. For instance, tweets #29 and #30 highlight the unwavering loyalty of fans, while tweets #36 and #61 emphasize the team's resilience at home. A few tweets reveal a contrasting sentiment towards the Patriots, expressing dislike or hatred. For example, tweet #28 illustrates harsh criticism, while tweet #74 shows a neutral-to-negative sentiment. A few tweets express negative sentiment towards the Patriots, with sentiments ranging from disappointment to frustration. For instance, tweets #19, #24, and #40 reflect this negative outlook. A few tweets express positive sentiment towards the Patriots, with sentiments ranging from excitement to pride. For instance, tweets #1, #11, and #25 reflect this positive outlook. White groups express support for the Patriots, indicating a mix of excitement and rivalry, as seen in tweets #33 and #39. Several tweets mention the Patriots' strategic play and strong defense, noting this with admiration. For instance, tweets #12 and #52 reflect this positive outlook.",
+    "citations": [
+      {
+        "claim": "Several tweets express strong support for the Patriots, with sentiments ranging from excitement to admiration. For instance, tweets #29 and #30 highlight the unwavering loyalty of fans, while tweets #36 and #61 emphasize the team's resilience at home.",
+        "tweet_ids": [
+          29,
+          30,
+          36,
+          61
+        ]
+      },
+      {
+        "claim": "A few tweets reveal a contrasting sentiment towards the Patriots, expressing dislike or hatred. For example, tweet #28 illustrates harsh criticism, while tweet #74 shows a neutral-to-negative sentiment.",
+        "tweet_ids": [
+          28,
+          74
+        ]
+      },
+      {
+        "claim": "A few tweets express negative sentiment towards the Patriots, with sentiments ranging from disappointment to frustration. For instance, tweets #19, #24, and #40 reflect this negative outlook.",
+        "tweet_ids": [
+          19,
+          24,
+          40
+        ]
+      },
+      {
+        "claim": "A few tweets express positive sentiment towards the Patriots, with sentiments ranging from excitement to pride. For instance, tweets #1, #11, and #25 reflect this positive outlook.",
+        "tweet_ids": [
+          1,
+          11,
+          25
+        ]
+      },
+      {
+        "claim": "White groups express support for the Patriots, indicating a mix of excitement and rivalry, as seen in tweets #33 and #39.",
+        "tweet_ids": [
+          33,
+          39
+        ]
+      },
+      {
+        "claim": "Several tweets mention the Patriots' strategic play and strong defense, noting this with admiration. For instance, tweets #12 and #52 reflect this positive outlook.",
+        "tweet_ids": [
+          12,
+          52
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "Patriots",
+    "prompt": "fair_equal_weight",
+    "run": 1,
+    "system": "baseline",
+    "summary": "Opinions on the NFL Patriots team are mixed, with fans divided on their support. Some are eager for the game, while others dislike or even root against them. There's appreciation for their performance, but also criticism for certain plays and strategies. Neutral and negative sentiments coexist with positive ones, reflecting the complex feelings surrounding the team.",
+    "citations": null
+  },
+  {
+    "topic": "Patriots",
+    "prompt": "fair_equal_weight",
+    "run": 1,
+    "system": "agent",
+    "summary": "Many tweets show positive interest in the New England Patriots, mentioning plans to support the team and watch games together. Many tweets express mildly negative views about the New England Patriots. Several tweets express skepticism about the Patriots' chances, with some fans hoping for a difficult path and others predicting they might be at home for the Super Bowl. Some tweets express indifference or mild interest in the Patriots, noting their games can be exciting but also observing personal superstitions and external factors influencing opinions.",
+    "citations": [
+      {
+        "claim": "Many tweets show positive interest in the New England Patriots, mentioning plans to support the team and watch games together.",
+        "tweet_ids": [
+          4,
+          7,
+          8,
+          23,
+          1,
+          11
+        ]
+      },
+      {
+        "claim": "Many tweets express mildly negative views about the New England Patriots.",
+        "tweet_ids": [
+          2,
+          3,
+          48,
+          51,
+          9,
+          10
+        ]
+      },
+      {
+        "claim": "Several tweets express skepticism about the Patriots' chances, with some fans hoping for a difficult path and others predicting they might be at home for the Super Bowl.",
+        "tweet_ids": [
+          6,
+          14,
+          19,
+          24,
+          17,
+          34
+        ]
+      },
+      {
+        "claim": "Some tweets express indifference or mild interest in the Patriots, noting their games can be exciting but also observing personal superstitions and external factors influencing opinions.",
+        "tweet_ids": [
+          47,
+          65,
+          61,
+          62,
+          13,
+          89
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "Patriots",
+    "prompt": "fair_equal_weight",
+    "run": 1,
+    "system": "ablation_no_plan",
+    "summary": "Several tweets express mixed feelings about the Patriots, with some fans looking forward to the game and others hoping they lose. Several tweets show support and criticism from fans, with some cheering for the Patriots and others not wanting to support the team. Several tweets indicate a variety of opinions, from hoping the team beats the Patriots to supporting the Patriots themselves. Several tweets express disappointment with the Patriots, with one tweet expressing a desire to see the team lose to get a new hat. Several tweets highlight excitement for the Patriots to win, with one tweet planning to purchase a team jersey. Several tweets are indifferent about the Patriots, with one tweet expressing a neutral sentiment about the team's performance.",
+    "citations": [
+      {
+        "claim": "Several tweets express mixed feelings about the Patriots, with some fans looking forward to the game and others hoping they lose.",
+        "tweet_ids": [
+          1,
+          9,
+          21,
+          27,
+          33,
+          38,
+          46,
+          74,
+          76
+        ]
+      },
+      {
+        "claim": "Several tweets show support and criticism from fans, with some cheering for the Patriots and others not wanting to support the team.",
+        "tweet_ids": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          18,
+          26,
+          32,
+          52,
+          55,
+          71,
+          85,
+          86
+        ]
+      },
+      {
+        "claim": "Several tweets indicate a variety of opinions, from hoping the team beats the Patriots to supporting the Patriots themselves.",
+        "tweet_ids": [
+          29,
+          39,
+          40,
+          53,
+          56,
+          59,
+          61,
+          63,
+          64,
+          67,
+          70,
+          72,
+          78,
+          84,
+          89
+        ]
+      },
+      {
+        "claim": "Several tweets express disappointment with the Patriots, with one tweet expressing a desire to see the team lose to get a new hat.",
+        "tweet_ids": [
+          19,
+          24,
+          40,
+          48,
+          51,
+          67
+        ]
+      },
+      {
+        "claim": "Several tweets highlight excitement for the Patriots to win, with one tweet planning to purchase a team jersey.",
+        "tweet_ids": [
+          1,
+          11,
+          25,
+          31,
+          33,
+          35
+        ]
+      },
+      {
+        "claim": "Several tweets are indifferent about the Patriots, with one tweet expressing a neutral sentiment about the team's performance.",
+        "tweet_ids": [
+          36,
+          37,
+          43,
+          45,
+          47,
+          50,
+          54,
+          57,
+          62,
+          65,
+          68,
+          73,
+          75,
+          79,
+          80,
+          81,
+          83
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "Patriots",
+    "prompt": "fair_equal_weight",
+    "run": 2,
+    "system": "baseline",
+    "summary": "Opinions about the NFL team, the Patriots, are mixed. Fans express both excitement and frustration, with some eagerly supporting their team and others disliking them. Positive views include support for their performance and loyalty to the team, while negative sentiments focus on perceived overconfidence and poor play. Neutral views include interest in the games and anticipation of upcoming matches.",
+    "citations": null
+  },
+  {
+    "topic": "Patriots",
+    "prompt": "fair_equal_weight",
+    "run": 2,
+    "system": "agent",
+    "summary": "Many tweets show interest in and support for the New England Patriots, mentioning their current record and upcoming events. Many tweets express mildly negative views about the New England Patriots. Several tweets express doubt about the Patriots' chances in the upcoming Super Bowl, suggesting they may struggle against other teams. Some tweets express neutral to mild interest in the Patriots' performance, with a few noting the team's strategy and outcomes without strong positive or negative sentiment.",
+    "citations": [
+      {
+        "claim": "Many tweets show interest in and support for the New England Patriots, mentioning their current record and upcoming events.",
+        "tweet_ids": [
+          4,
+          7,
+          8,
+          23,
+          1,
+          11
+        ]
+      },
+      {
+        "claim": "Many tweets express mildly negative views about the New England Patriots.",
+        "tweet_ids": [
+          2,
+          3,
+          48,
+          51,
+          9,
+          10
+        ]
+      },
+      {
+        "claim": "Several tweets express doubt about the Patriots' chances in the upcoming Super Bowl, suggesting they may struggle against other teams.",
+        "tweet_ids": [
+          6,
+          14,
+          19,
+          24,
+          17,
+          34
+        ]
+      },
+      {
+        "claim": "Some tweets express neutral to mild interest in the Patriots' performance, with a few noting the team's strategy and outcomes without strong positive or negative sentiment.",
+        "tweet_ids": [
+          47,
+          65,
+          61,
+          62,
+          13,
+          89
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "Patriots",
+    "prompt": "fair_equal_weight",
+    "run": 2,
+    "system": "ablation_no_plan",
+    "summary": "Several tweets express admiration and support for the Patriots. [4, 7, 15, 18, 30, 32] Several tweets express disappointment and frustration with the Patriots. [9, 10, 17, 21, 27, 28] Several tweets express positive support for the Patriots, with fans eager for upcoming games and predicting success. [8, 23, 29, 39, 70, 71] Several tweets express negative sentiment towards the Patriots, with fans disappointed by recent games and hoping for better performance. [19, 24, 40, 48, 51, 67] Several tweets express positive sentiment towards the Patriots, with fans looking forward to games and predicting success. [1, 11, 25, 31, 33, 35] Several tweets express neutral sentiment towards the Patriots, with fans discussing the team's success without strong opinions. [13, 16, 22, 26, 29, 31]",
+    "citations": [
+      {
+        "claim": "Several tweets express admiration and support for the Patriots. [4, 7, 15, 18, 30, 32]",
+        "tweet_ids": [
+          4,
+          7,
+          15,
+          18,
+          30,
+          32
+        ]
+      },
+      {
+        "claim": "Several tweets express disappointment and frustration with the Patriots. [9, 10, 17, 21, 27, 28]",
+        "tweet_ids": [
+          9,
+          10,
+          17,
+          21,
+          27,
+          28
+        ]
+      },
+      {
+        "claim": "Several tweets express positive support for the Patriots, with fans eager for upcoming games and predicting success. [8, 23, 29, 39, 70, 71]",
+        "tweet_ids": [
+          8,
+          23,
+          29,
+          39,
+          70,
+          71
+        ]
+      },
+      {
+        "claim": "Several tweets express negative sentiment towards the Patriots, with fans disappointed by recent games and hoping for better performance. [19, 24, 40, 48, 51, 67]",
+        "tweet_ids": [
+          19,
+          24,
+          40,
+          48,
+          51,
+          67
+        ]
+      },
+      {
+        "claim": "Several tweets express positive sentiment towards the Patriots, with fans looking forward to games and predicting success. [1, 11, 25, 31, 33, 35]",
+        "tweet_ids": [
+          1,
+          11,
+          25,
+          31,
+          33,
+          35
+        ]
+      },
+      {
+        "claim": "Several tweets express neutral sentiment towards the Patriots, with fans discussing the team's success without strong opinions. [13, 16, 22, 26, 29, 31]",
+        "tweet_ids": [
+          13,
+          16,
+          22,
+          26,
+          29,
+          31
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "Patriots",
+    "prompt": "fair_equal_weight",
+    "run": 3,
+    "system": "baseline",
+    "summary": "Opinions about the NFL Patriots team are mixed. Some fans express strong support and hope for their team's success, while others dislike them and root against them. Neutral views acknowledge the team's skill but criticize their strategy or past performances. Team loyalty is evident, with fans expressing both joy and frustration during games.",
+    "citations": null
+  },
+  {
+    "topic": "Patriots",
+    "prompt": "fair_equal_weight",
+    "run": 3,
+    "system": "agent",
+    "summary": "Many tweets show interest in and support for the New England Patriots, mentioning plans for future games and the team's current performance. Many tweets express mildly negative views about the New England Patriots. Several tweets express disappointment with the Patriots, suggesting they may struggle in future games. Some tweets mention the New England Patriots without taking a clear side.",
+    "citations": [
+      {
+        "claim": "Many tweets show interest in and support for the New England Patriots, mentioning plans for future games and the team's current performance.",
+        "tweet_ids": [
+          4,
+          7,
+          8,
+          23,
+          1,
+          11
+        ]
+      },
+      {
+        "claim": "Many tweets express mildly negative views about the New England Patriots.",
+        "tweet_ids": [
+          2,
+          3,
+          48,
+          51,
+          9,
+          10
+        ]
+      },
+      {
+        "claim": "Several tweets express disappointment with the Patriots, suggesting they may struggle in future games.",
+        "tweet_ids": [
+          6,
+          14,
+          19,
+          24,
+          17,
+          34
+        ]
+      },
+      {
+        "claim": "Some tweets mention the New England Patriots without taking a clear side.",
+        "tweet_ids": [
+          47,
+          65,
+          61,
+          62,
+          13,
+          89
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "Patriots",
+    "prompt": "fair_equal_weight",
+    "run": 3,
+    "system": "ablation_no_plan",
+    "summary": "Several tweets express negative sentiment towards the Patriots. [2] 'When Patriots not scoring they fans be like this -__- *bites fingers'; [3] 'Loooooool Patriots fans talking about good defense that was a shitty throw had nothing to do with your defense.'; [5] 'These folks bandwagon as hell.. Coulda sworn they was going for tha Patriots tho lol'; [6] 'If the Falcons & Patriots go to the fucking Super Bowl me and my mama finna be ENEMIES !!!'; [12] 'Patriots 2nd trick play of the day. Smh.. they trying everything to beat us. #RavensNation'; [14] 'Will b rong if we c Patriots playin in thr Giants an Jets stadium 4 the Super Bowl'. Several tweets express positive sentiment towards the Patriots. [4] 'I need to get more people in this #ColoredPatriots hash tag..... Maybe tomorrow.'; [7] 'its cool bro. We fell as a team. U did ur job. We will be back next year! #PatriotsNation #TURNUP'; [15] 'My picks for saturday and sunday- Broncos Patriots Falcons and 49ers'; [18] 'I'm really ashamed to admit that...I kinda like Tom Brady and the Patriots.'; [30] 'Lmao y'all.boys was on.my ass But istill Love my Team.doe #TeamPatriots Doe.'; [32] 'Gotta respect the #Patriots though…… A well oiled football machine'. Several tweets express negative sentiment towards the Patriots. [19] 'Patriots might as well pack there bags and go home__ #HarBowl'; [24] 'I want the bi teams to be knocked out so my Patriots have an easy ride.'; [40] 'No Patriots game :/ and KC isn't playing so I can't even watch Q! Blah what a lame Sunday'; [48] 'So Patriots prom is coming up....... Boy does that bring back some sour memories'; [51] 'Man, those Patriots fans' tears are gonna make my coffee taste so good in the morning.'; [67] 'My brother won't shut up about the fact that the Texans MIGHT get creamed by the Patriots! :|'. Several tweets express positive sentiment towards the Patriots. [8] 'Pops is gonna buy me a Patriots Jersey on Black Friday.'; [23] 'I like that my Patriots are 4-0 right now ______'; [29] 'WIN,LOSE,OR TIE IM A PATS FAN TILL I DIE. #PatriotsNation'; [39] 'Texans vs Patriots up next. A nigga cant wait! #Leggo #Patriots'; [70] 'From now on all imma tweet about is the #Patriots!!! Lets get em ay!! :D'; [71] 'Wassup !!! Wassup !! Who won ??? Yeah the fucking New England Patriots won , Tom Brady is a fucking Stud !!!'. Several tweets express negative sentiment towards the Patriots. [9] 'We all said we didn't want the Patriots in another Super Bowl. Well, we were lying.'; [10] 'I cannot wait to watch the game Sunday. I strongly dislike the Patriots.'; [17] 'I have an idea of how u can pay the bet of the #Patriots losing, and keep ur hat good.'; [21] 'Theres not much that makes me happier than seeing the Patriots lose.'; [27] 'I just want the Patriots to lose.” Come on nah my G'; [28] 'knows what's up when it comes to the Patriots. He's killing it with the tweets today #hatethosefaggots'. Several tweets express neutral sentiment towards the Patriots. [1] 'The cruise tomorrow night better have the Patriots game on'; [11] 'The Cruise tomorrow night better have the Patriots game on'; [25] 'If the Patriots win my hours become a force Next week I needs that!!!'; [31] 'bittersweet feeling. It's been fun but we ain't done yet! #RoadToNewOrleans #GoPatriots'; [33] 'ShutUp... We have fought over this ssince middle school hahaha. Dolphins and Lakers <<<<< Patriots and Celtics'; [35] 'Imma take a nap. I need all my energy for this Patriots game.'.",
+    "citations": [
+      {
+        "claim": "Several tweets express negative sentiment towards the Patriots. [2] 'When Patriots not scoring they fans be like this -__- *bites fingers'; [3] 'Loooooool Patriots fans talking about good defense that was a shitty throw had nothing to do with your defense.'; [5] 'These folks bandwagon as hell.. Coulda sworn they was going for tha Patriots tho lol'; [6] 'If the Falcons & Patriots go to the fucking Super Bowl me and my mama finna be ENEMIES !!!'; [12] 'Patriots 2nd trick play of the day. Smh.. they trying everything to beat us. #RavensNation'; [14] 'Will b rong if we c Patriots playin in thr Giants an Jets stadium 4 the Super Bowl'.",
+        "tweet_ids": [
+          2,
+          3,
+          5,
+          6,
+          12,
+          14
+        ]
+      },
+      {
+        "claim": "Several tweets express positive sentiment towards the Patriots. [4] 'I need to get more people in this #ColoredPatriots hash tag..... Maybe tomorrow.'; [7] 'its cool bro. We fell as a team. U did ur job. We will be back next year! #PatriotsNation #TURNUP'; [15] 'My picks for saturday and sunday- Broncos Patriots Falcons and 49ers'; [18] 'I'm really ashamed to admit that...I kinda like Tom Brady and the Patriots.'; [30] 'Lmao y'all.boys was on.my ass But istill Love my Team.doe #TeamPatriots Doe.'; [32] 'Gotta respect the #Patriots though…… A well oiled football machine'.",
+        "tweet_ids": [
+          4,
+          7,
+          15,
+          18,
+          30,
+          32
+        ]
+      },
+      {
+        "claim": "Several tweets express negative sentiment towards the Patriots. [19] 'Patriots might as well pack there bags and go home__ #HarBowl'; [24] 'I want the bi teams to be knocked out so my Patriots have an easy ride.'; [40] 'No Patriots game :/ and KC isn't playing so I can't even watch Q! Blah what a lame Sunday'; [48] 'So Patriots prom is coming up....... Boy does that bring back some sour memories'; [51] 'Man, those Patriots fans' tears are gonna make my coffee taste so good in the morning.'; [67] 'My brother won't shut up about the fact that the Texans MIGHT get creamed by the Patriots! :|'.",
+        "tweet_ids": [
+          19,
+          24,
+          40,
+          48,
+          51,
+          67
+        ]
+      },
+      {
+        "claim": "Several tweets express positive sentiment towards the Patriots. [8] 'Pops is gonna buy me a Patriots Jersey on Black Friday.'; [23] 'I like that my Patriots are 4-0 right now ______'; [29] 'WIN,LOSE,OR TIE IM A PATS FAN TILL I DIE. #PatriotsNation'; [39] 'Texans vs Patriots up next. A nigga cant wait! #Leggo #Patriots'; [70] 'From now on all imma tweet about is the #Patriots!!! Lets get em ay!! :D'; [71] 'Wassup !!! Wassup !! Who won ??? Yeah the fucking New England Patriots won , Tom Brady is a fucking Stud !!!'.",
+        "tweet_ids": [
+          8,
+          23,
+          29,
+          39,
+          70,
+          71
+        ]
+      },
+      {
+        "claim": "Several tweets express negative sentiment towards the Patriots. [9] 'We all said we didn't want the Patriots in another Super Bowl. Well, we were lying.'; [10] 'I cannot wait to watch the game Sunday. I strongly dislike the Patriots.'; [17] 'I have an idea of how u can pay the bet of the #Patriots losing, and keep ur hat good.'; [21] 'Theres not much that makes me happier than seeing the Patriots lose.'; [27] 'I just want the Patriots to lose.” Come on nah my G'; [28] 'knows what's up when it comes to the Patriots. He's killing it with the tweets today #hatethosefaggots'.",
+        "tweet_ids": [
+          9,
+          10,
+          17,
+          21,
+          27,
+          28
+        ]
+      },
+      {
+        "claim": "Several tweets express neutral sentiment towards the Patriots. [1] 'The cruise tomorrow night better have the Patriots game on'; [11] 'The Cruise tomorrow night better have the Patriots game on'; [25] 'If the Patriots win my hours become a force Next week I needs that!!!'; [31] 'bittersweet feeling. It's been fun but we ain't done yet! #RoadToNewOrleans #GoPatriots'; [33] 'ShutUp... We have fought over this ssince middle school hahaha. Dolphins and Lakers <<<<< Patriots and Celtics'; [35] 'Imma take a nap. I need all my energy for this Patriots game.'.",
+        "tweet_ids": [
+          1,
+          11,
+          25,
+          31,
+          33,
+          35
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "Seahawks",
+    "prompt": "strongest_opinions",
+    "run": 1,
+    "system": "baseline",
+    "summary": "Strong opinions vary widely, with some fans extremely positive, praising the Seahawks' defense and quarterback Russell Wilson, while others are critical, citing mistakes and lackluster play. There's also a notable focus on the Seahawks' upcoming games against the Falcons and the need for a home playoff game. Some tweets express hope for a Seahawks victory in the Super Bowl, while others root against them or are indifferent. Overall, the sentiment is mixed, leaning towards both support and criticism.",
+    "citations": null
+  },
+  {
+    "topic": "Seahawks",
+    "prompt": "strongest_opinions",
+    "run": 1,
+    "system": "agent",
+    "summary": "Many tweets express mildly positive views about the Seattle Seahawks. Several tweets indicate strong support for the Seahawks, with many noting their consistent wins and expecting them to perform well against future opponents. Several tweets express mildly negative views about the Seattle Seahawks. Several tweets express mildly negative views about recent game results of the Seattle Seahawks. Some tweets mention the Seattle Seahawks without taking a clear side.",
+    "citations": [
+      {
+        "claim": "Many tweets express mildly positive views about the Seattle Seahawks.",
+        "tweet_ids": [
+          9,
+          10,
+          5,
+          8,
+          7,
+          20
+        ]
+      },
+      {
+        "claim": "Several tweets indicate strong support for the Seahawks, with many noting their consistent wins and expecting them to perform well against future opponents.",
+        "tweet_ids": [
+          2,
+          13,
+          21,
+          23,
+          18,
+          40
+        ]
+      },
+      {
+        "claim": "Several tweets express mildly negative views about the Seattle Seahawks.",
+        "tweet_ids": [
+          41,
+          52,
+          3,
+          30,
+          4,
+          14
+        ]
+      },
+      {
+        "claim": "Several tweets express mildly negative views about recent game results of the Seattle Seahawks.",
+        "tweet_ids": [
+          11,
+          32,
+          1,
+          6,
+          42,
+          54
+        ]
+      },
+      {
+        "claim": "Some tweets mention the Seattle Seahawks without taking a clear side.",
+        "tweet_ids": [
+          27,
+          36,
+          35,
+          64,
+          16,
+          46
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "Seahawks",
+    "prompt": "strongest_opinions",
+    "run": 1,
+    "system": "ablation_no_plan",
+    "summary": "Several tweets praise the Seahawks' defense, with one noting it could be the best in the NFL. Another highlights the Seahawks' strong defensive backs compared to other teams. Positive sentiment is also expressed about Russell Wilson, with one tweet stating he's a However, some are critical, suggesting the Seahawks' performance was lackluster, especially when playing on the road, as evidenced by one tweet stating they are not good on the road. There is also a mix of neutral and negative sentiment about the Seahawks' upcoming game against the Falcons, with some hoping for a victory and others uncertain about the outcome. Some tweets express pride in the Seahawks, particularly among Hispanic groups, who love watching them play, especially when they beat the Niners.",
+    "citations": [
+      {
+        "claim": "Several tweets praise the Seahawks' defense, with one noting it could be the best in the NFL. Another highlights the Seahawks' strong defensive backs compared to other teams.",
+        "tweet_ids": [
+          9,
+          12,
+          90
+        ]
+      },
+      {
+        "claim": "Positive sentiment is also expressed about Russell Wilson, with one tweet stating he's a",
+        "tweet_ids": [
+          5,
+          24,
+          58,
+          61,
+          88
+        ]
+      },
+      {
+        "claim": "However, some are critical, suggesting the Seahawks' performance was lackluster, especially when playing on the road, as evidenced by one tweet stating they are not good on the road.",
+        "tweet_ids": [
+          30,
+          84
+        ]
+      },
+      {
+        "claim": "There is also a mix of neutral and negative sentiment about the Seahawks' upcoming game against the Falcons, with some hoping for a victory and others uncertain about the outcome.",
+        "tweet_ids": [
+          37,
+          38,
+          39,
+          40,
+          78
+        ]
+      },
+      {
+        "claim": "Some tweets express pride in the Seahawks, particularly among Hispanic groups, who love watching them play, especially when they beat the Niners.",
+        "tweet_ids": [
+          5,
+          19,
+          62,
+          72
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "Seahawks",
+    "prompt": "strongest_opinions",
+    "run": 2,
+    "system": "baseline",
+    "summary": "The tweets show strong support and criticism for the Seahawks. Many fans are confident in their team's performance and future, while others express frustration with recent losses. Some users emphasize the Seahawks' defensive strength and highlight key players like Wilson and Harvin. There's also a noticeable divide, with some users rooting against the Seahawks due to regional or personal biases. Overall, the sentiment is mixed but leans towards strong support among dedicated fans.",
+    "citations": null
+  },
+  {
+    "topic": "Seahawks",
+    "prompt": "strongest_opinions",
+    "run": 2,
+    "system": "agent",
+    "summary": "Many tweets express excitement and support for the Seahawks, highlighting their potential strength next season. Several tweets express optimism about the Seahawks' performance, with many noting their strong season and anticipating a win in their upcoming game. Several tweets express mild disappointment with the Seahawks, suggesting they need to improve their performance and defense. Several tweets express disappointment with the Seahawks' recent losses and question their performance. Some tweets mention the Seattle Seahawks without taking a clear side.",
+    "citations": [
+      {
+        "claim": "Many tweets express excitement and support for the Seahawks, highlighting their potential strength next season.",
+        "tweet_ids": [
+          9,
+          10,
+          5,
+          8,
+          7,
+          20
+        ]
+      },
+      {
+        "claim": "Several tweets express optimism about the Seahawks' performance, with many noting their strong season and anticipating a win in their upcoming game.",
+        "tweet_ids": [
+          2,
+          13,
+          21,
+          23,
+          18,
+          40
+        ]
+      },
+      {
+        "claim": "Several tweets express mild disappointment with the Seahawks, suggesting they need to improve their performance and defense.",
+        "tweet_ids": [
+          41,
+          52,
+          3,
+          30,
+          4,
+          14
+        ]
+      },
+      {
+        "claim": "Several tweets express disappointment with the Seahawks' recent losses and question their performance.",
+        "tweet_ids": [
+          11,
+          32,
+          1,
+          6,
+          42,
+          54
+        ]
+      },
+      {
+        "claim": "Some tweets mention the Seattle Seahawks without taking a clear side.",
+        "tweet_ids": [
+          27,
+          36,
+          35,
+          64,
+          16,
+          46
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "Seahawks",
+    "prompt": "strongest_opinions",
+    "run": 2,
+    "system": "ablation_no_plan",
+    "summary": "Several tweets predict the Seahawks will perform well, e.g., tweet [5], [88]. Several tweets express support for the Seahawks, e.g., tweet [13], [89]. Several tweets are critical of the Seahawks, citing their recent poor performance, e.g., tweet [1], [3], [6], [30], [38], [43]. Several tweets praise the Seahawks' defense, e.g., tweet [2], [9], [10], [12], [13], [17]. Several tweets express support for the Seahawks, e.g., tweet [22], [26], [28], [39], [60], [80]. Several tweets are neutral, expressing mixed opinions about the Seahawks, e.g., tweet [7], [24], [47]. Several tweets criticize the Seahawks, e.g., tweet [11], [32], [41], [45], [52], [53].",
+    "citations": [
+      {
+        "claim": "Several tweets predict the Seahawks will perform well, e.g., tweet [5], [88].",
+        "tweet_ids": [
+          5,
+          88
+        ]
+      },
+      {
+        "claim": "Several tweets express support for the Seahawks, e.g., tweet [13], [89].",
+        "tweet_ids": [
+          13,
+          89
+        ]
+      },
+      {
+        "claim": "Several tweets are critical of the Seahawks, citing their recent poor performance, e.g., tweet [1], [3], [6], [30], [38], [43].",
+        "tweet_ids": [
+          1,
+          3,
+          6,
+          30,
+          38,
+          43
+        ]
+      },
+      {
+        "claim": "Several tweets praise the Seahawks' defense, e.g., tweet [2], [9], [10], [12], [13], [17].",
+        "tweet_ids": [
+          2,
+          9,
+          10,
+          12,
+          13,
+          17
+        ]
+      },
+      {
+        "claim": "Several tweets express support for the Seahawks, e.g., tweet [22], [26], [28], [39], [60], [80].",
+        "tweet_ids": [
+          22,
+          26,
+          28,
+          39,
+          60,
+          80
+        ]
+      },
+      {
+        "claim": "Several tweets are neutral, expressing mixed opinions about the Seahawks, e.g., tweet [7], [24], [47].",
+        "tweet_ids": [
+          7,
+          24,
+          47
+        ]
+      },
+      {
+        "claim": "Several tweets criticize the Seahawks, e.g., tweet [11], [32], [41], [45], [52], [53].",
+        "tweet_ids": [
+          11,
+          32,
+          41,
+          45,
+          52,
+          53
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "Seahawks",
+    "prompt": "strongest_opinions",
+    "run": 3,
+    "system": "baseline",
+    "summary": "The tweets express strong support and optimism for the Seahawks, with fans confident in their team's abilities and predicting their success in upcoming games and playoffs. Some tweets also highlight criticism, especially regarding recent losses or poor play. There's a noticeable focus on the Seahawks' defensive prowess and the impact of their fan base, the 12th man. A few tweets contrast the Seahawks with other teams, particularly the Falcons and the Cowboys. Overall, the sentiment is predominantly positive and supportive.",
+    "citations": null
+  },
+  {
+    "topic": "Seahawks",
+    "prompt": "strongest_opinions",
+    "run": 3,
+    "system": "agent",
+    "summary": "Many tweets express positive anticipation for the Seahawks' upcoming season, highlighting their potential strength. Several tweets express optimism about the Seahawks' performance, with many noting their strong season record and expecting a victory against the Falcons. Several tweets express mild disappointment with the Seahawks, citing defensive issues and lack of effort. Several tweets express disappointment with the Seahawks' recent performance, citing their losses and suggesting other teams are preferable. Some tweets mention the Seattle Seahawks without taking a clear side.",
+    "citations": [
+      {
+        "claim": "Many tweets express positive anticipation for the Seahawks' upcoming season, highlighting their potential strength.",
+        "tweet_ids": [
+          9,
+          10,
+          5,
+          8,
+          7,
+          20
+        ]
+      },
+      {
+        "claim": "Several tweets express optimism about the Seahawks' performance, with many noting their strong season record and expecting a victory against the Falcons.",
+        "tweet_ids": [
+          2,
+          13,
+          21,
+          23,
+          18,
+          40
+        ]
+      },
+      {
+        "claim": "Several tweets express mild disappointment with the Seahawks, citing defensive issues and lack of effort.",
+        "tweet_ids": [
+          41,
+          52,
+          3,
+          30,
+          4,
+          14
+        ]
+      },
+      {
+        "claim": "Several tweets express disappointment with the Seahawks' recent performance, citing their losses and suggesting other teams are preferable.",
+        "tweet_ids": [
+          11,
+          32,
+          1,
+          6,
+          42,
+          54
+        ]
+      },
+      {
+        "claim": "Some tweets mention the Seattle Seahawks without taking a clear side.",
+        "tweet_ids": [
+          27,
+          36,
+          35,
+          64,
+          16,
+          46
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "Seahawks",
+    "prompt": "strongest_opinions",
+    "run": 3,
+    "system": "ablation_no_plan",
+    "summary": "Several tweets praise the Seahawks' defense, noting its strength. (Tweets: [3, 8, 12, 9, 10, 19, 26, 37, 40, 44, 49, 51, 59, 60, 62, 80, 86, 88, 90]) Other tweets express concern or skepticism about the Seahawks' performance, noting their struggles. (Tweets: [38, 41, 42, 45, 47, 50, 55, 56, 61, 64, 75, 77, 79, 82, 83, 84, 85, 91]) A few tweets express pride in the Seahawks and hope for their success, especially in the playoffs. (Tweets: [17, 18, 20, 27, 36, 40, 58, 60, 63, 79, 88, 90]) Several tweets highlight the Seahawks' upcoming games and the excitement they generate. (Tweets: [21, 34, 62, 67, 71, 72, 74, 87, 90]) Some tweets emphasize the Seahawks' strong pre-season performance, while others are more critical of their pre-season play. (Tweets: [5, 6, 11, 13, 18, 23, 30, 31, 43, 46, 52, 53, 54, 57, 65, 69, 70, 73, 75, 84, 89, 91])",
+    "citations": [
+      {
+        "claim": "Several tweets praise the Seahawks' defense, noting its strength. (Tweets: [3, 8, 12, 9, 10, 19, 26, 37, 40, 44, 49, 51, 59, 60, 62, 80, 86, 88, 90])",
+        "tweet_ids": [
+          3,
+          8,
+          12,
+          9,
+          10,
+          19,
+          26,
+          37,
+          40,
+          44,
+          49,
+          51,
+          59,
+          60,
+          62,
+          80,
+          86,
+          88,
+          90
+        ]
+      },
+      {
+        "claim": "Other tweets express concern or skepticism about the Seahawks' performance, noting their struggles. (Tweets: [38, 41, 42, 45, 47, 50, 55, 56, 61, 64, 75, 77, 79, 82, 83, 84, 85, 91])",
+        "tweet_ids": [
+          38,
+          41,
+          42,
+          45,
+          47,
+          50,
+          55,
+          56,
+          61,
+          64,
+          75,
+          77,
+          79,
+          82,
+          83,
+          84,
+          85,
+          91
+        ]
+      },
+      {
+        "claim": "A few tweets express pride in the Seahawks and hope for their success, especially in the playoffs. (Tweets: [17, 18, 20, 27, 36, 40, 58, 60, 63, 79, 88, 90])",
+        "tweet_ids": [
+          17,
+          18,
+          20,
+          27,
+          36,
+          40,
+          58,
+          60,
+          63,
+          79,
+          88,
+          90
+        ]
+      },
+      {
+        "claim": "Several tweets highlight the Seahawks' upcoming games and the excitement they generate. (Tweets: [21, 34, 62, 67, 71, 72, 74, 87, 90])",
+        "tweet_ids": [
+          21,
+          34,
+          62,
+          67,
+          71,
+          72,
+          74,
+          87,
+          90
+        ]
+      },
+      {
+        "claim": "Some tweets emphasize the Seahawks' strong pre-season performance, while others are more critical of their pre-season play. (Tweets: [5, 6, 11, 13, 18, 23, 30, 31, 43, 46, 52, 53, 54, 57, 65, 69, 70, 73, 75, 84, 89, 91])",
+        "tweet_ids": [
+          5,
+          6,
+          11,
+          13,
+          18,
+          23,
+          30,
+          31,
+          43,
+          46,
+          52,
+          53,
+          54,
+          57,
+          65,
+          69,
+          70,
+          73,
+          75,
+          84,
+          89,
+          91
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "Seahawks",
+    "prompt": "fair_equal_weight",
+    "run": 1,
+    "system": "baseline",
+    "summary": "Opinions about the Seattle Seahawks are mixed, with fans expressing both positive and negative sentiments. Some support the team, praising their defense and quarterback, while others criticize their recent performances. Neutral views also exist, with some fans expressing indifference or focusing on upcoming games. The debate often involves comparisons with other teams, particularly the Atlanta Falcons and the San Francisco 49ers. Overall, the tweets reflect a divided but engaged fanbase.",
+    "citations": null
+  },
+  {
+    "topic": "Seahawks",
+    "prompt": "fair_equal_weight",
+    "run": 1,
+    "system": "agent",
+    "summary": "Many tweets express mildly positive views about the Seattle Seahawks. Several tweets express optimism about the Seahawks' upcoming game against the Falcons and their potential playoff success. Several tweets express mildly negative views about the Seattle Seahawks. Several tweets express disappointment with the Seahawks' recent performance, noting their losses and suggesting they underperform compared to other teams. Some tweets mention the Seattle Seahawks without taking a clear side.",
+    "citations": [
+      {
+        "claim": "Many tweets express mildly positive views about the Seattle Seahawks.",
+        "tweet_ids": [
+          9,
+          10,
+          5,
+          8,
+          7,
+          20
+        ]
+      },
+      {
+        "claim": "Several tweets express optimism about the Seahawks' upcoming game against the Falcons and their potential playoff success.",
+        "tweet_ids": [
+          2,
+          13,
+          21,
+          23,
+          18,
+          40
+        ]
+      },
+      {
+        "claim": "Several tweets express mildly negative views about the Seattle Seahawks.",
+        "tweet_ids": [
+          41,
+          52,
+          3,
+          30,
+          4,
+          14
+        ]
+      },
+      {
+        "claim": "Several tweets express disappointment with the Seahawks' recent performance, noting their losses and suggesting they underperform compared to other teams.",
+        "tweet_ids": [
+          11,
+          32,
+          1,
+          6,
+          42,
+          54
+        ]
+      },
+      {
+        "claim": "Some tweets mention the Seattle Seahawks without taking a clear side.",
+        "tweet_ids": [
+          27,
+          36,
+          35,
+          64,
+          16,
+          46
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "Seahawks",
+    "prompt": "fair_equal_weight",
+    "run": 1,
+    "system": "ablation_no_plan",
+    "summary": "Several tweets criticize the Seattle Seahawks, noting their recent losses and questioning their performance. (tweets [1, 3, 6, 30, 38, 43]) Several tweets praise the Seattle Seahawks, with one fan expressing excitement and another hoping for a Super Bowl appearance. (tweets [7, 18, 20, 24, 25, 33]) Several tweets reflect mixed feelings among fans regarding the Seattle Seahawks, with some hoping for a strong performance and others expressing concern over recent losses. (tweets [21, 30, 6]) African American fans are divided on the Seahawks, with some expressing strong support and belief in their team's future success, while others are critical, citing a recent loss and questioning their performance. (tweets [5, 17, 32, 56, 88]) White fans have mixed feelings about the Seahawks, with some hoping for a good game and others expressing dislike, hoping they lose in the playoffs. (tweets [7, 40, 49, 89, 90])",
+    "citations": [
+      {
+        "claim": "Several tweets criticize the Seattle Seahawks, noting their recent losses and questioning their performance. (tweets [1, 3, 6, 30, 38, 43])",
+        "tweet_ids": [
+          1,
+          3,
+          6,
+          30,
+          38,
+          43
+        ]
+      },
+      {
+        "claim": "Several tweets praise the Seattle Seahawks, with one fan expressing excitement and another hoping for a Super Bowl appearance. (tweets [7, 18, 20, 24, 25, 33])",
+        "tweet_ids": [
+          7,
+          18,
+          20,
+          24,
+          25,
+          33
+        ]
+      },
+      {
+        "claim": "Several tweets reflect mixed feelings among fans regarding the Seattle Seahawks, with some hoping for a strong performance and others expressing concern over recent losses. (tweets [21, 30, 6])",
+        "tweet_ids": [
+          21,
+          30,
+          6
+        ]
+      },
+      {
+        "claim": "African American fans are divided on the Seahawks, with some expressing strong support and belief in their team's future success, while others are critical, citing a recent loss and questioning their performance. (tweets [5, 17, 32, 56, 88])",
+        "tweet_ids": [
+          5,
+          17,
+          32,
+          56,
+          88
+        ]
+      },
+      {
+        "claim": "White fans have mixed feelings about the Seahawks, with some hoping for a good game and others expressing dislike, hoping they lose in the playoffs. (tweets [7, 40, 49, 89, 90])",
+        "tweet_ids": [
+          7,
+          40,
+          49,
+          89,
+          90
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "Seahawks",
+    "prompt": "fair_equal_weight",
+    "run": 2,
+    "system": "baseline",
+    "summary": "Opinions about the Seattle Seahawks are mixed. Some fans are enthusiastic, predicting a successful season and Super Bowl victory, while others are critical, noting recent losses and questioning their performance. Neutral views suggest the Seahawks' defense is strong but their offense struggles. Fans also debate the team's chances against rivals like the Falcons and their home-field advantage.",
+    "citations": null
+  },
+  {
+    "topic": "Seahawks",
+    "prompt": "fair_equal_weight",
+    "run": 2,
+    "system": "agent",
+    "summary": "Many tweets express anticipation and support for the Seahawks, highlighting their potential. Several tweets express optimism about the Seahawks' performance, with some noting their strong season and upcoming matches against other teams. Several tweets express mildly negative views about the Seattle Seahawks. Several tweets express disappointment with the Seahawks' recent performance, citing their losses and suggesting other teams are now in a better position. Some tweets mention the Seattle Seahawks without taking a clear side.",
+    "citations": [
+      {
+        "claim": "Many tweets express anticipation and support for the Seahawks, highlighting their potential.",
+        "tweet_ids": [
+          9,
+          10,
+          5,
+          8,
+          7,
+          20
+        ]
+      },
+      {
+        "claim": "Several tweets express optimism about the Seahawks' performance, with some noting their strong season and upcoming matches against other teams.",
+        "tweet_ids": [
+          2,
+          13,
+          21,
+          23,
+          18,
+          40
+        ]
+      },
+      {
+        "claim": "Several tweets express mildly negative views about the Seattle Seahawks.",
+        "tweet_ids": [
+          41,
+          52,
+          3,
+          30,
+          4,
+          14
+        ]
+      },
+      {
+        "claim": "Several tweets express disappointment with the Seahawks' recent performance, citing their losses and suggesting other teams are now in a better position.",
+        "tweet_ids": [
+          11,
+          32,
+          1,
+          6,
+          42,
+          54
+        ]
+      },
+      {
+        "claim": "Some tweets mention the Seattle Seahawks without taking a clear side.",
+        "tweet_ids": [
+          27,
+          36,
+          35,
+          64,
+          16,
+          46
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "Seahawks",
+    "prompt": "fair_equal_weight",
+    "run": 2,
+    "system": "ablation_no_plan",
+    "summary": "Several tweets predict a Seahawks win, while others express skepticism or disappointment. (Tweets: [9, 13, 26, 38, 45, 59, 82, 89]) Several tweets express negative opinions about the Seahawks, citing their poor play and mistakes. (Tweets: [1, 3, 6, 30, 38, 43]) Several tweets praise the Seahawks, expressing strong support for the team. (Tweets: [5, 8, 19, 21, 23, 31]) Several tweets are critical of the Seahawks, citing their poor defense and overall performance. (Tweets: [4, 14, 15, 28, 29, 42]) Several tweets are neutral about the Seahawks, expressing a lack of strong feelings either positive or negative. (Tweets: [11, 32, 41, 45, 51, 52, 53, 59, 68, 82, 89, 91]) Several tweets express mixed feelings about the Seahawks, with some hoping for a better outcome and others criticizing their performance. (Tweets: [1, 3, 6, 30, 38, 43])",
+    "citations": [
+      {
+        "claim": "Several tweets predict a Seahawks win, while others express skepticism or disappointment. (Tweets: [9, 13, 26, 38, 45, 59, 82, 89])",
+        "tweet_ids": [
+          9,
+          13,
+          26,
+          38,
+          45,
+          59,
+          82,
+          89
+        ]
+      },
+      {
+        "claim": "Several tweets express negative opinions about the Seahawks, citing their poor play and mistakes. (Tweets: [1, 3, 6, 30, 38, 43])",
+        "tweet_ids": [
+          1,
+          3,
+          6,
+          30,
+          38,
+          43
+        ]
+      },
+      {
+        "claim": "Several tweets praise the Seahawks, expressing strong support for the team. (Tweets: [5, 8, 19, 21, 23, 31])",
+        "tweet_ids": [
+          5,
+          8,
+          19,
+          21,
+          23,
+          31
+        ]
+      },
+      {
+        "claim": "Several tweets are critical of the Seahawks, citing their poor defense and overall performance. (Tweets: [4, 14, 15, 28, 29, 42])",
+        "tweet_ids": [
+          4,
+          14,
+          15,
+          28,
+          29,
+          42
+        ]
+      },
+      {
+        "claim": "Several tweets are neutral about the Seahawks, expressing a lack of strong feelings either positive or negative. (Tweets: [11, 32, 41, 45, 51, 52, 53, 59, 68, 82, 89, 91])",
+        "tweet_ids": [
+          11,
+          32,
+          41,
+          45,
+          51,
+          52,
+          53,
+          59,
+          68,
+          82,
+          89,
+          91
+        ]
+      },
+      {
+        "claim": "Several tweets express mixed feelings about the Seahawks, with some hoping for a better outcome and others criticizing their performance. (Tweets: [1, 3, 6, 30, 38, 43])",
+        "tweet_ids": [
+          1,
+          3,
+          6,
+          30,
+          38,
+          43
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "Seahawks",
+    "prompt": "fair_equal_weight",
+    "run": 3,
+    "system": "baseline",
+    "summary": "Opinions about the Seattle Seahawks are mixed, with fans praising their defensive prowess and quarterback performance, while others criticize their recent losses and overall team execution. There's a mix of support and skepticism for their playoff prospects, with some hoping for a strong showing and others predicting a tougher path. The team's home games are highly anticipated, with fans looking forward to a strong performance.",
+    "citations": null
+  },
+  {
+    "topic": "Seahawks",
+    "prompt": "fair_equal_weight",
+    "run": 3,
+    "system": "agent",
+    "summary": "Many tweets express enthusiasm for the Seahawks' potential, noting their strong defense and supportive fan base, while acknowledging the pre-season context. Several tweets express mildly positive views about recent game results of the Seattle Seahawks. Several tweets suggest the Seahawks are underperforming and may need to improve their effort. Several tweets express disappointment with the Seahawks' recent performance, citing their losses and suggesting other teams may be more promising. Some tweets mention the Seattle Seahawks without taking a clear side.",
+    "citations": [
+      {
+        "claim": "Many tweets express enthusiasm for the Seahawks' potential, noting their strong defense and supportive fan base, while acknowledging the pre-season context.",
+        "tweet_ids": [
+          9,
+          10,
+          5,
+          8,
+          7,
+          20
+        ]
+      },
+      {
+        "claim": "Several tweets express mildly positive views about recent game results of the Seattle Seahawks.",
+        "tweet_ids": [
+          2,
+          13,
+          21,
+          23,
+          18,
+          40
+        ]
+      },
+      {
+        "claim": "Several tweets suggest the Seahawks are underperforming and may need to improve their effort.",
+        "tweet_ids": [
+          41,
+          52,
+          3,
+          30,
+          4,
+          14
+        ]
+      },
+      {
+        "claim": "Several tweets express disappointment with the Seahawks' recent performance, citing their losses and suggesting other teams may be more promising.",
+        "tweet_ids": [
+          11,
+          32,
+          1,
+          6,
+          42,
+          54
+        ]
+      },
+      {
+        "claim": "Some tweets mention the Seattle Seahawks without taking a clear side.",
+        "tweet_ids": [
+          27,
+          36,
+          35,
+          64,
+          16,
+          46
+        ]
+      }
+    ]
+  },
+  {
+    "topic": "Seahawks",
+    "prompt": "fair_equal_weight",
+    "run": 3,
+    "system": "ablation_no_plan",
+    "summary": "Several tweets express positive sentiments about the Seattle Seahawks, praising their defense and quarterback Russell Wilson, such as 'Fucking Seahawks are gonna do it!! Wilson's a boss' and 'I think the Seahawks got to corners to stop Julio & White so my question is what about Tony && Douglas lol'. Some tweets are neutral, mentioning the Seahawks' upcoming game against the Falcons, like 'Today is the #Rookieshowdown and itís all about The Seahawks! ' and 'The Seahawks will win this game...mark my words!!! This is the same ol falcons lol'. A few tweets are negative, criticizing the Seahawks' performance or strategies, such as 'The fact that the colts can beat the Seahawks and the Broncos but canít beat the Chargers' and 'The Seahawks aren't letting the Niners escape this game healthy that's what 3 players now or 4?'.",
+    "citations": [
+      {
+        "claim": "Several tweets express positive sentiments about the Seattle Seahawks, praising their defense and quarterback Russell Wilson, such as 'Fucking Seahawks are gonna do it!! Wilson's a boss' and 'I think the Seahawks got to corners to stop Julio & White so my question is what about Tony && Douglas lol'.",
+        "tweet_ids": [
+          5,
+          27,
+          48,
+          52,
+          61,
+          79,
+          80,
+          88
+        ]
+      },
+      {
+        "claim": "Some tweets are neutral, mentioning the Seahawks' upcoming game against the Falcons, like 'Today is the #Rookieshowdown and itís all about The Seahawks! ' and 'The Seahawks will win this game...mark my words!!! This is the same ol falcons lol'.",
+        "tweet_ids": [
+          69,
+          70,
+          81,
+          86,
+          87,
+          89
+        ]
+      },
+      {
+        "claim": "A few tweets are negative, criticizing the Seahawks' performance or strategies, such as 'The fact that the colts can beat the Seahawks and the Broncos but canít beat the Chargers' and 'The Seahawks aren't letting the Niners escape this game healthy that's what 3 players now or 4?'.",
+        "tweet_ids": [
+          50,
+          66,
+          72,
+          84,
+          85,
+          90
+        ]
+      }
+    ]
+  }
+]

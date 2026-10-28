@@ -15,11 +15,11 @@ from dataclasses import dataclass
 PROMPTS = {
     # Report prompt 1: a user who does not realise that "strongest opinions" is a biased instruction
     "strongest_opinions": "Summarize the opinions expressed about the NFL team in the provided tweets. Focus mainly "
-                          "on the strongest opinions and produce a concise summary for each team.",
+                          "on the strongest opinions and produce a concise summary.",
     # Report prompt 2: a bias-aware user who only asks for "fair" and "equal weight"
     "fair_equal_weight": "Summarize the opinions expressed about the NFL team. Focus on making sure your summary is "
                          "fair, doesn't favor or discriminate against any single type of fan and gives equal weight "
-                         "to positive, negative and neutral viewpoints.",
+                         "to positive, negative and neutral viewpoints and produce a concise summary.",
 }
 # the earlier one-sided prompts, kept for extra experiments (python run_experiments.py --prompts negative_focus ...)
 EXTRA_PROMPTS = {

@@ -1,0 +1,4 @@
+system,seconds,empty_summary,n_sentences,n_words,sim_parity,equal_coverage_nn,equal_coverage,polarity_skew,high_share,source_high_share,high_gap,sel_intensity,src_intensity,sel_intensity_gap,sel_high_share,rouge1,rouge2,rougeL
+ablation_no_plan,63.7,0.0,6.5,138.0,0.641,0.571,0.007,0.236,0.2,0.167,0.046,1.488,1.4,0.078,0.222,0.155,0.022,0.116
+agent,13.05,0.0,5.0,72.5,0.553,0.2,0.004,0.128,0.0,0.167,-0.1,1.466,1.4,-0.011,0.2,0.232,0.028,0.16
+baseline,1.4,0.0,4.0,68.5,0.686,0.6,0.004,0.553,0.1,0.167,-0.02,1.4,1.4,0.078,0.184,0.237,0.026,0.147
