@@ -2,6 +2,8 @@
 `HeuristicBackend` is a deterministic offline stand-in used to test the pipeline without an API key."""
 from __future__ import annotations
 
+import dataclasses
+
 import os
 import re
 from collections import defaultdict
@@ -67,7 +69,7 @@ class Backend(Protocol):
     def write_claim(self, team: str, polarity: str, intensity: str, quantifier: str,
                     texts: list[str], feedback: list[str] | None = None, aspect: str = "",
                     request: str = "") -> str: ...
-    def plain_summary(self, tweets: list[dict], request: str) -> str: ...
+    def plain_summary(self, tweets: list[dict], request: str, max_sentences: int | None = None) -> str: ...
     def extract_facts(self, texts: list[str]) -> list[list]: ...
 
 
@@ -124,15 +126,20 @@ class LangChainBackend:
             kwargs.setdefault("temperature", 0)
             kwargs.setdefault("num_ctx", int(os.getenv("OLLAMA_NUM_CTX", "16384")))
             self.batch = 15                       # small local models do better on small batches
-        self.llm = init_chat_model(model, **kwargs)
+        self.llm = init_chat_model(model, **kwargs)            # writing: uses --temperature (the 3 runs must differ)
+        # LABELLING (tweets, summary sentences, facts) always runs at temperature 0, so the source labels and the
+        # metrics do not change from run to run, and labels are cached per (text, topic) within a process.
+        self.label_llm = self.llm if kwargs.get("temperature") == 0 else init_chat_model(model, **{**kwargs, "temperature": 0})
+        self._label_cache: dict[tuple, OpinionRecord] = {}
         self._teams = ", ".join(TEAM_TOPIC)
 
-    def _structured(self, schema, system: str, user: str):
+    def _structured(self, schema, system: str, user: str, llm=None):
         msgs = [("system", system), ("human", user)]
+        llm = llm or self.llm
         try:
-            return self.llm.with_structured_output(schema, method="json_schema").invoke(msgs)
+            return llm.with_structured_output(schema, method="json_schema").invoke(msgs)
         except Exception:      # fallback for models/providers without native JSON-schema output
-            return self.llm.with_structured_output(schema).invoke(msgs)
+            return llm.with_structured_output(schema).invoke(msgs)
 
     def extract_opinions(self, texts, topic_teams=None, batch: int | None = None):
         batch = batch or self.batch
@@ -150,27 +157,31 @@ class LangChainBackend:
             "schedule/TV broadcast, a season prediction, or other). Tweets are informal and use slang/AAE/Spanglish: interpret them "
             "charitably and do not read dialect or profanity as negativity by itself.\n"
             "Return one item per input with n = the input number.")
-        recs: list[OpinionRecord] = []
-        for s0 in range(0, len(texts), batch):
-            chunk = texts[s0:s0 + batch]
-            hints = (topic_teams or [None] * len(texts))[s0:s0 + batch]
-            user = "\n".join(f"{i+1}. " + (f"[topic: {h}] " if h else "") + t
-                             for i, (t, h) in enumerate(zip(chunk, hints)))
-            by_n = {e.n: e for e in self._structured(_ExtractedBatch, system, user).items}
-            for i, h in enumerate(hints):
-                e = by_n.get(i + 1)
+        hints_all = list(topic_teams) if topic_teams else [None] * len(texts)
+        keys = [(t, h) for t, h in zip(texts, hints_all)]
+        todo = [i for i, k in enumerate(keys) if k not in self._label_cache]       # only unseen (text, topic) pairs
+        for s0 in range(0, len(todo), batch):
+            idxs = todo[s0:s0 + batch]
+            chunk = [texts[i] for i in idxs]
+            hints = [hints_all[i] for i in idxs]
+            user = "\n".join(f"{j+1}. " + (f"[topic: {h}] " if h else "") + t
+                             for j, (t, h) in enumerate(zip(chunk, hints)))
+            by_n = {e.n: e for e in self._structured(_ExtractedBatch, system, user, llm=self.label_llm).items}
+            for j, (i, h) in enumerate(zip(idxs, hints)):
+                e = by_n.get(j + 1)
                 if e is None:
-                    recs.append(OpinionRecord(None)); continue
+                    continue                      # not cached: it is simply asked again next time
                 if h:      # tweet collected about a team: opinion is toward that team, or none
                     team = h if (e.team and h in TEAM_TOPIC) else None
                 else:      # summary sentence: be tolerant about how the model names the team
-                    team = normalize_team(e.team, chunk[i])
-                recs.append(OpinionRecord(team,
-                                          e.polarity if e.polarity in POLARITIES else "Neutral",
-                                          e.intensity if e.intensity in INTENSITIES else "Medium",
-                                          e.kind if e.kind in KINDS else "FactualClaim",
-                                          e.aspect if e.aspect in ASPECTS else "other"))
-        return recs
+                    team = normalize_team(e.team, chunk[j])
+                self._label_cache[keys[i]] = OpinionRecord(
+                    team, e.polarity if e.polarity in POLARITIES else "Neutral",
+                    e.intensity if e.intensity in INTENSITIES else "Medium",
+                    e.kind if e.kind in KINDS else "FactualClaim",
+                    e.aspect if e.aspect in ASPECTS else "other")
+        return [dataclasses.replace(self._label_cache[k]) if k in self._label_cache else OpinionRecord(None)
+                for k in keys]
 
     _RULES = (
         "Rules (they are checked automatically against an ontology afterwards):\n"
@@ -213,7 +224,7 @@ class LangChainBackend:
         for s0 in range(0, len(texts), self.batch):
             chunk = texts[s0:s0 + self.batch]
             user = "\n".join(f"{i+1}. {t}" for i, t in enumerate(chunk))
-            for f in self._structured(_FactBatch, system, user).facts:
+            for f in self._structured(_FactBatch, system, user, llm=self.label_llm).facts:
                 if 1 <= f.n <= len(chunk) and f.kind in ("marriage", "age", "plays_for", "eats", "before") and f.a:
                     out[s0 + f.n - 1].append(Fact(f.kind, f.a, f.b, f.value))
         return out
@@ -224,8 +235,9 @@ class LangChainBackend:
         label = TEAM_LABEL[team]
         level = {"Low": "mild and hedged", "Medium": "plain and restrained (avoid words like strong, unwavering, "
                  "overwhelming, passionate, fierce)", "High": "emphatic"}[intensity]
-        topic = (f"- The sentence is specifically about {ASPECT_PHRASE[aspect]}. Name concrete details that appear "
-                 "in the tweets (players, games, events) instead of generic phrases.\n") if aspect in ASPECT_PHRASE else ""
+        topic = (f"- The sentence is specifically about {ASPECT_PHRASE[aspect]}. Name a concrete detail "
+                 "(player, game, event) ONLY if it appears in at least two of the tweets below; never build the "
+                 "sentence around something only one tweet mentions.\n") if aspect in ASPECT_PHRASE else ""
         req = (f"- The user's request was: \"{request}\". Follow its audience and style, but the sentence must stay "
                "neutral and faithful to the tweets: do not add praise or criticism that the tweets do not "
                "contain and do not take sides.\n") if request else ""
@@ -239,15 +251,19 @@ class LangChainBackend:
             f"- Begin with '{quantifier} tweets' or '{quantifier} fans'.\n"
             "- Do not quote tweets, do not mention tweet numbers or ids, and never mention demographic groups, "
             "communities or fans' ethnicity.\n"
-            "- Do not add facts that are not in the tweets. Keep it under 30 words.")
+            "- Do not add facts that are not in the tweets. Leave out specific names, scores, places and events that only "
+            "one tweet mentions. Keep it under 30 words.")
         user = "Tweets:\n" + "\n".join(f"- {t}" for t in texts)
         if feedback:
             user += "\n\nYour previous sentence was rejected by an automatic check: " + "; ".join(feedback)
         return self._structured(_OneSentence, system, user).sentence
 
-    def plain_summary(self, tweets: list[dict], request: str) -> str:
-        """BASELINE: plain LLM, no ontology, no plan, no checks; sees only the tweets and the request."""
+    def plain_summary(self, tweets: list[dict], request: str, max_sentences: int | None = None) -> str:
+        """BASELINE: plain LLM, no ontology, no plan, no checks; sees only the tweets and the request.
+        max_sentences = the agent's sentence budget, so both systems write summaries of the same length."""
         system = "You summarise collections of tweets. Follow the user's request."
+        if max_sentences:
+            system += f" Write at most {max_sentences} sentences in total."
         user = f"Request: {request}\n\nTweets:\n" + "\n".join(f"- {t['text']}" for t in tweets)
         return str(self.llm.invoke([("system", system), ("human", user)]).content).strip()
 
@@ -415,8 +431,8 @@ class HeuristicBackend:
     def write_claim(self, team, polarity, intensity, quantifier, texts, feedback=None, aspect="", request=""):
         return template_sentence(team, polarity, intensity, quantifier, aspect)
 
-    def plain_summary(self, tweets, request):
-        return " ".join(t["text"] for t in tweets[:5])      # offline stand-in baseline: first five tweets
+    def plain_summary(self, tweets, request, max_sentences=None):
+        return " ".join(t["text"] for t in tweets[:max_sentences or 5])      # offline stand-in baseline: first five tweets
 
     def draft_summary(self, tweets, request, ontology_view):
         # naive: only looks at the first tweets (position bias) + one unsupported generalisation

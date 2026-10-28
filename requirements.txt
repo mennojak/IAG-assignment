@@ -8,3 +8,6 @@ pandas
 numpy
 scikit-learn
 rouge-score
+# optional metrics:
+# bert-score
+# deepeval

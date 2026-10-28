@@ -14,7 +14,7 @@ def main():
                     help="DivSumm .txt files (group<TAB>text, team taken from the file name) or CSV with group,text[,team]")
     ap.add_argument("--per-cell", type=int, default=0, help="subsample at most N tweets per (group, team); 0 = all")
     ap.add_argument("--prompt", default="Summarize the opinions expressed in these tweets about the NFL teams.")
-    ap.add_argument("--model", default=os.getenv("LLM_MODEL", "anthropic:claude-sonnet-5-5"))
+    ap.add_argument("--model", default=os.getenv("LLM_MODEL", "ollama:qwen2.5:7b-instruct"))
     ap.add_argument("--max-iters", type=int, default=4)
     ap.add_argument("--k", type=int, default=5, help="summary sentences per team (a number in the prompt overrides it)")
     ap.add_argument("--temperature", type=float, default=None)
@@ -46,6 +46,7 @@ def main():
     print("\n=== FINAL SUMMARY (iteration %d, score %d) ===" % (best["iteration"], best["score"]))
     print(final["summary"])
     print("metrics:", best["metrics"])
+    print("reasoner:", best["metrics"].get("reasoner"))
 
 
 if __name__ == "__main__":

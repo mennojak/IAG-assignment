@@ -60,9 +60,42 @@ GROUP_WORDS = re.compile(
     r"\bwhite\s+(?:community|communities|fans?|people|users?|tweeters?|group|folks)", re.I)
 
 WEIGHTS = {"GROUP_MENTIONED": 2, "CLAIM_NOT_LINKED": 3, "GROUP_UNDERREPRESENTED": 3, "POLARITY_UNSUPPORTED": 3,
-           "GROUP_VIEWPOINT_OMITTED": 2, "PROMPT_FOCUS_BIAS": 3, "INTENSITY_INFLATED": 1,
+           "GROUP_VIEWPOINT_OMITTED": 2, "PROMPT_FOCUS_BIAS": 3, "SINGLE_TWEET_DETAIL": 2, "INTENSITY_INFLATED": 1,
            "REPORT1_Q1_UNDERAGE_MARRIAGE": 3, "REPORT1_Q2_IMPLAUSIBLE_AGE": 3, "REPORT1_Q3_DIET_CONFLICT": 3,
            "REPORT1_Q5_PLAYER_TEAM": 3, "REPORT1_Q6_EVENT_CYCLE": 3}
+
+
+_STOP = set("""about above after again against also because been before being below between both could does doing down
+during each every from further have having here hers herself himself into itself just like many more most much must myself
+once only other ours ourselves over same several should some such than that their theirs them themselves then there these
+they this those through under until very want were what when where which while whom will with would your yours yourself
+tweets tweet fans fan team teams views view opinions opinion express expressed expressing positive negative neutral
+mixed feelings support noting note notes mentioning suggesting recent overall general""".split())
+_TEAM_WORDS = {"patriots", "england", "seahawks", "seattle", "francisco", "49", "niners", "49ers"}
+_TOK = re.compile(r"[a-z]{4,}|\d+", re.I)
+
+
+def _stems(text: str) -> set[str]:
+    """Word stems (first 5 letters, so 'broadcast' ~ 'broadcasts') and whole numbers of a text."""
+    return {(w.lower()[:5] if not w.isdigit() else w) for w in _TOK.findall(text)}
+
+
+def single_tweet_details(claim: str, cited: list[str], corpus: list[str], team_words: set[str]) -> list[str]:
+    """Words of the claim that rest on ONE stray tweet: they occur in exactly one of the cited tweets AND in at most two
+    tweets of the whole topic. Paraphrase words (they occur in no tweet) and shared words (>= 2 cited tweets, or
+    common in the topic) are fine. This is the guard against claims like 'hope the cruise will show their game'."""
+    cited_sets = [_stems(t) for t in cited]
+    corpus_sets = [_stems(t) for t in corpus]
+    out = []
+    for w in dict.fromkeys(_TOK.findall(claim)):
+        k = w.lower()[:5] if not w.isdigit() else w
+        if w.lower() in _STOP or w.lower() in team_words or (not w.isdigit() and len(w) < 5 and k in _STOP):
+            continue
+        in_cited = sum(k in s for s in cited_sets)
+        in_corpus = sum(k in s for s in corpus_sets)
+        if in_cited == 1 and in_corpus <= 2 and len(cited) >= 2:
+            out.append(w)
+    return out
 
 
 @dataclass
@@ -131,7 +164,7 @@ def evaluate(store: OntologyStore, summary_iri: str, tolerance: float = 0.5,
     gap = (max(shares.values()) - min(shares.values())) if shares else 0.0
     metrics = {"n_claims": n_claims, "group_counts": counts,
                "group_shares": {g: round(v, 3) for g, v in shares.items()},
-               "equal_coverage": round(1 - gap, 3) if sum(counts.values()) else 0.0}
+               "group_balance": round(1 - gap, 3) if sum(counts.values()) else 0.0}
     under = []
     for g in groups:
         if counts[g] == 0 or shares[g] < (1 / k) * (1 - tolerance):
@@ -193,5 +226,19 @@ def evaluate(store: OntologyStore, summary_iri: str, tolerance: float = 0.5,
             f'Claim "{c.text}" sounds {ln(r["ci"])}-intensity, but the cited tweets about {team} are at most '
             f"{max(real, key=['Low','Medium','High'].index) if real else 'n/a'}. Tone it down.",
             {"claim": c.iri, "text": c.text, "tweet_ids": c.tweet_ids, "team": team}))
+
+    # --- consistency check 3: a claim built on details that only ONE tweet mentions (not a viewpoint of several)
+    corpus = [t["text"] for t in store.tweets.values()]
+    for c in store.claims_of(summary_iri):
+        team_words = _TEAM_WORDS
+        det = single_tweet_details(c.text, [store.tweets[i]["text"] for i in c.tweet_ids if i in store.tweets],
+                                   corpus, team_words)
+        if det:
+            violations.append(Violation(
+                "SINGLE_TWEET_DETAIL",
+                f'Claim "{c.text}" relies on details that only one tweet mentions ({", ".join(det[:4])}). Describe only what '
+                "several tweets say; leave out such specific names, scores, places and events.",
+                {"claim": c.iri, "text": c.text, "details": det, "tweet_ids": c.tweet_ids}))
+    metrics["single_tweet_detail_claims"] = sum(v.kind == "SINGLE_TWEET_DETAIL" for v in violations)
 
     return EvalResult(violations, metrics)

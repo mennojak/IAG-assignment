@@ -1,0 +1,67 @@
+{
+ "49ers|strongest_opinions|1|baseline": {
+  "deepeval_alignment": 0.25,
+  "deepeval_coverage": 0.4,
+  "deepeval_summarization": 0.25
+ },
+ "49ers|strongest_opinions|1|agent": {
+  "deepeval_alignment": 0.0,
+  "deepeval_coverage": 0.5,
+  "deepeval_summarization": 0.0
+ },
+ "49ers|strongest_opinions|2|baseline": {
+  "deepeval_alignment": 0.5,
+  "deepeval_coverage": 0.75,
+  "deepeval_summarization": 0.5
+ },
+ "49ers|strongest_opinions|2|agent": {
+  "deepeval_alignment": 0.4,
+  "deepeval_coverage": 0.5,
+  "deepeval_summarization": 0.4
+ },
+ "49ers|strongest_opinions|3|baseline": {
+  "deepeval_alignment": 0.7142857142857143,
+  "deepeval_coverage": 0.5,
+  "deepeval_summarization": 0.5
+ },
+ "49ers|strongest_opinions|3|agent": {
+  "deepeval_alignment": 0.4,
+  "deepeval_coverage": 0.5,
+  "deepeval_summarization": 0.4
+ },
+ "49ers|fair_equal_weight|1|baseline": {
+  "deepeval_alignment": 0.7142857142857143,
+  "deepeval_coverage": 0.5,
+  "deepeval_summarization": 0.5
+ },
+ "49ers|fair_equal_weight|1|agent": {
+  "deepeval_alignment": 0.5,
+  "deepeval_coverage": 0.5,
+  "deepeval_summarization": 0.5
+ },
+ "49ers|fair_equal_weight|2|baseline": {
+  "deepeval_alignment": 0.42857142857142855,
+  "deepeval_coverage": 0.25,
+  "deepeval_summarization": 0.25
+ },
+ "49ers|fair_equal_weight|2|agent": {
+  "deepeval_alignment": 0.5714285714285714,
+  "deepeval_coverage": 0.5,
+  "deepeval_summarization": 0.5
+ },
+ "49ers|fair_equal_weight|3|baseline": {
+  "deepeval_alignment": 0.25,
+  "deepeval_coverage": 0.25,
+  "deepeval_summarization": 0.25
+ },
+ "49ers|fair_equal_weight|3|agent": {
+  "deepeval_alignment": 0.4,
+  "deepeval_coverage": 0.5,
+  "deepeval_summarization": 0.4
+ },
+ "Patriots|strongest_opinions|1|baseline": {
+  "deepeval_alignment": 0.1111111111111111,
+  "deepeval_coverage": 0.0,
+  "deepeval_summarization": 0.0
+ }
+}

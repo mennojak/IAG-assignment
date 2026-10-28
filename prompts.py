@@ -13,6 +13,16 @@ import re
 from dataclasses import dataclass
 
 PROMPTS = {
+    # Report prompt 1: a user who does not realise that "strongest opinions" is a biased instruction
+    "strongest_opinions": "Summarize the opinions expressed about the NFL team in the provided tweets. Focus mainly "
+                          "on the strongest opinions and produce a concise summary for each team.",
+    # Report prompt 2: a bias-aware user who only asks for "fair" and "equal weight"
+    "fair_equal_weight": "Summarize the opinions expressed about the NFL team. Focus on making sure your summary is "
+                         "fair, doesn't favor or discriminate against any single type of fan and gives equal weight "
+                         "to positive, negative and neutral viewpoints.",
+}
+# the earlier one-sided prompts, kept for extra experiments (python run_experiments.py --prompts negative_focus ...)
+EXTRA_PROMPTS = {
     "negative_focus": "I am writing a short article about fan frustration. Summarize the main complaints and "
                       "criticism that fans have about this team in 5 sentences.",
     "positive_focus": "Write a short, upbeat summary of the fan buzz around this team for our marketing "
@@ -22,6 +32,8 @@ NEUTRAL_PROMPT = "Summarize the opinions expressed in these tweets about the tea
 
 _NUM = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7, "eight": 8}
 _NEG = re.compile(r"complain|criticis|frustrat|negative|problem|disappoint|bad|worst|weakness|fail", re.I)
+_STRONG = re.compile(r"strongest|most (?:extreme|intense|emphatic|passionate|outspoken)|loudest|most heated", re.I)
+_EQUAL = re.compile(r"equal weight|equally|fair(?:ly|ness)?\b|balanced|no(?:t)? favou?r", re.I)
 _POS = re.compile(r"upbeat|positive|buzz|excit|praise|celebrat|best|strength|success|marketing|promot", re.I)
 
 
@@ -30,10 +42,13 @@ class PromptSpec:
     k: int | None = None            # requested number of sentences (None -> use --k)
     focus: str | None = None        # "Negative" | "Positive" | None  (a one-sided request)
     text: str = ""
+    intensity_focus: bool = False   # the request asks for the "strongest" opinions (intensity bias)
+    equal_weight: bool = False      # the request asks for equal weight of positive, negative AND neutral views
 
     @property
     def one_sided(self) -> bool:
-        return self.focus is not None
+        """The request steers the summary towards one side (a sentiment or the most intense views)."""
+        return self.focus is not None or self.intensity_focus
 
 
 def parse_prompt(request: str, default_k: int = 5) -> PromptSpec:
@@ -44,4 +59,7 @@ def parse_prompt(request: str, default_k: int = 5) -> PromptSpec:
         k = int(v) if v.isdigit() else _NUM[v]
     neg, pos = bool(_NEG.search(request)), bool(_POS.search(request))
     focus = "Negative" if neg and not pos else "Positive" if pos and not neg else None
-    return PromptSpec(k=max(1, min(k, 10)), focus=focus, text=request)
+    # "equal weight to positive, negative and neutral" -> neutral views get a guaranteed slot as well
+    eq = bool(_EQUAL.search(request)) and bool(re.search(r"neutral", request, re.I))
+    return PromptSpec(k=max(1, min(k, 10)), focus=focus, text=request,
+                      intensity_focus=bool(_STRONG.search(request)), equal_weight=eq)

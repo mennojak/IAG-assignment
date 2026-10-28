@@ -1,0 +1,7 @@
+topic,prompt,rev_mean,rev_std,unresolved,runs
+49ers,fair_equal_weight,2.33,0.58,1,3
+49ers,strongest_opinions,2.67,0.58,2,3
+Patriots,fair_equal_weight,2.0,0.0,0,3
+Patriots,strongest_opinions,2.0,0.0,0,3
+Seahawks,fair_equal_weight,2.0,0.0,0,3
+Seahawks,strongest_opinions,2.0,0.0,0,3

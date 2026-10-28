@@ -1,4 +1,7 @@
-"""LangGraph agent:  ingest -> draft -> evaluate -> (revise -> evaluate)* -> finish"""
+"""LangGraph agent:  ingest -> draft -> extract -> ontology_check -> evaluate -> (revise -> extract ...)* -> finish
+
+extract = Information Extractor (LLM/NLP -> ontology facts), ontology_check = Ontology Reasoning Tool (SPARQL / Pellet
+queries), evaluate = Bias Consistency Evaluator (prompt-focus check, scoring, best draft), revise = Rewrite."""
 from __future__ import annotations
 
 import math
@@ -94,7 +97,7 @@ def plan_from_ontology(store: OntologyStore, spec: PromptSpec | None = None) -> 
                               "intensity": _typical_intensity([x for _, x in picked]),
                               "quantifier": _quantifier(n, team_total[team]), "sentence": "",
                               "attempts": 0, "issues": []})
-    return select_k(cands, spec.k or DEFAULT_K, spec.focus)
+    return select_k(cands, spec.k or DEFAULT_K, spec)
 
 
 def _order_key(p: dict, focus: str | None):
@@ -103,28 +106,33 @@ def _order_key(p: dict, focus: str | None):
             0 if p["polarity"] == focus else 1, POLARITIES.index(p["polarity"]), -p.get("support", 0))
 
 
-def select_k(cands: list[dict], k: int, focus: str | None) -> list[dict]:
+def select_k(cands: list[dict], k: int, spec: PromptSpec) -> list[dict]:
     """Pick at most k claims per team. First one claim for every non-neutral viewpoint (the largest one), so
-    a one-sided request can never silence the other side; then fill the remaining slots by support,
-    preferring the requested focus. Neutral claims only fill leftover slots."""
+    a one-sided request can never silence the other side (neutral too when the request asks for equal weight
+    of positive, negative AND neutral views); then fill the remaining slots by support, preferring the
+    requested sentiment focus, or the most intense claims when the request asks for the "strongest" opinions.
+    Neutral claims otherwise only fill leftover slots."""
+    focus = spec.focus
+    must = POLARITIES if spec.equal_weight else POLARITIES[:2]
     chosen: list[dict] = []
     for team in TEAM_TOPIC:
         mine = [c for c in cands if c["team"] == team]
         if not mine:
             continue
         pick: list[dict] = []
-        for pol in POLARITIES[:2]:                         # Positive, Negative
+        for pol in must:                                   # Positive, Negative (+ Neutral if equal weight)
             best = max((c for c in mine if c["polarity"] == pol), key=lambda c: c["support"], default=None)
             if best:
                 pick.append(best)
         rest = sorted((c for c in mine if c not in pick),
-                      key=lambda c: (c["polarity"] == "Neutral", c["polarity"] != focus, -c["support"]))
+                      key=lambda c: (c["polarity"] == "Neutral" and not spec.equal_weight, c["polarity"] != focus,
+                                      -INTENSITIES.index(c["intensity"]) if spec.intensity_focus else 0, -c["support"]))
         pick += rest[:max(k - len(pick), 0)]
         chosen += pick[:max(k, 1)]
     return sorted(chosen, key=lambda p: _order_key(p, focus))
 
 
-def _enforce_k(plan: list[dict], k: int, focus: str | None) -> list[dict]:
+def _enforce_k(plan: list[dict], k: int, spec: PromptSpec) -> list[dict]:
     """After revision added tweets/claims: drop the weakest claims above k, never the last claim of a viewpoint."""
     for team in TEAM_TOPIC:
         while True:
@@ -132,11 +140,11 @@ def _enforce_k(plan: list[dict], k: int, focus: str | None) -> list[dict]:
             if len(mine) <= k:
                 break
             cnt = Counter(p["polarity"] for p in mine)
-            droppable = [p for p in mine if cnt[p["polarity"]] > 1 or p["polarity"] == "Neutral"]
+            droppable = [p for p in mine if cnt[p["polarity"]] > 1 or (p["polarity"] == "Neutral" and not spec.equal_weight)]
             if not droppable:
                 break
             plan.remove(min(droppable, key=lambda p: p["support"]))
-    return sorted(plan, key=lambda p: _order_key(p, focus))
+    return sorted(plan, key=lambda p: _order_key(p, spec.focus))
 
 
 def plan_claims(plan: list[dict]) -> list[dict]:
@@ -166,6 +174,8 @@ class State(TypedDict, total=False):
     summary: str
     plan: list[dict]
     stale: int
+    summary_iri: str
+    facts: list
 
 
 class SummaryAgent:
@@ -178,6 +188,7 @@ class SummaryAgent:
         self.spec = parse_prompt(request, k)           # sentence budget + one-sided focus read from the user prompt
         self.r1 = Report1Checker(store)
         self.view: str | None = None
+        self.reasoner_msg = ""
         self.graph = self._build()
 
     def log(self, *a):
@@ -189,12 +200,14 @@ class SummaryAgent:
                                                  [t.get("team") for t in self.tweets])
         self.store.add_source(self.tweets, opinions)
         ok, msg = self.store.check_consistency(self.require_reasoner)
+        self.reasoner_msg = msg
         self.log(f"[ingest] {len(self.tweets)} tweets, {sum(o.team is not None for o in opinions)} opinions "
                  f"extracted into the ontology; reasoner: {msg}")
         self.q4_src = self.r1.q4_source()
         self.log(f"[ingest] Report-1 Q4 (topic x group tweet counts): {self.q4_src}")
         self.view = ontology_view(self.store) if self.use_ctx else None
-        self.log(f"[prompt] k={self.spec.k} sentences per team, focus={self.spec.focus or 'none (balanced)'}")
+        self.log(f"[prompt] k={self.spec.k} sentences per team, focus={self.spec.focus or 'none'}, "
+                 f"strongest-opinions={self.spec.intensity_focus}, equal-weight={self.spec.equal_weight}")
         return {"iteration": 0, "history": [], "stale": 0}
 
     def _write(self, p: dict, feedback: list[str] | None = None) -> None:
@@ -222,7 +235,8 @@ class SummaryAgent:
         self.log(f"[draft] {len(plan)} planned claims (team x sentiment x aspect), written one by one")
         return {"plan": plan, "claims": plan_claims(plan)}
 
-    def evaluate(self, st: State) -> State:
+    def extract(self, st: State) -> State:
+        """Information Extractor: summary sentences -> opinions + facts, written into the ontology."""
         it = st["iteration"] + 1
         claims = st["claims"]
         opinions = self.backend.extract_opinions([c["sentence"] for c in claims])   # NLP/LLM extraction
@@ -230,16 +244,38 @@ class SummaryAgent:
             if c.get("template"):
                 opinions[k] = OpinionRecord(c["team"], c["polarity"], c["intensity"], opinions[k].kind)
         iri = self.store.add_summary(it, claims, opinions)                           # facts -> ontology
-        res = evaluate(self.store, iri, self.tol)                                    # SPARQL queries
         facts = self.backend.extract_facts([c["sentence"] for c in claims])          # facts for Report-1 Q1,2,3,5,6
-        r1_vs, r1_status = self.r1.check(claims, facts)                              # DL / SPARQL / ASK on scratch ontology
+        self.log(f"[extract #{it}] {sum(o.team is not None for o in opinions)} opinions, "
+                 f"{sum(len(f) for f in facts)} Report-1 facts")
+        return {"iteration": it, "summary_iri": iri, "facts": facts}
+
+    def ontology_check(self, st: State) -> State:
+        """Ontology Reasoning Tool: SPARQL checks + the six Report-1 queries (DL/Pellet on a scratch copy)."""
+        iri, claims = st["summary_iri"], st["claims"]
+        res = evaluate(self.store, iri, self.tol)                                    # SPARQL queries
+        r1_vs, r1_status = self.r1.check(claims, st["facts"])                        # DL / SPARQL / ASK on scratch ontology
         seen = {v.data.get("group") for v in res.violations if v.kind == "GROUP_UNDERREPRESENTED"}
         r1_vs += [v for v in self.r1.q4_violations(iri, self.tol) if v.data["group"] not in seen]   # Q4 per topic
         res.violations.extend(r1_vs)
-        res.violations.extend(self._focus_violations(iri))
-        res.metrics["prompt"] = {"k": self.spec.k, "focus": self.spec.focus}
         res.metrics["report1"] = r1_status
         res.metrics["q4_summary"] = self.r1.q4_summary(iri)
+        res.metrics["reasoner"] = self.reasoner_msg       # was Pellet really used, or only SPARQL?
+        return {"result": res}
+
+    def _intensity_shares(self, claims: list[dict]) -> dict:
+        """Share of High-intensity opinions in the summary vs in the source tweets (intensity-bias diagnostic)."""
+        src = [o.intensity for o in self.store.source_opinion.values() if o.team]
+        mine = [c.get("intensity") for c in claims if c.get("intensity")]
+        f = lambda xs: round(sum(x == "High" for x in xs) / len(xs), 3) if xs else None
+        return {"source_high": f(src), "summary_high": f(mine)}
+
+    def evaluate(self, st: State) -> State:
+        """Bias Consistency Evaluator: prompt-focus check, scoring, bookkeeping of the best draft."""
+        it, res, claims, iri = st["iteration"], st["result"], st["claims"], st["summary_iri"]
+        res.violations.extend(self._focus_violations(iri))
+        res.metrics["prompt"] = {"k": self.spec.k, "focus": self.spec.focus, "intensity_focus": self.spec.intensity_focus,
+                                 "equal_weight": self.spec.equal_weight}
+        res.metrics["intensity_share"] = self._intensity_shares(claims)
         entry = {"iteration": it, "score": res.score, "metrics": res.metrics, "claims": list(claims),
                  "violations": [{"kind": v.kind, "message": v.message} for v in res.violations]}
         history = st["history"] + [entry]
@@ -248,16 +284,18 @@ class SummaryAgent:
             best, stale = entry, 0          # strictly better draft
         else:
             stale += 1
-        self.log(f"[evaluate #{it}] score={res.score}  equal_coverage={res.metrics['equal_coverage']}  "
+        self.log(f"[evaluate #{it}] score={res.score}  group_balance={res.metrics['group_balance']}  "
                  f"shares={res.metrics['group_shares']}")
         for v in res.violations:
             self.log(f"    - {v.kind}: {v.message[:140]}")
-        return {"iteration": it, "result": res, "history": history, "best": best, "stale": stale}
+        return {"result": res, "history": history, "best": best, "stale": stale}
 
     _CLAIM_FIXES = {
         "GROUP_MENTIONED": "it names a demographic group; describe only the sentiment about the team",
         "POLARITY_UNSUPPORTED": "its sentiment does not match the tweets; it must be clearly {pol}",
         "INTENSITY_INFLATED": "it sounds stronger than the tweets; use milder, more restrained wording",
+        "SINGLE_TWEET_DETAIL": "it leans on details that only one tweet mentions; describe only what several tweets say "
+                               "and leave out specific names, scores, places and events",
         "CLAIM_NOT_LINKED": "it must name exactly one team explicitly and take a clear stance",
         "REPORT1_Q1_UNDERAGE_MARRIAGE": "it states a marriage involving a minor, which the ontology forbids; drop such facts",
         "REPORT1_Q2_IMPLAUSIBLE_AGE": "it states an implausible age; drop such facts",
@@ -270,12 +308,15 @@ class SummaryAgent:
         """PROMPT_FOCUS_BIAS: the request asks for one side only (e.g. 'the complaints'), but another sentiment is
         held by >= 20% of the tweets about a team and the summary says nothing about it."""
         from evaluation import Violation
-        if not self.spec.one_sided:
+        if not (self.spec.one_sided or self.spec.equal_weight):
             return []
+        ask = ("equal weight for positive, negative and neutral views" if self.spec.equal_weight else
+               "the strongest opinions" if self.spec.intensity_focus and not self.spec.focus else
+               f"{self.spec.focus.lower()} views")
         said = {(c.opinion.team, c.opinion.polarity) for c in self.store.claims_of(iri) if c.opinion}
         by_team: dict[str, dict[str, list[int]]] = defaultdict(lambda: defaultdict(list))
         for i, o in self.store.source_opinion.items():
-            if o.team and o.polarity != "Neutral":
+            if o.team and (o.polarity != "Neutral" or self.spec.equal_weight):
                 by_team[o.team][o.polarity].append(i)
         out = []
         for team, pols in by_team.items():
@@ -285,7 +326,7 @@ class SummaryAgent:
                     mix = self._balanced(ids)
                     out.append(Violation(
                         "PROMPT_FOCUS_BIAS",
-                        f"The request only asks for {self.spec.focus.lower()} views, but {len(ids)} of {tot} opinionated "
+                        f"The request asks for {ask}, but {len(ids)} of {tot} opinionated "
                         f"tweets about {team} are {pol}. Add ONE neutral claim about this {pol} viewpoint.",
                         {"team": team, "polarity": pol, "tweet_ids": mix}))
         return out
@@ -345,7 +386,7 @@ class SummaryAgent:
             if id(p) in dirty:
                 self._write(p, p["issues"] or None)      # only flagged claims are rewritten
         self.log(f"[revise] rewrote {len(dirty)} of {len(plan)} claims")
-        plan = _enforce_k(plan, self.spec.k or DEFAULT_K, self.spec.focus)
+        plan = _enforce_k(plan, self.spec.k or DEFAULT_K, self.spec)
         return {"plan": plan, "claims": plan_claims(plan)}
 
     def finish(self, st: State) -> State:
@@ -360,13 +401,15 @@ class SummaryAgent:
 
     def _build(self):
         g = StateGraph(State)
-        for name, fn in [("ingest", self.ingest), ("draft", self.draft), ("evaluate", self.evaluate),
+        for name, fn in [("ingest", self.ingest), ("draft", self.draft), ("extract", self.extract),
+                         ("ontology_check", self.ontology_check), ("evaluate", self.evaluate),
                          ("revise", self.revise), ("finish", self.finish)]:
             g.add_node(name, fn)
-        g.add_edge(START, "ingest"); g.add_edge("ingest", "draft"); g.add_edge("draft", "evaluate")
+        g.add_edge(START, "ingest"); g.add_edge("ingest", "draft"); g.add_edge("draft", "extract")
+        g.add_edge("extract", "ontology_check"); g.add_edge("ontology_check", "evaluate")
         g.add_conditional_edges("evaluate", self.route, {"revise": "revise", "finish": "finish"})
-        g.add_edge("revise", "evaluate"); g.add_edge("finish", END)
+        g.add_edge("revise", "extract"); g.add_edge("finish", END)
         return g.compile()
 
     def run(self) -> dict[str, Any]:
-        return self.graph.invoke({}, {"recursion_limit": 8 + 3 * self.max_iters})
+        return self.graph.invoke({}, {"recursion_limit": 10 + 5 * self.max_iters})
