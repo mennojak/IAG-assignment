@@ -1,0 +1,1566 @@
+{
+ "49ers|strongest_opinions|1|baseline": {
+  "support": 0.625,
+  "n": 4,
+  "detail": [
+   {
+    "sentence": "The tweets express strong support for the 49ers, with many fans confident in their team's performance and predicting a Super Bowl victory.",
+    "supported": "yes",
+    "why": "Many tweets express support and confidence in the 49ers' performance and Super Bowl chances."
+   },
+   {
+    "sentence": "Some fans are disappointed in recent losses but remain loyal.",
+    "supported": "partly",
+    "why": "Some tweets express disappointment, but others remain supportive."
+   },
+   {
+    "sentence": "There's also a notable divide, with a few fans expressing dislike for the 49ers and hoping for their loss.",
+    "supported": "partly",
+    "why": "Some tweets express dislike for the 49ers and hope for their loss, but the majority of tweets are supportive."
+   },
+   {
+    "sentence": "The team's quarterback, Colin Kaepernick, receives praise from many supporters.",
+    "supported": "partly",
+    "why": "Some tweets express support for Colin Kaepernick, but others criticize or are neutral."
+   }
+  ]
+ },
+ "49ers|strongest_opinions|1|agent": {
+  "support": 0.8,
+  "n": 5,
+  "detail": [
+   {
+    "sentence": "Many tweets express strong, unwavering support for the 49ers, anticipating their success.",
+    "supported": "partly",
+    "why": "While many tweets show support for the 49ers, some express doubt or negativity."
+   },
+   {
+    "sentence": "Several tweets express strongly negative views about recent game results of the San Francisco 49ers.",
+    "supported": "partly",
+    "why": "Some tweets express negative views, but not strongly."
+   },
+   {
+    "sentence": "Some tweets express mildly negative views about the San Francisco 49ers.",
+    "supported": "yes",
+    "why": "Some tweets contain negative or critical comments about the 49ers."
+   },
+   {
+    "sentence": "Some tweets mention the San Francisco 49ers without taking a clear side.",
+    "supported": "yes",
+    "why": "Several tweets mention the 49ers without expressing clear support or criticism."
+   },
+   {
+    "sentence": "Some tweets express mixed opinions, with a few fans remaining supportive of the 49ers despite their recent game against the Falcons.",
+    "supported": "yes",
+    "why": "Some tweets show support for the 49ers, while others express doubt or criticism, indicating mixed opinions."
+   }
+  ]
+ },
+ "49ers|strongest_opinions|1|ablation_no_plan": {
+  "support": 1.0,
+  "n": 1,
+  "detail": [
+   {
+    "sentence": "Several tweets express strong support for the San Francisco 49ers, with many hoping for a Super Bowl victory. (#1, #2, #4, #16, #32, #49, #60, #67, #76, #80, #88, #90) Several tweets show mixed feelings about the San Francisco 49ers, with some skeptical about their chances in the Super Bowl. (#8, #25, #30, #34, #35, #41) A few tweets remain neutral about the San Francisco 49ers, showing interest without strong opinions. (#3, #6, #15, #21, #48, #51) Some tweets predict a victory for the San Francisco 49ers, praising their strong defense and overall performance. (#25, #40, #62, #71, #75) Several tweets express negative sentiment towards the San Francisco 49ers, citing poor defensive performance and predicting defeat. (#7, #11, #28, #29, #37, #68)",
+    "supported": "yes",
+    "why": "The tweets clearly show strong support, mixed feelings, neutrality, and both positive and negative sentiments towards the San Francisco 49ers, as described."
+   }
+  ]
+ },
+ "49ers|strongest_opinions|2|baseline": {
+  "support": 0.625,
+  "n": 4,
+  "detail": [
+   {
+    "sentence": "Strong opinions about the 49ers were mostly positive, with many fans expressing confidence in their team, supporting their quarterback Colin Kaepernick, and hoping for a Super Bowl victory.",
+    "supported": "partly",
+    "why": "While many tweets express confidence and support for the 49ers, some also express negative opinions or doubts about the team's performance."
+   },
+   {
+    "sentence": "Some tweets also highlighted the team's strong defense and talented players.",
+    "supported": "partly",
+    "why": "Some tweets mention the team's defense and players, but not a majority."
+   },
+   {
+    "sentence": "However, a few criticized the team's recent performance and doubted their chances in the playoffs.",
+    "supported": "partly",
+    "why": "Some tweets express criticism and doubt, but many are supportive."
+   },
+   {
+    "sentence": "Overall, the 49ers had a significant number of dedicated fans who believed in their team's success.",
+    "supported": "yes",
+    "why": "Many tweets express support and faith in the 49ers' success."
+   }
+  ]
+ },
+ "49ers|strongest_opinions|2|agent": {
+  "support": 0.8,
+  "n": 5,
+  "detail": [
+   {
+    "sentence": "Many tweets express strong, unshaken support for the 49ers, believing they will win.",
+    "supported": "partly",
+    "why": "Some tweets express strong support, but others doubt or are uncertain about the 49ers' chances."
+   },
+   {
+    "sentence": "Several tweets express strongly negative views about recent game results of the San Francisco 49ers.",
+    "supported": "partly",
+    "why": "Some tweets express negative views, but not strongly."
+   },
+   {
+    "sentence": "Some tweets express mildly negative views about the San Francisco 49ers.",
+    "supported": "yes",
+    "why": "Some tweets contain negative or critical comments about the 49ers."
+   },
+   {
+    "sentence": "Some tweets mention the San Francisco 49ers without taking a clear side.",
+    "supported": "yes",
+    "why": "Several tweets mention the 49ers without expressing clear support or criticism."
+   },
+   {
+    "sentence": "Some tweets mention the San Francisco 49ers and recent game results without taking a clear side.",
+    "supported": "yes",
+    "why": "Several tweets mention recent game results and the San Francisco 49ers without showing clear support or criticism."
+   }
+  ]
+ },
+ "49ers|strongest_opinions|2|ablation_no_plan": {
+  "support": 0.5,
+  "n": 4,
+  "detail": [
+   {
+    "sentence": "Several Hispanic fans express strong support for the San Francisco 49ers, with one hoping they win the Super Bowl.",
+    "supported": "partly",
+    "why": "Most tweets are from general fans, not specifically Hispanic fans."
+   },
+   {
+    "sentence": "Several African American fans predict a loss for the San Francisco 49ers, with one expressing a desire for the team to lose.",
+    "supported": "partly",
+    "why": "Some tweets express a desire for the 49ers to lose, but there is no clear indication that these fans are African American."
+   },
+   {
+    "sentence": "Several White fans express strong support for the San Francisco 49ers, while others root against them, often due to future matchups.",
+    "supported": "partly",
+    "why": "The tweets show support for the 49ers, but do not specifically mention race or express clear opposition due to future matchups."
+   },
+   {
+    "sentence": "Several tweets mention the San Francisco 49ers' strong defense and potential Super Bowl appearance.",
+    "supported": "partly",
+    "why": "Some tweets mention the 49ers' defense and Super Bowl appearance, but not explicitly as a strong defense."
+   }
+  ]
+ },
+ "49ers|strongest_opinions|3|baseline": {
+  "support": 1.0,
+  "n": 4,
+  "detail": [
+   {
+    "sentence": "Strong opinions among the tweets are overwhelmingly positive towards the 49ers, with many fans expressing confidence in their team's performance and success, especially in upcoming Super Bowl games.",
+    "supported": "yes",
+    "why": "Many tweets express support and confidence in the 49ers, especially for upcoming games and the Super Bowl."
+   },
+   {
+    "sentence": "Some tweets highlight the team's recent strong performances and express hope for continued success.",
+    "supported": "yes",
+    "why": "Several tweets mention the 49ers' recent good performance and hope for future success."
+   },
+   {
+    "sentence": "A few negative opinions suggest the 49ers may struggle against stronger opponents, and a couple of tweets mock the team's fans.",
+    "supported": "yes",
+    "why": "Some tweets express doubts about the 49ers' performance and a few mock the fans."
+   },
+   {
+    "sentence": "Overall, the sentiment is predominantly supportive and optimistic.",
+    "supported": "yes",
+    "why": "Many tweets express support and optimism for the 49ers."
+   }
+  ]
+ },
+ "49ers|strongest_opinions|3|agent": {
+  "support": 0.7,
+  "n": 5,
+  "detail": [
+   {
+    "sentence": "Many tweets express strong support and confidence in the San Francisco 49ers, predicting their success.",
+    "supported": "yes",
+    "why": "Multiple tweets express support and confidence in the 49ers, predicting their success."
+   },
+   {
+    "sentence": "Several tweets express strongly negative views about recent game results of the San Francisco 49ers.",
+    "supported": "partly",
+    "why": "Some tweets express negative views, but not strongly."
+   },
+   {
+    "sentence": "Some tweets express mildly negative views about the San Francisco 49ers.",
+    "supported": "yes",
+    "why": "Some tweets contain negative or critical comments about the 49ers."
+   },
+   {
+    "sentence": "Some tweets mention the 49ers' prospects and potential free agency moves.",
+    "supported": "no",
+    "why": "None of the tweets mention the 49ers' prospects or potential free agency moves."
+   },
+   {
+    "sentence": "Some tweets reflect mixed opinions, with some rooting for the 49ers and others expressing indifference towards the outcome.",
+    "supported": "yes",
+    "why": "Some tweets show support for the 49ers (e.g. tweets 1, 9, 38, 40, 55, 60) while others express indifference or dislike (e.g. tweets 34, 35, 53, 55, 85, 90)."
+   }
+  ]
+ },
+ "49ers|strongest_opinions|3|ablation_no_plan": {
+  "support": 0.0,
+  "n": 1,
+  "detail": [
+   {
+    "sentence": "Several Hispanic groups express strong support for the San Francisco 49ers, with many anticipating a Super Bowl appearance. (Tweets White groups are split in their opinions about the 49ers, with some strongly supporting the team and others expressing disappointment. (Tweets African American groups have mixed feelings towards the 49ers, with some hoping they win and others predicting a loss. (Tweets Several tweets express disappointment in the 49ers' recent performance, citing their defensive struggles. (Tweets",
+    "supported": "no",
+    "why": "The summary does not match the content of the tweets, which are primarily about the 49ers' performance and fan opinions, not about Hispanic, White, or African American groups' support."
+   }
+  ]
+ },
+ "49ers|fair_equal_weight|1|baseline": {
+  "support": 1.0,
+  "n": 4,
+  "detail": [
+   {
+    "sentence": "Opinions on the 49ers vary widely, with fans expressing both strong support and criticism.",
+    "supported": "yes",
+    "why": "Both support and criticism are evident in the tweets."
+   },
+   {
+    "sentence": "Positive views highlight the team's talent and potential, while some criticize their recent performance.",
+    "supported": "yes",
+    "why": "Many tweets express positive views about the 49ers' talent and potential, and some criticize their recent performance."
+   },
+   {
+    "sentence": "Fans are divided on whether the 49ers or Falcons will win the upcoming game, with predictions ranging from optimism to pessimism.",
+    "supported": "yes",
+    "why": "The tweets show a mix of optimism and pessimism for both the 49ers and Falcons."
+   },
+   {
+    "sentence": "Despite the mixed reactions, many fans show enthusiasm, especially for the possibility of a Super Bowl appearance.",
+    "supported": "yes",
+    "why": "Many tweets express enthusiasm for the 49ers, including Super Bowl hopes."
+   }
+  ]
+ },
+ "49ers|fair_equal_weight|1|agent": {
+  "support": 0.7,
+  "n": 5,
+  "detail": [
+   {
+    "sentence": "Many tweets express strong support and confidence in the 49ers' ability to win.",
+    "supported": "partly",
+    "why": "Some tweets express strong support, but others are skeptical or critical."
+   },
+   {
+    "sentence": "Several tweets express strongly negative views about recent game results of the San Francisco 49ers.",
+    "supported": "partly",
+    "why": "Some tweets express negative views, but not strongly."
+   },
+   {
+    "sentence": "Some tweets express mildly negative views about the San Francisco 49ers.",
+    "supported": "yes",
+    "why": "Some tweets contain negative or critical comments about the 49ers."
+   },
+   {
+    "sentence": "Some tweets discuss the 49ers' prospects, mentioning potential roster moves and games, but opinions are mixed without clear favoritism.",
+    "supported": "yes",
+    "why": "The tweets mention various topics related to the 49ers, including potential roster moves and games, and show mixed opinions without clear favoritism."
+   },
+   {
+    "sentence": "Some tweets show mixed feelings, with fans acknowledging the 49ers' popularity but expressing neutral opinions about the upcoming game.",
+    "supported": "partly",
+    "why": "Some tweets express mixed feelings, but the majority of tweets are supportive or excited about the 49ers."
+   }
+  ]
+ },
+ "49ers|fair_equal_weight|1|ablation_no_plan": {
+  "support": 0.938,
+  "n": 8,
+  "detail": [
+   {
+    "sentence": "Several tweets express strong support for the San Francisco 49ers, with some calling for a Super Bowl victory.",
+    "supported": "yes",
+    "why": "Multiple tweets express support for the 49ers and hope for a Super Bowl win."
+   },
+   {
+    "sentence": "Several tweets remain neutral, acknowledging the team's players and their performance.",
+    "supported": "yes",
+    "why": "Several tweets mention the 49ers' players and performance without expressing clear support or criticism."
+   },
+   {
+    "sentence": "Several tweets praise the San Francisco 49ers, expressing long-standing support and faith in the team.",
+    "supported": "yes",
+    "why": "Multiple tweets express support and faith in the 49ers, such as tweets 1, 9, 32, 38, and 65."
+   },
+   {
+    "sentence": "Several tweets celebrate the San Francisco 49ers' performance, predicting a strong showing in the Super Bowl.",
+    "supported": "yes",
+    "why": "Many tweets express support and optimism for the 49ers' performance and Super Bowl prospects."
+   },
+   {
+    "sentence": "Several tweets express cautious optimism, acknowledging the team's potential but also highlighting areas for improvement.",
+    "supported": "partly",
+    "why": "Some tweets show cautious optimism, but many express strong support or criticism without reservation."
+   },
+   {
+    "sentence": "Several tweets express a negative sentiment, critiquing the team's performance and predicting potential challenges.",
+    "supported": "yes",
+    "why": "Several tweets criticize the 49ers' performance and predict challenges they might face."
+   },
+   {
+    "sentence": "Several tweets express a negative sentiment, with fans predicting a tough Super Bowl matchup for the 49ers.",
+    "supported": "yes",
+    "why": "Several tweets express negative sentiments and predictions for the 49ers' performance."
+   },
+   {
+    "sentence": "Several tweets express a negative sentiment, citing the 49ers' recent struggles and questioning their Super Bowl potential.",
+    "supported": "yes",
+    "why": "Several tweets mention the 49ers' struggles and doubt their Super Bowl chances."
+   }
+  ]
+ },
+ "49ers|fair_equal_weight|2|baseline": {
+  "support": 1.0,
+  "n": 4,
+  "detail": [
+   {
+    "sentence": "Opinions about the 49ers are mixed, with fans showing both strong support and criticism.",
+    "supported": "yes",
+    "why": "Both support and criticism are evident in the tweets."
+   },
+   {
+    "sentence": "Many are excited for the upcoming games and Super Bowl, while others express doubts or hatred.",
+    "supported": "yes",
+    "why": "Both excitement and doubts/hatred are expressed in the tweets."
+   },
+   {
+    "sentence": "Some appreciate the team's performance and players, while others find faults or predict their defeat.",
+    "supported": "yes",
+    "why": "Both positive and negative sentiments are present in the tweets."
+   },
+   {
+    "sentence": "The fans' passion is evident, with many expressing their loyalty and hoping for a successful season.",
+    "supported": "yes",
+    "why": "Many tweets express loyalty and hope for the 49ers' success, indicating fan passion."
+   }
+  ]
+ },
+ "49ers|fair_equal_weight|2|agent": {
+  "support": 0.8,
+  "n": 5,
+  "detail": [
+   {
+    "sentence": "Many tweets express enthusiastic support and confidence in the San Francisco 49ers' success.",
+    "supported": "yes",
+    "why": "Multiple tweets express strong support and confidence in the 49ers."
+   },
+   {
+    "sentence": "Several tweets express strongly negative views about recent game results of the San Francisco 49ers.",
+    "supported": "partly",
+    "why": "Some tweets express negative views, but not strongly."
+   },
+   {
+    "sentence": "Some tweets express skepticism about the San Francisco 49ers' prospects, citing concerns over their performance and upcoming matchups.",
+    "supported": "yes",
+    "why": "Several tweets express doubts or concerns about the 49ers' performance or upcoming games."
+   },
+   {
+    "sentence": "Some tweets mention the 49ers' upcoming games and their need for key players.",
+    "supported": "yes",
+    "why": "Several tweets discuss the 49ers' upcoming games and the importance of key players."
+   },
+   {
+    "sentence": "Some tweets express mixed feelings about the 49ers' performance, with some rooting for them and others remaining indifferent to the outcome.",
+    "supported": "partly",
+    "why": "Some tweets express support and excitement for the 49ers, while others are indifferent or critical, indicating mixed feelings."
+   }
+  ]
+ },
+ "49ers|fair_equal_weight|2|ablation_no_plan": {
+  "support": 0.938,
+  "n": 8,
+  "detail": [
+   {
+    "sentence": "Several tweets express negative sentiments about the San Francisco 49ers, such as 'I want the 49ers to lose just cause EVERYBODY and they moma on they dick....', 'That falcons gotta but in some work against the 49ers', and '49ers r gonna lose in the Super Bowl anyways __'.",
+    "supported": "yes",
+    "why": "The tweets clearly express negative sentiments about the 49ers."
+   },
+   {
+    "sentence": "Several tweets express positive sentiments about the San Francisco 49ers, such as 'S/O to the 49ers mane!!!",
+    "supported": "yes",
+    "why": "Multiple tweets express support and positive sentiments towards the 49ers."
+   },
+   {
+    "sentence": "We going all the way!!', 'I mean i'm from Chicago.",
+    "supported": "yes",
+    "why": "Both sentences are directly quoted from the tweets."
+   },
+   {
+    "sentence": "I'll cheer for the Bears, but i a bigger 49ers fan', and 'that 49ers vs falcons game gone be some good shit'.",
+    "supported": "partly",
+    "why": "Only one tweet expresses being a bigger 49ers fan, while the sentence includes this and a prediction about the game, neither of which is supported by the tweets."
+   },
+   {
+    "sentence": "Several tweets express neutral sentiments about the San Francisco 49ers, such as 'Wow anquan boldion is leaving the ravens and is going to the 49ers o:', 'So the #49ers have to get a #Revis deal done now right?', and 'Lmaooo hes a 49ers fan so i showed up to his house in my #Cowboys sweater lmaooooo'.",
+    "supported": "yes",
+    "why": "The tweets directly mention neutral sentiments about the 49ers."
+   },
+   {
+    "sentence": "Several tweets express neutral sentiments about the San Francisco 49ers, such as 'If I had folks like the 49ers, I would be a true spread team also', 'Looks like those smooth predictable Qtrback moves the 49ers, pulled on the Pack last weekend aren't wking 2day.1 man tm doesnt wrk', and 'Run O, feed it to Gore. #49ers Come on D.",
+    "supported": "yes",
+    "why": "The tweets provided contain statements that are neither supportive nor critical, indicating neutral sentiments."
+   },
+   {
+    "sentence": "Several tweets express mixed sentiments about the San Francisco 49ers, including positive claims like 'S/O to the 49ers mane!!!",
+    "supported": "yes",
+    "why": "Several tweets show both support and criticism for the 49ers."
+   },
+   {
+    "sentence": "We going all the way!!' and 'Falcon and 49ers.",
+    "supported": "yes",
+    "why": "Multiple tweets express support for the 49ers and mention 'We going all the way!!', and 'Falcon and 49ers' is directly stated by a tweet."
+   }
+  ]
+ },
+ "49ers|fair_equal_weight|3|baseline": {
+  "support": 0.9,
+  "n": 5,
+  "detail": [
+   {
+    "sentence": "Opinions about the 49ers are mixed.",
+    "supported": "yes",
+    "why": "Some tweets express support for the 49ers while others express doubt or criticism."
+   },
+   {
+    "sentence": "Some fans are confident and excited, while others express doubt and criticism.",
+    "supported": "yes",
+    "why": "The tweets show a mix of confidence and excitement, as well as doubt and criticism."
+   },
+   {
+    "sentence": "There's a mix of support and hope for a Super Bowl win alongside skepticism.",
+    "supported": "yes",
+    "why": "The tweets show a mix of support and hope for the 49ers, as well as skepticism."
+   },
+   {
+    "sentence": "A few tweets indicate the 49ers' performance was inconsistent, with some fans questioning key decisions.",
+    "supported": "partly",
+    "why": "Some tweets suggest inconsistency, like tweet 11 and 37, but not a majority."
+   },
+   {
+    "sentence": "Overall, the tweets reflect a blend of optimism and caution among the fanbase.",
+    "supported": "yes",
+    "why": "The tweets show a mix of positive support and some doubts or concerns, supporting the sentence."
+   }
+  ]
+ },
+ "49ers|fair_equal_weight|3|agent": {
+  "support": 0.6,
+  "n": 5,
+  "detail": [
+   {
+    "sentence": "Many tweets express unwavering support and confidence in the San Francisco 49ers.",
+    "supported": "partly",
+    "why": "While many tweets show support, some express doubt or criticism."
+   },
+   {
+    "sentence": "Several tweets express strongly negative views about recent game results of the San Francisco 49ers.",
+    "supported": "partly",
+    "why": "Some tweets express negative views, but not strongly."
+   },
+   {
+    "sentence": "Some tweets mention the 49ers' struggles and suggest the Falcons may have an advantage in future games.",
+    "supported": "partly",
+    "why": "Some tweets mention the 49ers' struggles, but not many suggest the Falcons may have an advantage in future games."
+   },
+   {
+    "sentence": "Some tweets mention the San Francisco 49ers without taking a clear side.",
+    "supported": "yes",
+    "why": "Several tweets mention the 49ers without expressing clear support or criticism."
+   },
+   {
+    "sentence": "Some tweets express mixed feelings about the 49ers' recent game, with some rooted fans and casual observers showing interest in the match outcome.",
+    "supported": "partly",
+    "why": "Some tweets show mixed feelings and interest, but not all clearly express mixed feelings about the recent game."
+   }
+  ]
+ },
+ "49ers|fair_equal_weight|3|ablation_no_plan": {
+  "support": 0.917,
+  "n": 6,
+  "detail": [
+   {
+    "sentence": "Several tweets express hope and enthusiasm for the San Francisco 49ers, with some predicting a Super Bowl victory.",
+    "supported": "yes",
+    "why": "Many tweets show support and enthusiasm for the 49ers, and a few predict a Super Bowl win."
+   },
+   {
+    "sentence": "For example, @22 and @32 mention the 49ers as a Super Bowl contender, while @44 celebrates the team\u2019s strong performance.",
+    "supported": "yes",
+    "why": "The tweets clearly mention the 49ers as Super Bowl contenders and celebrate their performance."
+   },
+   {
+    "sentence": "Negative sentiments towards the 49ers are also evident, with fans voicing concerns. @35 and @52 suggest that the 49ers may not perform as well as expected, while @85 predicts their loss in the Super Bowl.",
+    "supported": "yes",
+    "why": "Several tweets express negative sentiments towards the 49ers, including predictions of their loss in the Super Bowl."
+   },
+   {
+    "sentence": "Neutral observations about the 49ers are shared by various groups. @48 and @67 highlight the unexpected support for the 49ers, noting the sudden increase in fan engagement. @74 and @84 express cautious optimism, with @84 pointing out the 49ers' strong offense.",
+    "supported": "yes",
+    "why": "The tweets show various groups sharing neutral observations and unexpected support for the 49ers, with some expressing cautious optimism about their performance."
+   },
+   {
+    "sentence": "African American fans show strong support for the 49ers.",
+    "supported": "partly",
+    "why": "Most tweets are from general fans, not specifically African American fans."
+   },
+   {
+    "sentence": "For instance, @9, @17, @18, @20, @27, and @36 express enthusiasm and confidence in the team's performance and future prospects.",
+    "supported": "yes",
+    "why": "The tweets match the description of expressing enthusiasm and confidence."
+   }
+  ]
+ },
+ "Patriots|strongest_opinions|1|baseline": {
+  "support": 0.833,
+  "n": 6,
+  "detail": [
+   {
+    "sentence": "Opinions are overwhelmingly divided.",
+    "supported": "partly",
+    "why": "Some tweets express strong support or dislike for the Patriots, indicating divided opinions, but not all tweets clearly show strong opinions."
+   },
+   {
+    "sentence": "Fans are excited for the game and supportive of their team, with some expressing strong loyalty (\"WIN,LOSE,OR TIE IM A PATS FAN TILL I DIE\").",
+    "supported": "yes",
+    "why": "Many tweets express excitement and support for the Patriots, including strong loyalty statements."
+   },
+   {
+    "sentence": "However, there's also significant criticism, particularly about the team's defense and strategy.",
+    "supported": "partly",
+    "why": "Some tweets express criticism, but the overall sentiment is mixed and not predominantly critical."
+   },
+   {
+    "sentence": "Some users express disappointment in the team's performance, while others are eagerly watching their games.",
+    "supported": "yes",
+    "why": "Both disappointment and eagerness are expressed in the tweets."
+   },
+   {
+    "sentence": "A few even show begrudging respect for the Patriots' skill (\"Gotta respect the #Patriots though\").",
+    "supported": "yes",
+    "why": "Several tweets express respect for the Patriots' skill."
+   },
+   {
+    "sentence": "Overall, the tone ranges from enthusiastic to critical.",
+    "supported": "yes",
+    "why": "The tweets show a mix of support and criticism towards the Patriots."
+   }
+  ]
+ },
+ "Patriots|strongest_opinions|1|agent": {
+  "support": 0.875,
+  "n": 4,
+  "detail": [
+   {
+    "sentence": "Many tweets express mildly positive views about the New England Patriots.",
+    "supported": "partly",
+    "why": "Some tweets express mild support, but others express dislike or are neutral."
+   },
+   {
+    "sentence": "Several tweets express mildly negative views about the New England Patriots.",
+    "supported": "yes",
+    "why": "Multiple tweets show mixed or slightly negative sentiments towards the Patriots."
+   },
+   {
+    "sentence": "Several tweets express disappointment that the Patriots might play in the Super Bowl again, with some suggesting they should be eliminated for an easier path.",
+    "supported": "yes",
+    "why": "Several tweets express disappointment about the Patriots playing in the Super Bowl again, and a few suggest they should be eliminated."
+   },
+   {
+    "sentence": "Several tweets mention the New England Patriots, with some expressing a desire to see the team play but no clear indication of support or opposition.",
+    "supported": "yes",
+    "why": "The tweets mention the Patriots and some express a desire to see them play."
+   }
+  ]
+ },
+ "Patriots|strongest_opinions|1|ablation_no_plan": {
+  "support": 0.3,
+  "n": 5,
+  "detail": [
+   {
+    "sentence": "Several tweets from African American and Hispanic groups express strong support for the New England Patriots, believing they will continue to perform well, with one tweet specifically praising their defense and another predicting a win for the Patriots against the Broncos.",
+    "supported": "no",
+    "why": "No tweets in the list specifically mention support from African American or Hispanic groups, and the content does not indicate strong support or predictions of performance based on defense or a win against the Broncos."
+   },
+   {
+    "sentence": "African American and Hispanic groups are divided on the Patriots, with some expressing frustration that the team can't win despite having a bye, and others hoping for a tie between the Patriots and the Broncos.",
+    "supported": "partly",
+    "why": "The tweets show mixed feelings about the Patriots, with some hoping for a tie between the Patriots and the Broncos, but do not specifically mention African American and Hispanic groups."
+   },
+   {
+    "sentence": "White individuals have mixed feelings about the Patriots, with some expressing dislike and others looking forward to the game, indicating that the team's performance affects their sentiment.",
+    "supported": "partly",
+    "why": "Some tweets express dislike for the Patriots, while others look forward to the game, but the race of the individuals is not specified."
+   },
+   {
+    "sentence": "The African American group shows a range of sentiments, from hoping the Patriots will succeed to expressing frustration that the team can't replace key players, with one tweet noting they still have a chance in the playoffs.",
+    "supported": "partly",
+    "why": "The tweets show a range of sentiments, but the specific mention of an African American group and their sentiments is not supported."
+   },
+   {
+    "sentence": "White and Hispanic groups show varying levels of support for the Patriots, with some rooting for the team and others pulling for their rivals, indicating a competitive spirit among fans.",
+    "supported": "no",
+    "why": "The tweets do not provide information about the support levels of white and Hispanic groups."
+   }
+  ]
+ },
+ "Patriots|strongest_opinions|2|baseline": {
+  "support": 1.0,
+  "n": 4,
+  "detail": [
+   {
+    "sentence": "Opinions are strongly divided.",
+    "supported": "yes",
+    "why": "The tweets show both strong support and criticism for the Patriots."
+   },
+   {
+    "sentence": "Many fans are enthusiastic and supportive, especially for #PatriotsNation, while others dislike the team intensely.",
+    "supported": "yes",
+    "why": "The tweets show both enthusiastic support and intense dislike for the Patriots."
+   },
+   {
+    "sentence": "Some are anxious about potential Super Bowl matchups, and a few express mixed feelings or dislike due to specific events or players.",
+    "supported": "yes",
+    "why": "Some tweets express anxiety about potential matchups and dislike towards specific players or events."
+   },
+   {
+    "sentence": "Overall, the tone ranges from intense support to bitter competition.",
+    "supported": "yes",
+    "why": "The tweets show a mix of strong support and intense dislike towards the Patriots."
+   }
+  ]
+ },
+ "Patriots|strongest_opinions|2|agent": {
+  "support": 0.75,
+  "n": 4,
+  "detail": [
+   {
+    "sentence": "Many tweets express support for the New England Patriots, acknowledging their recent success and showing enthusiasm for future games.",
+    "supported": "partly",
+    "why": "While some tweets express support and enthusiasm, others show disapproval or dislike."
+   },
+   {
+    "sentence": "Several tweets express mildly negative views about the New England Patriots.",
+    "supported": "yes",
+    "why": "Multiple tweets show mixed or slightly negative sentiments towards the Patriots."
+   },
+   {
+    "sentence": "Several tweets show disappointment that the Patriots could face challenging teams in the Super Bowl.",
+    "supported": "partly",
+    "why": "Some tweets express disappointment, but others are indifferent or even rooting for the Patriots to win."
+   },
+   {
+    "sentence": "Several tweets mention the Patriots, with some expressing a desire to see them play but noting they are not dedicated fans.",
+    "supported": "yes",
+    "why": "Multiple tweets mention the Patriots and express mixed feelings, indicating a desire to see them play but not being dedicated fans."
+   }
+  ]
+ },
+ "Patriots|strongest_opinions|2|ablation_no_plan": {
+  "support": 0.375,
+  "n": 4,
+  "detail": [
+   {
+    "sentence": "Several tweets express strong dislike for the Patriots, with one user stating, 'I cannot wait to watch the game Sunday.",
+    "supported": "partly",
+    "why": "Most tweets express dislike or neutral sentiment towards the Patriots, but one tweet does show a positive sentiment."
+   },
+   {
+    "sentence": "I strongly dislike the Patriots.' and another adding, 'I just want the Patriots to lose.\u00d3 Come on nah my G.' Patriots fans remain enthusiastic, as one tweet mentions, 'I like that my Patriots are 4-0 right now ______', while another asserts, 'I wanna watch that one thingy on butttt Broncos vs Patriots.' Some African American groups feel conflicted about the Patriots, as one user notes, 'I'm really ashamed to admit that...I kinda like Tom Brady and the Patriots.' while another comments, 'If the Patriots win my hours become a force Next week I needs that!!!' There is a mix of positive and negative opinions from Hispanic groups, with one tweet highlighting, 'Patriots might as well pack their bags and go home__ #HarBowl', while another states, 'The Patriots just have little firecrackers for running backs! #Patriots.' White groups show mixed feelings, with one user stating, 'The cruise tomorrow night better have the Patriots game on' and another expressing, 'ShutUp...",
+    "supported": "partly",
+    "why": "The summary captures some negative opinions but also includes positive and mixed sentiments from different groups."
+   },
+   {
+    "sentence": "We have fought over this since middle school hahaha.",
+    "supported": "partly",
+    "why": "The tweet expresses a long-standing rivalry, but the sentence is not directly supported by multiple tweets."
+   },
+   {
+    "sentence": "Dolphins and Lakers <<<<< Patriots and Celtics.'",
+    "supported": "no",
+    "why": "The tweets do not mention Dolphins and Lakers or Patriots and Celtics."
+   }
+  ]
+ },
+ "Patriots|strongest_opinions|3|baseline": {
+  "support": 1.0,
+  "n": 5,
+  "detail": [
+   {
+    "sentence": "Opinions about the Patriots were mixed.",
+    "supported": "yes",
+    "why": "Some tweets express support while others express dislike or neutral opinions."
+   },
+   {
+    "sentence": "Some fans were strongly supportive, celebrating their team's victories and planning to wear jerseys.",
+    "supported": "yes",
+    "why": "Several tweets express support and plans to wear Patriots jerseys."
+   },
+   {
+    "sentence": "Others were critical, expressing dislike for the team and hoping they would lose.",
+    "supported": "yes",
+    "why": "Several tweets express dislike for the Patriots and hope they would lose."
+   },
+   {
+    "sentence": "A few were neutral or indifferent, focusing on upcoming games or mocking the team's defensive plays.",
+    "supported": "yes",
+    "why": "Some tweets express neutrality or indifference, and a few mock the team's defense."
+   },
+   {
+    "sentence": "There were also those who rooted for the Patriots despite personal conflicts, and a small group who were ashamed to admit liking the team.",
+    "supported": "yes",
+    "why": "The tweets show some people supporting the Patriots despite personal conflicts or admitting to liking them, e.g. tweets 18, 44, 64."
+   }
+  ]
+ },
+ "Patriots|strongest_opinions|3|agent": {
+  "support": 0.75,
+  "n": 4,
+  "detail": [
+   {
+    "sentence": "Many tweets express support and optimism for the Patriots, focusing on team unity and future games.",
+    "supported": "partly",
+    "why": "Some tweets express support and optimism, but others express dislike or are neutral."
+   },
+   {
+    "sentence": "Several tweets express mild disappointment with the New England Patriots, mentioning their poor performance and negative fan reactions.",
+    "supported": "yes",
+    "why": "Several tweets mention disappointment and negative reactions towards the Patriots."
+   },
+   {
+    "sentence": "Several tweets express disappointment and skepticism about the New England Patriots' chances of reaching the Super Bowl.",
+    "supported": "partly",
+    "why": "Some tweets express disappointment, but others are hopeful."
+   },
+   {
+    "sentence": "Several tweets mention interest in the Patriots game, with some neutral fans noting their team's performance and a few expressing no particular bias.",
+    "supported": "yes",
+    "why": "Multiple tweets mention interest in Patriots games and some express neutral opinions about their team's performance."
+   }
+  ]
+ },
+ "Patriots|strongest_opinions|3|ablation_no_plan": {
+  "support": 0.688,
+  "n": 8,
+  "detail": [
+   {
+    "sentence": "Several White and African American fans express strong dislike for the Patriots, with one threatening to cheer for the 49ers.",
+    "supported": "partly",
+    "why": "Most tweets are from Patriots fans or neutral, with a few expressing dislike. There is no clear evidence of a significant number of White or African American fans expressing strong dislike or cheering for the 49ers."
+   },
+   {
+    "sentence": "Several White and Hispanic fans are divided; some are highly supportive of the Patriots, while others wish for them to lose, reflecting the complexity of fan support.",
+    "supported": "partly",
+    "why": "The tweets show a mix of support and dislike for the Patriots, but do not specifically mention White and Hispanic fans."
+   },
+   {
+    "sentence": "Several fans anticipate the Patriots' performance, with some predicting a close game and others expressing confidence in their victory.",
+    "supported": "yes",
+    "why": "Several tweets express anticipation and predictions about the Patriots' performance."
+   },
+   {
+    "sentence": "Several fans highlight the team's strong defense, noting their well-coordinated strategy.",
+    "supported": "partly",
+    "why": "Only one tweet mentions the defense, and it's critical, not positive."
+   },
+   {
+    "sentence": "Several fans express hope for the Patriots to win, with one expressing admiration for Tom Brady.",
+    "supported": "yes",
+    "why": "Multiple tweets show hope for Patriots to win and one admires Tom Brady."
+   },
+   {
+    "sentence": "Several fans express negative sentiment toward the Patriots, suggesting they might struggle in future games.",
+    "supported": "yes",
+    "why": "Multiple tweets express negative sentiment towards the Patriots and predict difficulties for them in future games."
+   },
+   {
+    "sentence": "Several fans express positive sentiment toward the Patriots, declaring their loyalty to the team.",
+    "supported": "yes",
+    "why": "Multiple tweets express support and loyalty to the Patriots."
+   },
+   {
+    "sentence": "Several White fans maintain a neutral stance regarding the Patriots' performance, offering prayers for the team.",
+    "supported": "no",
+    "why": "The tweets do not mention any White fans or their neutral stance regarding the Patriots' performance or offering prayers for the team."
+   }
+  ]
+ },
+ "Patriots|fair_equal_weight|1|baseline": {
+  "support": 0.875,
+  "n": 4,
+  "detail": [
+   {
+    "sentence": "Opinions about the NFL Patriots team are mixed.",
+    "supported": "yes",
+    "why": "The tweets show both support and criticism for the Patriots."
+   },
+   {
+    "sentence": "Some fans are eagerly supporting and confident in their team, while others express dislike or frustration.",
+    "supported": "yes",
+    "why": "The tweets show a mix of support and dislike towards the Patriots."
+   },
+   {
+    "sentence": "A few users mention the team's strong performance, but many also criticize their defense and plays.",
+    "supported": "partly",
+    "why": "Some tweets praise the Patriots' performance, while others criticize their defense and plays."
+   },
+   {
+    "sentence": "There are both positive and negative reactions, with some fans discussing potential matchups and Super Bowl scenarios.",
+    "supported": "yes",
+    "why": "The tweets show a mix of positive and negative reactions, with some discussing potential matchups and Super Bowl scenarios."
+   }
+  ]
+ },
+ "Patriots|fair_equal_weight|1|agent": {
+  "support": 0.875,
+  "n": 4,
+  "detail": [
+   {
+    "sentence": "Many tweets express mildly positive views about the New England Patriots.",
+    "supported": "partly",
+    "why": "Some tweets express mild support, but others express dislike or are neutral."
+   },
+   {
+    "sentence": "Several tweets express mildly negative views about the New England Patriots.",
+    "supported": "yes",
+    "why": "Multiple tweets show mixed or slightly negative sentiments towards the Patriots."
+   },
+   {
+    "sentence": "Several tweets express disappointment and skepticism about the New England Patriots' prospects in the upcoming Super Bowl, with some fans wagering on their loss.",
+    "supported": "yes",
+    "why": "Several tweets express disappointment and skepticism about the Patriots, and some fans mention betting on their loss."
+   },
+   {
+    "sentence": "Several tweets express varied opinions about the New England Patriots, including neutral and indifferent views, as well as a desire to watch their games on cruise nights.",
+    "supported": "yes",
+    "why": "The tweets show a mix of opinions, including neutral and indifferent views, and mentions of wanting to watch their games on cruise nights."
+   }
+  ]
+ },
+ "Patriots|fair_equal_weight|1|ablation_no_plan": {
+  "support": 1.0,
+  "n": 1,
+  "detail": [
+   {
+    "sentence": "Several tweets express strong dislike for the Patriots, while others look forward to the game. (Tweets A few fans hope the Patriots will lose, while others support the team. (Tweets Several fans are eager for the Patriots to succeed in the playoffs, while others root for different teams. (Tweets Fans admire the Patriots' performance but also criticize them for inconsistency. (Tweets Several fans express disappointment and frustration with the Patriots' lack of effort, while others support the team. (Tweets Some fans strongly support the Patriots, while others are indifferent or rooting for other teams. (Tweets",
+    "supported": "yes",
+    "why": "The tweets show a mix of dislike, support, and indifference towards the Patriots."
+   }
+  ]
+ },
+ "Patriots|fair_equal_weight|2|baseline": {
+  "support": 1.0,
+  "n": 4,
+  "detail": [
+   {
+    "sentence": "Opinions on the NFL Patriots team are mixed.",
+    "supported": "yes",
+    "why": "The tweets show both support and criticism for the Patriots."
+   },
+   {
+    "sentence": "Fans express both strong support and dislike, with some planning to celebrate wins and others hoping for losses.",
+    "supported": "yes",
+    "why": "The tweets show a mix of support and dislike for the Patriots, with some fans planning to celebrate wins and others hoping for losses."
+   },
+   {
+    "sentence": "The team's performance is noted positively and negatively, with some anticipating a tough game against the Ravens.",
+    "supported": "yes",
+    "why": "Both positive and negative sentiments towards the Patriots are present, and some tweets anticipate a challenging game against the Ravens."
+   },
+   {
+    "sentence": "There's a mix of neutral tweets focusing on the upcoming game or season, showing a varied fanbase with diverse sentiments.",
+    "supported": "yes",
+    "why": "The tweets show a range of sentiments, including neutral ones focused on the upcoming game or season."
+   }
+  ]
+ },
+ "Patriots|fair_equal_weight|2|agent": {
+  "support": 0.875,
+  "n": 4,
+  "detail": [
+   {
+    "sentence": "Many tweets reflect positive support for the Patriots' current performance and anticipation for future games.",
+    "supported": "partly",
+    "why": "While some tweets express positive support and anticipation, others show mixed feelings or dislike."
+   },
+   {
+    "sentence": "Several tweets express mildly negative views about the New England Patriots.",
+    "supported": "yes",
+    "why": "Multiple tweets show mixed or slightly negative sentiments towards the Patriots."
+   },
+   {
+    "sentence": "Several tweets express mildly negative views about recent game results of the New England Patriots.",
+    "supported": "yes",
+    "why": "Multiple tweets mention disappointment or negative outcomes for the Patriots."
+   },
+   {
+    "sentence": "Several tweets mention the New England Patriots without strong sentiment, with some expressing neutral views or a preference for other teams.",
+    "supported": "yes",
+    "why": "Multiple tweets mention the Patriots without strong sentiment."
+   }
+  ]
+ },
+ "Patriots|fair_equal_weight|2|ablation_no_plan": {
+  "support": 0.714,
+  "n": 7,
+  "detail": [
+   {
+    "sentence": "Several tweets express negative sentiments towards the New England Patriots, with fans criticizing the team's recent performance and expressing frustration.",
+    "supported": "yes",
+    "why": "Multiple tweets criticize the Patriots' performance and express negative sentiments."
+   },
+   {
+    "sentence": "For example, 'When Patriots not scoring they fans be like this -__- *bites fingers' and 'I need to get more people in this #ColoredPatriots hash tag.....",
+    "supported": "yes",
+    "why": "The tweets directly quote and reference the given sentence."
+   },
+   {
+    "sentence": "Maybe tomorrow.'  Several tweets express negative sentiments towards the New England Patriots, with fans expressing disappointment and disapproval.",
+    "supported": "partly",
+    "why": "Some tweets express negative sentiments, but not all are clearly disappointed or disapproving."
+   },
+   {
+    "sentence": "For instance, 'Patriots might as well pack their bags and go home__ #HarBowl' and 'I want the bi teams to be knocked out so my Patriots have an easy ride.'  Several tweets express neutral sentiments towards the New England Patriots, with fans showing indifference or mixed feelings.",
+    "supported": "partly",
+    "why": "The sentence partly matches the tweets, as some tweets do express indifference or mixed feelings towards the Patriots, but the overall sentiment is not neutral as the sentence suggests."
+   },
+   {
+    "sentence": "For example, 'I just want the Patriots to lose.\u00d3 Come on nah my G' and 'I cannot wait to watch the game Sunday.",
+    "supported": "yes",
+    "why": "Both sentences are directly supported by the tweets."
+   },
+   {
+    "sentence": "I strongly dislike the Patriots.'  Several tweets express positive sentiments towards the New England Patriots, with fans eager to watch upcoming games and celebrating the team's recent victories.",
+    "supported": "no",
+    "why": "The sentence is contradicted by the tweets."
+   },
+   {
+    "sentence": "For example, 'Several tweets express positive sentiments towards the New England Patriots, with fans eager to watch upcoming games and celebrating the team's recent victories.'",
+    "supported": "yes",
+    "why": "Multiple tweets express positive sentiments towards the Patriots and eagerness to watch their games."
+   }
+  ]
+ },
+ "Patriots|fair_equal_weight|3|baseline": {
+  "support": 0.875,
+  "n": 4,
+  "detail": [
+   {
+    "sentence": "Opinions about the Patriots are mixed, with fans expressing both strong support and intense dislike.",
+    "supported": "yes",
+    "why": "Both support and dislike are evident in the tweets."
+   },
+   {
+    "sentence": "Some fans are eagerly looking forward to games, while others wish them defeat.",
+    "supported": "yes",
+    "why": "Both positive and negative sentiments towards the Patriots are expressed in the tweets."
+   },
+   {
+    "sentence": "The team's performance and strategies are frequently debated, with praise for their offensive prowess and criticism for defensive lapses.",
+    "supported": "partly",
+    "why": "Some tweets praise the Patriots' offense while criticizing their defense, but the debate is not as frequent or detailed as described."
+   },
+   {
+    "sentence": "Overall, the tweets reflect a passionate fanbase, though there's a notable divide in sentiment.",
+    "supported": "yes",
+    "why": "The tweets show a mix of strong support and criticism, indicating a passionate but divided fanbase."
+   }
+  ]
+ },
+ "Patriots|fair_equal_weight|3|agent": {
+  "support": 0.75,
+  "n": 4,
+  "detail": [
+   {
+    "sentence": "Many tweets express mildly positive views about the New England Patriots.",
+    "supported": "partly",
+    "why": "Some tweets express mild support, but others express dislike or are neutral."
+   },
+   {
+    "sentence": "Several tweets express mildly negative views about the New England Patriots.",
+    "supported": "yes",
+    "why": "Multiple tweets show mixed or slightly negative sentiments towards the Patriots."
+   },
+   {
+    "sentence": "Several tweets express disappointment that the Patriots might face difficult opponents and question their chances in the upcoming Super Bowl.",
+    "supported": "partly",
+    "why": "Some tweets express disappointment or doubt about the Patriots' chances, but not all tweets indicate this sentiment."
+   },
+   {
+    "sentence": "Several tweets mention interest in Patriots games, whether for support or just to see the home team, with some noting a perceived jinx when watching them.",
+    "supported": "yes",
+    "why": "Multiple tweets express interest in Patriots games and mention a perceived jinx when watching them."
+   }
+  ]
+ },
+ "Patriots|fair_equal_weight|3|ablation_no_plan": {
+  "support": 0.438,
+  "n": 8,
+  "detail": [
+   {
+    "sentence": "Several tweets express mixed feelings towards the New England Patriots, with some fans looking forward to their upcoming games and others hoping they lose.",
+    "supported": "yes",
+    "why": "The tweets show both anticipation and negative sentiments towards the Patriots."
+   },
+   {
+    "sentence": "African American fans appreciate the Patriots' performance and resilience, while others are frustrated by their inconsistency.",
+    "supported": "partly",
+    "why": "The tweets show a mix of support and frustration, but do not specifically mention African American fans."
+   },
+   {
+    "sentence": "White fans show a range of opinions, with some supporting the Patriots and others hoping they lose, highlighting the team's rivalry and division within this demographic.",
+    "supported": "partly",
+    "why": "Some tweets express support for the Patriots, while others hope they lose, indicating a range of opinions among white fans."
+   },
+   {
+    "sentence": "Hispanic fans express a mix of support and criticism, with some eagerly watching games and others expressing disappointment in the team's performance.",
+    "supported": "no",
+    "why": "The tweets do not mention Hispanic fans or their sentiments."
+   },
+   {
+    "sentence": "Negative sentiments among African American fans are evident, with frustration over inconsistent play and perceived bandwagoning.",
+    "supported": "partly",
+    "why": "The tweets show some frustration and negative sentiments, but there is no clear indication that these sentiments are specifically from African American fans or that they are primarily due to inconsistent play and perceived bandwagoning."
+   },
+   {
+    "sentence": "Hispanic fans show disappointment in the Patriots, feeling that their games are often unexciting or lackluster.",
+    "supported": "no",
+    "why": "No tweets express disappointment from Hispanic fans or mention the ethnicity of fans."
+   },
+   {
+    "sentence": "White fans express strong dislike for the Patriots, with some hoping they lose and others criticizing the team's performance.",
+    "supported": "partly",
+    "why": "Some tweets express dislike for the Patriots, but not all are white fans, and the sentiment is mixed."
+   },
+   {
+    "sentence": "Positive sentiments among White fans include appreciation for the team's rivalry and long-standing support, despite occasional disappointment.",
+    "supported": "partly",
+    "why": "Some tweets express positive sentiments and support for the Patriots, but others show disappointment or hatred, making it partly supported."
+   }
+  ]
+ },
+ "Seahawks|strongest_opinions|1|baseline": {
+  "support": 0.75,
+  "n": 4,
+  "detail": [
+   {
+    "sentence": "The tweets show strong support and optimism for the Seahawks, with many fans predicting a successful season and Super Bowl run.",
+    "supported": "yes",
+    "why": "Many tweets express support and optimism for the Seahawks, including predictions of a successful season and Super Bowl run."
+   },
+   {
+    "sentence": "Some express frustration with the team's performance, especially during losses.",
+    "supported": "yes",
+    "why": "Several tweets mention frustration with the Seahawks' performance, particularly after losses."
+   },
+   {
+    "sentence": "There is also a notable contrast in opinions between Seahawks fans and those supporting other teams.",
+    "supported": "partly",
+    "why": "Some tweets show support for the Seahawks, while others express opposition or indifference, indicating a contrast in opinions."
+   },
+   {
+    "sentence": "A few mention the Seahawks' defensive strength, while others highlight the quarterback's performance and the team's overall potential.",
+    "supported": "partly",
+    "why": "Some tweets mention defensive strength and the quarterback's performance, but not many explicitly highlight the team's overall potential."
+   }
+  ]
+ },
+ "Seahawks|strongest_opinions|1|agent": {
+  "support": 0.9,
+  "n": 5,
+  "detail": [
+   {
+    "sentence": "Many tweets express mildly positive views about the Seattle Seahawks.",
+    "supported": "partly",
+    "why": "Some tweets express positive views, but others are neutral or critical."
+   },
+   {
+    "sentence": "Several tweets suggest strong support for the Seahawks, with many fans anticipating a win against the Falcons and looking forward to the team's performance.",
+    "supported": "yes",
+    "why": "Multiple tweets express support for the Seahawks and anticipation of their success, especially against the Falcons."
+   },
+   {
+    "sentence": "Several tweets express mildly negative views about the Seattle Seahawks.",
+    "supported": "yes",
+    "why": "Some tweets criticize or express disappointment with the Seahawks, such as tweets 15, 30, 45, and 85."
+   },
+   {
+    "sentence": "Some tweets suggest disappointment with the Seahawks' recent performance and losses.",
+    "supported": "yes",
+    "why": "Several tweets express disappointment or criticism of the Seahawks' performance, such as tweets 15, 30, and 45."
+   },
+   {
+    "sentence": "Some tweets mention the Seattle Seahawks without taking a clear side.",
+    "supported": "yes",
+    "why": "Several tweets mention the Seahawks without expressing clear support or criticism."
+   }
+  ]
+ },
+ "Seahawks|strongest_opinions|1|ablation_no_plan": {
+  "support": 0.917,
+  "n": 6,
+  "detail": [
+   {
+    "sentence": "Several tweets praise the Seattle Seahawks' defensive strength.",
+    "supported": "yes",
+    "why": "Multiple tweets mention the Seahawks' defensive strength, such as tweets 3, 12, 39, and 58."
+   },
+   {
+    "sentence": "For example, 'The Seahawks are scary!!' and 'The Seahawks defensive backs tuff might be the best in the NFL.'  Several tweets express optimism about the Seahawks' potential to win the Super Bowl.",
+    "supported": "yes",
+    "why": "Multiple tweets express optimism about the Seahawks' potential to win the Super Bowl."
+   },
+   {
+    "sentence": "For example, 'My dream Super Bowl would be Seahawks vs Broncos #predictions' and 'I almost wanna root for our NFC south foe solely because the Seahawks are feeling themselves entirely too much.'  Other tweets are skeptical about the Seahawks' performance.",
+    "supported": "partly",
+    "why": "some tweets express support while others are skeptical"
+   },
+   {
+    "sentence": "For example, 'I expected more from the Seahawks.",
+    "supported": "yes",
+    "why": "The tweet directly supports the sentence."
+   },
+   {
+    "sentence": "It doesn't look like they want it.' and 'The Seahawks have mad some stupid calls and mistakes so far, they've been awful!'  Several tweets criticize the Seahawks, highlighting their poor performance.",
+    "supported": "yes",
+    "why": "Multiple tweets express criticism of the Seahawks' performance."
+   },
+   {
+    "sentence": "For example, 'Damn man the Seahawks have to lose Sunday, so we can be tied with them.' and 'I didn't watch the game cuz I was at work but I know they won so Seahawks 9-1...",
+    "supported": "yes",
+    "why": "Both tweets directly express opinions about the Seahawks' performance and the desire for them to lose or win."
+   }
+  ]
+ },
+ "Seahawks|strongest_opinions|2|baseline": {
+  "support": 0.9,
+  "n": 5,
+  "detail": [
+   {
+    "sentence": "The tweets show strong support and some criticism for the Seahawks.",
+    "supported": "yes",
+    "why": "Many tweets express support for the Seahawks, while a few show criticism."
+   },
+   {
+    "sentence": "Many fans are excited about potential playoff matchups and Super Bowl possibilities.",
+    "supported": "yes",
+    "why": "Several tweets express excitement about potential playoff matchups and the Super Bowl, such as tweets 20, 40, 56, and 75."
+   },
+   {
+    "sentence": "Some highlight the team's defensive strength and quarterback performance.",
+    "supported": "yes",
+    "why": "Several tweets mention the Seahawks' defensive strength and quarterback performance."
+   },
+   {
+    "sentence": "However, there are also opinions that the team has been inconsistent, especially away from home.",
+    "supported": "yes",
+    "why": "Tweet 30 and 33 express that the Seahawks have been inconsistent, with 30 specifically mentioning inconsistency away from home."
+   },
+   {
+    "sentence": "Overall, the tone among supporters is one of fervent belief in the team's ability to win.",
+    "supported": "partly",
+    "why": "Some tweets express strong belief, but others are more skeptical or critical."
+   }
+  ]
+ },
+ "Seahawks|strongest_opinions|2|agent": {
+  "support": 0.9,
+  "n": 5,
+  "detail": [
+   {
+    "sentence": "Many tweets express mildly positive views about the Seattle Seahawks.",
+    "supported": "partly",
+    "why": "Some tweets express positive views, but others are neutral or critical."
+   },
+   {
+    "sentence": "Several tweets indicate the Seahawks are performing well, with some fans anticipating a strong performance against the Falcons.",
+    "supported": "yes",
+    "why": "Multiple tweets express support for the Seahawks and anticipation of a good performance, especially against the Falcons."
+   },
+   {
+    "sentence": "Several tweets express mildly negative views about the Seattle Seahawks.",
+    "supported": "yes",
+    "why": "Some tweets criticize or express disappointment with the Seahawks, such as tweets 15, 30, 45, and 85."
+   },
+   {
+    "sentence": "Some tweets express disappointment with the Seahawks' recent losses and suggest they underperformed in their games.",
+    "supported": "yes",
+    "why": "Several tweets mention disappointment and underperformance, e.g. tweets 15, 30, 45, 55."
+   },
+   {
+    "sentence": "Some tweets mention the Seattle Seahawks without taking a clear side.",
+    "supported": "yes",
+    "why": "Several tweets mention the Seahawks without expressing clear support or criticism."
+   }
+  ]
+ },
+ "Seahawks|strongest_opinions|2|ablation_no_plan": {
+  "support": 0.938,
+  "n": 8,
+  "detail": [
+   {
+    "sentence": "Several tweets praise the Seahawks' defensive backs, noting their effectiveness.",
+    "supported": "yes",
+    "why": "Multiple tweets mention the Seahawks' defensive backs as being effective."
+   },
+   {
+    "sentence": "Several tweets express positive sentiment towards the Seahawks, indicating support for the team.",
+    "supported": "yes",
+    "why": "Many tweets show support or positive sentiment towards the Seahawks."
+   },
+   {
+    "sentence": "Several tweets express negative sentiment towards the Seahawks, highlighting their recent struggles.",
+    "supported": "yes",
+    "why": "Several tweets criticize the Seahawks' performance and recent games."
+   },
+   {
+    "sentence": "Several tweets express mixed feelings about the Seahawks, with some optimistic about their playoff prospects and others more critical.",
+    "supported": "yes",
+    "why": "The tweets show both optimism and criticism towards the Seahawks."
+   },
+   {
+    "sentence": "Whites express a mix of support and criticism for the Seahawks.",
+    "supported": "partly",
+    "why": "Some tweets express support for the Seahawks, but others criticize them."
+   },
+   {
+    "sentence": "Some are hopeful, while others are critical.",
+    "supported": "yes",
+    "why": "Both hopeful and critical sentiments are expressed in the tweets."
+   },
+   {
+    "sentence": "Several tweets express frustration with the Seahawks, focusing on their recent losses and poor performance.",
+    "supported": "yes",
+    "why": "Several tweets mention frustration with the Seahawks, such as tweets 1, 15, 30, and 85."
+   },
+   {
+    "sentence": "Some tweets criticize the Seahawks for their recent losses and poor performance.",
+    "supported": "yes",
+    "why": "Several tweets mention the Seahawks' poor performance and losses, such as tweets 15, 30, and 45."
+   }
+  ]
+ },
+ "Seahawks|strongest_opinions|3|baseline": {
+  "support": 0.625,
+  "n": 4,
+  "detail": [
+   {
+    "sentence": "Strong opinions in the tweets overwhelmingly favor the Seahawks, praising their defensive strength and offensive prowess.",
+    "supported": "partly",
+    "why": "While many tweets express support for the Seahawks, some also criticize their performance."
+   },
+   {
+    "sentence": "Some tweets express disappointment in their recent performance, while others predict a dominating season and Super Bowl victory.",
+    "supported": "yes",
+    "why": "Some tweets criticize recent performance while others express optimism for the future."
+   },
+   {
+    "sentence": "There is a noticeable bias against the Falcons, with many hoping the Seahawks will defeat them.",
+    "supported": "partly",
+    "why": "Some tweets express hope for Seahawks to defeat Falcons, but not a majority."
+   },
+   {
+    "sentence": "A few tweets also highlight the Seahawks' influence on gaming and their cultural impact among fans.",
+    "supported": "partly",
+    "why": "Some tweets mention the Seahawks' influence on gaming and culture, but not a significant number to consider 'a few'."
+   }
+  ]
+ },
+ "Seahawks|strongest_opinions|3|agent": {
+  "support": 0.9,
+  "n": 5,
+  "detail": [
+   {
+    "sentence": "Many tweets express positive anticipation for the Seahawks' upcoming season, highlighting their defense and quarterback performance.",
+    "supported": "partly",
+    "why": "Some tweets express positive anticipation and highlight the defense and quarterback, but not all."
+   },
+   {
+    "sentence": "Several tweets express optimism about the Seahawks' performance, with many believing they will secure victories against their opponents this season.",
+    "supported": "yes",
+    "why": "Multiple tweets express optimism about the Seahawks' performance and future victories."
+   },
+   {
+    "sentence": "Several tweets mention the Seahawks' defensive issues and lackluster performance, expressing mild disappointment.",
+    "supported": "yes",
+    "why": "Multiple tweets criticize the Seahawks' performance and defense, indicating mild disappointment."
+   },
+   {
+    "sentence": "Some tweets express mildly negative views about recent game results of the Seattle Seahawks.",
+    "supported": "yes",
+    "why": "Several tweets mention the Seahawks losing or performing poorly in recent games."
+   },
+   {
+    "sentence": "Some tweets mention the Seattle Seahawks without taking a clear side.",
+    "supported": "yes",
+    "why": "Several tweets mention the Seahawks without expressing clear support or criticism."
+   }
+  ]
+ },
+ "Seahawks|strongest_opinions|3|ablation_no_plan": {
+  "support": 0.7,
+  "n": 5,
+  "detail": [
+   {
+    "sentence": "Several tweets predict the Seahawks will struggle against the 49ers, noting their past difficulties.",
+    "supported": "partly",
+    "why": "Some tweets predict the Seahawks will struggle, but others are more positive or neutral."
+   },
+   {
+    "sentence": "Some tweets express negative sentiments about the Seahawks, citing their recent poor performance.",
+    "supported": "yes",
+    "why": "Several tweets mention the Seahawks' poor performance and negative sentiments."
+   },
+   {
+    "sentence": "White groups show mixed feelings about the Seahawks, with some hoping they will win the Super Bowl and others frustrated by their recent performance.",
+    "supported": "partly",
+    "why": "Some tweets express hope for Seahawks' success, while others are frustrated with their performance."
+   },
+   {
+    "sentence": "African American groups are generally positive about the Seahawks, with many expressing strong support.",
+    "supported": "partly",
+    "why": "The tweets show some support for the Seahawks, but there is no clear indication that it is specifically from African American groups."
+   },
+   {
+    "sentence": "Several tweets criticize the Seahawks for their recent poor performance, citing their struggles.",
+    "supported": "yes",
+    "why": "Several tweets mention the Seahawks' poor performance and struggles."
+   }
+  ]
+ },
+ "Seahawks|fair_equal_weight|1|baseline": {
+  "support": 1.0,
+  "n": 4,
+  "detail": [
+   {
+    "sentence": "Opinions on the Seahawks vary, with some fans praising their defensive strength and performance, while others criticize their recent losses and overall team execution.",
+    "supported": "yes",
+    "why": "tweets express both praise for the Seahawks' defense and criticism of their recent performance and losses."
+   },
+   {
+    "sentence": "Positive views include hopes for a strong playoff run and admiration for their play, particularly in close games.",
+    "supported": "yes",
+    "why": "Many tweets express positive views and hope for the Seahawks' success in the playoffs and in close games."
+   },
+   {
+    "sentence": "Negative sentiments highlight perceived mistakes and underperformance, especially in crucial matches.",
+    "supported": "yes",
+    "why": "Several tweets mention perceived mistakes and underperformance, such as tweets 15, 30, and 48."
+   },
+   {
+    "sentence": "Neutral comments focus on upcoming games and the team's prospects, with mixed expectations for future success.",
+    "supported": "yes",
+    "why": "Many tweets discuss future games and the team's prospects with mixed expectations."
+   }
+  ]
+ },
+ "Seahawks|fair_equal_weight|1|agent": {
+  "support": 1.0,
+  "n": 5,
+  "detail": [
+   {
+    "sentence": "Many tweets express enthusiasm and support for the Seahawks, noting their potential strength next season while acknowledging it's pre-season.",
+    "supported": "yes",
+    "why": "Multiple tweets express enthusiasm and support for the Seahawks, and a few mention their potential strength next season."
+   },
+   {
+    "sentence": "Several tweets show positive anticipation for the Seahawks, with fans expecting a strong performance.",
+    "supported": "yes",
+    "why": "Many tweets express positive expectations for the Seahawks, such as tweets 24, 40, 51, 59, 69, and 88."
+   },
+   {
+    "sentence": "Several tweets express mildly negative views about the Seattle Seahawks.",
+    "supported": "yes",
+    "why": "Some tweets criticize or express disappointment with the Seahawks, such as tweets 15, 30, 45, and 85."
+   },
+   {
+    "sentence": "Some tweets express disappointment with the Seahawks' recent losses and criticize their performance.",
+    "supported": "yes",
+    "why": "Several tweets mention disappointment and criticize the Seahawks' performance."
+   },
+   {
+    "sentence": "Some tweets mention the Seattle Seahawks without taking a clear side.",
+    "supported": "yes",
+    "why": "Several tweets mention the Seahawks without expressing clear support or criticism."
+   }
+  ]
+ },
+ "Seahawks|fair_equal_weight|1|ablation_no_plan": {
+  "support": 1.0,
+  "n": 1,
+  "detail": [
+   {
+    "sentence": "Several tweets praise the Seahawks' defense and predict their success in the upcoming season. (#2, #9, #10, #12, #13) Several tweets criticize the Seahawks for their inconsistent performance and lack of improvement. (#1, #6, #30, #43) Several tweets express skepticism and disappointment regarding the Seahawks. (#11, #32, #41, #45, #52, #53) Several tweets express disappointment and criticism towards the Seahawks. (#14, #15, #28, #42, #49, #54)",
+    "supported": "yes",
+    "why": "The tweets clearly contain praise and predictions for the Seahawks' defense and success, as well as criticism and skepticism about their performance and consistency."
+   }
+  ]
+ },
+ "Seahawks|fair_equal_weight|2|baseline": {
+  "support": 1.0,
+  "n": 3,
+  "detail": [
+   {
+    "sentence": "Opinions on the Seahawks are mixed, with fans praising their defensive strength and quarterback performance, while others criticize their recent losses and overall team execution.",
+    "supported": "yes",
+    "why": "The tweets show both praise for the Seahawks' defense and quarterback, as well as criticism for their recent losses and overall performance."
+   },
+   {
+    "sentence": "Positive sentiments are balanced by critical views, reflecting both hope for future success and skepticism of their current form.",
+    "supported": "yes",
+    "why": "The tweets show both positive support and critical views of the Seahawks."
+   },
+   {
+    "sentence": "Support for the team is strong, but so are calls for improvement, especially on the road.",
+    "supported": "yes",
+    "why": "The tweets show both support (e.g. #10, #24, #40) and calls for improvement (e.g. #15, #30, #32)."
+   }
+  ]
+ },
+ "Seahawks|fair_equal_weight|2|agent": {
+  "support": 1.0,
+  "n": 5,
+  "detail": [
+   {
+    "sentence": "Many tweets express excitement and support for the Seahawks, noting their strong defense and upcoming potential, while acknowledging it's pre-season.",
+    "supported": "yes",
+    "why": "Multiple tweets express excitement and support for the Seahawks, and several mention their strong defense and potential."
+   },
+   {
+    "sentence": "Several tweets express confidence in the Seahawks' performance, with some noting their strong season and upcoming match against the Falcons.",
+    "supported": "yes",
+    "why": "Multiple tweets express confidence in the Seahawks and mention their strong season and upcoming game against the Falcons."
+   },
+   {
+    "sentence": "Several tweets express mildly negative views about the Seattle Seahawks.",
+    "supported": "yes",
+    "why": "Some tweets criticize or express disappointment with the Seahawks, such as tweets 15, 30, 45, and 85."
+   },
+   {
+    "sentence": "Some tweets express disappointment with the Seahawks' recent losses and suggest their performance has declined.",
+    "supported": "yes",
+    "why": "Several tweets mention disappointment with the Seahawks' recent performance and losses."
+   },
+   {
+    "sentence": "Some tweets mention the Seattle Seahawks without taking a clear side.",
+    "supported": "yes",
+    "why": "Several tweets mention the Seahawks without expressing clear support or criticism."
+   }
+  ]
+ },
+ "Seahawks|fair_equal_weight|2|ablation_no_plan": {
+  "support": 1.0,
+  "n": 1,
+  "detail": [
+   {
+    "sentence": "Several tweets express support for the Seahawks, praising their defense and overall performance. (#5, #8, #19, #21, #23, #31) Several tweets express positive sentiment towards the Seahawks, hoping for a strong performance. (#2, #9, #10, #12, #13, #17) Several tweets express positive sentiment towards the Seahawks, highlighting their strong defense and upcoming games. (#7, #18, #20, #24, #25) Several tweets express neutral sentiment towards the Seahawks, discussing their performance without strong positive or negative views. (#46, #64, #81, #84, #86, #90) Several tweets express concern about the Seahawks' consistency, noting their strong defense but questioning their performance in critical games. (#3, #6, #30, #85, #89) Several tweets express mixed feelings among fans, with some supporting the Seahawks and others expressing doubts about their performance. (#26, #32, #38, #41, #51, #55, #58, #68, #83, #88) Several tweets express negative sentiment towards the Seahawks, citing their inconsistent performance and questioning their ability to win critical games. (#14, #15, #16, #28, #42, #49, #54) Several tweets express skepticism about the Seahawks' future success, with some fans reminding them of past performances. (#27, #36, #40, #45, #52, #61, #66, #91)",
+    "supported": "yes",
+    "why": "The tweets clearly show support, positive sentiment, and mixed feelings towards the Seahawks."
+   }
+  ]
+ },
+ "Seahawks|fair_equal_weight|3|baseline": {
+  "support": 0.875,
+  "n": 4,
+  "detail": [
+   {
+    "sentence": "Opinions about the Seattle Seahawks are mixed, with fans expressing both support and criticism.",
+    "supported": "yes",
+    "why": "Both support and criticism are present in the tweets."
+   },
+   {
+    "sentence": "Positive views include admiration for the team's defense and quarterback performance, with some hoping they can win the Super Bowl.",
+    "supported": "yes",
+    "why": "Multiple tweets express admiration for the Seahawks' defense and quarterback, and several mention hoping they win the Super Bowl."
+   },
+   {
+    "sentence": "Negative opinions highlight mistakes and poor execution, particularly in recent games.",
+    "supported": "yes",
+    "why": "Several tweets mention mistakes, poor execution, and underperformance, such as tweets 15, 30, and 32."
+   },
+   {
+    "sentence": "Neutral perspectives focus on upcoming matches and the team's potential in future seasons.",
+    "supported": "partly",
+    "why": "Some tweets discuss upcoming matches and future potential, but many express opinions or support for the team, so it's not entirely neutral."
+   }
+  ]
+ },
+ "Seahawks|fair_equal_weight|3|agent": {
+  "support": 0.9,
+  "n": 5,
+  "detail": [
+   {
+    "sentence": "Many tweets express optimism about the Seahawks' potential next season, with some highlighting their strong defense and quarterback.",
+    "supported": "partly",
+    "why": "Some tweets express optimism and highlight the defense and quarterback, but not a majority."
+   },
+   {
+    "sentence": "Several tweets express mildly positive views about recent game results of the Seattle Seahawks.",
+    "supported": "yes",
+    "why": "Several tweets mention positive outcomes or support for the Seahawks' recent games."
+   },
+   {
+    "sentence": "Several tweets express mildly negative views about the Seattle Seahawks.",
+    "supported": "yes",
+    "why": "Some tweets criticize or express disappointment with the Seahawks, such as tweets 15, 30, 45, and 85."
+   },
+   {
+    "sentence": "Some tweets express disappointment with the Seahawks' recent performance and suggest they might underperform to avoid falling behind.",
+    "supported": "yes",
+    "why": "Several tweets express disappointment and suggest the Seahawks might underperform, such as tweets 15, 30, and 85."
+   },
+   {
+    "sentence": "Some tweets mention the Seattle Seahawks without taking a clear side.",
+    "supported": "yes",
+    "why": "Several tweets mention the Seahawks without expressing clear support or criticism."
+   }
+  ]
+ },
+ "Seahawks|fair_equal_weight|3|ablation_no_plan": {
+  "support": 0.5,
+  "n": 6,
+  "detail": [
+   {
+    "sentence": "Several tweets express negative sentiments about the Seattle Seahawks, such as 'Seahawks lost today and cowboys fans talk shit?",
+    "supported": "yes",
+    "why": "The tweet directly supports the sentence."
+   },
+   {
+    "sentence": "Last time I checked you're what 2-2?",
+    "supported": "no",
+    "why": "The tweet does not support the sentence as it is a criticism of the Cowboys' record, not a statement about their record."
+   },
+   {
+    "sentence": "You guys need to stfu and go watch your team lose again' and 'Damn man the Seahawks have to lose Sunday, so we can be tied with them.'  Several tweets praise the Seattle Seahawks, such as 'Fucking Seahawks are gonna do it!!",
+    "supported": "partly",
+    "why": "The sentence is partly supported as it includes a tweet that criticizes the Seahawks, but there are also tweets that praise them."
+   },
+   {
+    "sentence": "Wilson's a boss ;D' and 'I want to take a picture with everyone in Seahawks Gear.",
+    "supported": "partly",
+    "why": "Only one tweet supports 'Wilson's a boss ;D', while 'I want to take a picture with everyone in Seahawks Gear' is supported by one tweet."
+   },
+   {
+    "sentence": "Favorite this.'  Some tweets express mixed sentiments about the Seattle Seahawks, such as 'Seahawks are my favorite to win the Superbowl.",
+    "supported": "partly",
+    "why": "Some tweets express strong support, but others are mixed or critical."
+   },
+   {
+    "sentence": "What a game.' and 'I am rooting for the Seattle Seahawks. #flockout.'  Several tweets are more critical about the Seattle Seahawks, such as 'Seahawks have mad some stupid calls and mistakes so far' and 'I almost wanna root for our NFC south foe solely because the Seahawks are feeling themselves entirely too much.'",
+    "supported": "partly",
+    "why": "Some tweets express support while others are critical."
+   }
+  ]
+ }
+}
