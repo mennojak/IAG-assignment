@@ -9,5 +9,5 @@ numpy
 scikit-learn
 rouge-score
 # optional metrics:
-# bert-score
+bert-score
 # deepeval
