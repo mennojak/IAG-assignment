@@ -12,7 +12,7 @@
     ]
   },
   {
-    "claim": "Some tweets suggest the San Francisco 49ers have been performing well, with multiple teams losing to them recently.",
+    "claim": "Some tweets suggest the San Francisco 49ers have been performing well, with multiple teams, including the Ravens, expecting them to win.",
     "team": "SanFrancisco49ers",
     "tweet_ids": [
       18,
@@ -48,7 +48,7 @@
     ]
   },
   {
-    "claim": "Several tweets express mixed opinions about the San Francisco 49ers, mentioning their potential for a good season and the impact of Ray Lewis, while also showing indifference towards other teams.",
+    "claim": "Several tweets mention the San Francisco 49ers without taking a clear side.",
     "team": "SanFrancisco49ers",
     "tweet_ids": [
       19,
@@ -60,30 +60,19 @@
     ]
   },
   {
-    "claim": "Several tweets express mildly positive views about the New England Patriots.",
+    "claim": "Many tweets express mildly positive views about the New England Patriots.",
     "team": "NewEnglandPatriots",
     "tweet_ids": [
       94,
       97,
       98,
-      119,
-      123,
-      125
-    ]
-  },
-  {
-    "claim": "Some tweets express mildly positive views about recent game results of the New England Patriots.",
-    "team": "NewEnglandPatriots",
-    "tweet_ids": [
-      147,
-      175,
       113,
       91,
       101
     ]
   },
   {
-    "claim": "Several tweets express mild disappointment with the New England Patriots, mentioning their defense and past experiences with the team.",
+    "claim": "Many tweets express mild disappointment with the New England Patriots, mentioning their defense and past experiences with the team.",
     "team": "NewEnglandPatriots",
     "tweet_ids": [
       92,
@@ -95,7 +84,7 @@
     ]
   },
   {
-    "claim": "Several tweets express disappointment with the Patriots, hoping they will not advance to the Super Bowl and suggesting pleasure at their potential defeat.",
+    "claim": "Several tweets express disappointment with the Patriots' performance, noting their loss in the AFC Championship Game and suggesting they may face tough competition in the upcoming Super Bowl.",
     "team": "NewEnglandPatriots",
     "tweet_ids": [
       96,
@@ -103,34 +92,35 @@
       109,
       114,
       107,
-      111
+      124
     ]
   },
   {
-    "claim": "Some tweets mention the Patriots without strong sentiment, noting they are part of game lineups but not a primary focus for all viewers.",
+    "claim": "Some tweets express mixed feelings about the Patriots, with some rooting for them and others showing indifference.",
     "team": "NewEnglandPatriots",
     "tweet_ids": [
       105,
       137,
       151,
-      152,
-      103
+      162,
+      103,
+      140
     ]
   },
   {
-    "claim": "Many tweets show positive anticipation for the Seahawks, praising their defense and quarterback.",
+    "claim": "Many tweets express optimism about the Seattle Seahawks' defense and quarterback, predicting a strong season and a potential Super Bowl matchup.",
     "team": "SeattleSeahawks",
     "tweet_ids": [
       189,
       190,
+      183,
       185,
-      188,
       187,
       200
     ]
   },
   {
-    "claim": "Several tweets suggest that fans are optimistic about the Seahawks' performance, with many noting their strong season record.",
+    "claim": "Several tweets express optimism about the Seahawks' performance, with many noting their strong season record.",
     "team": "SeattleSeahawks",
     "tweet_ids": [
       182,
@@ -147,8 +137,8 @@
     "tweet_ids": [
       221,
       225,
-      183,
       210,
+      223,
       184,
       194
     ]
