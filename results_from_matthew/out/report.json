@@ -1,0 +1,945 @@
+[
+  {
+    "iteration": 1,
+    "score": 15,
+    "metrics": {
+      "n_claims": 15,
+      "group_counts": {
+        "AfricanAmerican": 15,
+        "Hispanic": 15,
+        "White": 15
+      },
+      "group_shares": {
+        "AfricanAmerican": 0.333,
+        "Hispanic": 0.333,
+        "White": 0.333
+      },
+      "group_balance": 1.0,
+      "single_tweet_detail_claims": 5,
+      "report1": {
+        "Q1_Q2_facts_checked": 0,
+        "Q3_facts_checked": 0,
+        "Q5_facts_checked": 0,
+        "Q6_facts_checked": 0,
+        "flagged": []
+      },
+      "q4_summary": {
+        "49ersTopic": {
+          "Hispanic": 10,
+          "AfricanAmerican": 10,
+          "White": 10
+        },
+        "PatriotsTopic": {
+          "Hispanic": 9,
+          "AfricanAmerican": 10,
+          "White": 9
+        },
+        "SeahawksTopic": {
+          "Hispanic": 10,
+          "AfricanAmerican": 10,
+          "White": 10
+        }
+      },
+      "reasoner": "Pellet NOT run: 'java' not found on PATH (install a JDK, reopen the terminal, check `java -version`); SPARQL consistency checks passed",
+      "prompt": {
+        "k": 5,
+        "focus": null,
+        "intensity_focus": false,
+        "equal_weight": false
+      },
+      "intensity_share": {
+        "source_high": 0.149,
+        "summary_high": 0.067
+      }
+    },
+    "claims": [
+      {
+        "sentence": "Many tweets express strong support and excitement for the San Francisco 49ers, celebrating their success and dedicated fan base.",
+        "tweet_ids": [
+          9,
+          17,
+          1,
+          2,
+          5,
+          22
+        ],
+        "team": "SanFrancisco49ers",
+        "template": false,
+        "polarity": "Positive",
+        "intensity": "High",
+        "aspect": ""
+      },
+      {
+        "sentence": "Some tweets suggest the San Francisco 49ers have been performing well, with multiple teams losing to them recently.",
+        "tweet_ids": [
+          18,
+          53,
+          16,
+          65,
+          13,
+          24
+        ],
+        "team": "SanFrancisco49ers",
+        "template": false,
+        "polarity": "Positive",
+        "intensity": "Low",
+        "aspect": "game_result"
+      },
+      {
+        "sentence": "Several tweets express disappointment with the San Francisco 49ers, mentioning their underwhelming performance and questioning their strategy.",
+        "tweet_ids": [
+          8,
+          25,
+          43,
+          51,
+          7,
+          11
+        ],
+        "team": "SanFrancisco49ers",
+        "template": false,
+        "polarity": "Negative",
+        "intensity": "Low",
+        "aspect": ""
+      },
+      {
+        "sentence": "Some tweets express disappointment with the 49ers' recent performance and predict they may not advance to the Super Bowl.",
+        "tweet_ids": [
+          30,
+          34,
+          10,
+          48,
+          28,
+          68
+        ],
+        "team": "SanFrancisco49ers",
+        "template": false,
+        "polarity": "Negative",
+        "intensity": "Low",
+        "aspect": "game_result"
+      },
+      {
+        "sentence": "Several tweets express mixed opinions about the San Francisco 49ers, mentioning their potential for a good season and the impact of Ray Lewis, while also showing indifference towards other teams.",
+        "tweet_ids": [
+          19,
+          33,
+          3,
+          6,
+          12,
+          26
+        ],
+        "team": "SanFrancisco49ers",
+        "template": false,
+        "polarity": "Neutral",
+        "intensity": "Low",
+        "aspect": ""
+      },
+      {
+        "sentence": "Several tweets express support and enthusiasm for the New England Patriots, highlighting team unity and long-term loyalty.",
+        "tweet_ids": [
+          94,
+          97,
+          98,
+          119,
+          123,
+          125
+        ],
+        "team": "NewEnglandPatriots",
+        "template": false,
+        "polarity": "Positive",
+        "intensity": "Low",
+        "aspect": ""
+      },
+      {
+        "sentence": "Some tweets express excitement and support for the Patriots' 4-0 start, with fans looking forward to watching their team play.",
+        "tweet_ids": [
+          147,
+          175,
+          113,
+          91,
+          101
+        ],
+        "team": "NewEnglandPatriots",
+        "template": false,
+        "polarity": "Positive",
+        "intensity": "Low",
+        "aspect": "game_result"
+      },
+      {
+        "sentence": "Several tweets express mild disappointment with the New England Patriots, mentioning their defense and past experiences with the team.",
+        "tweet_ids": [
+          92,
+          93,
+          138,
+          141,
+          99,
+          100
+        ],
+        "team": "NewEnglandPatriots",
+        "template": false,
+        "polarity": "Negative",
+        "intensity": "Low",
+        "aspect": ""
+      },
+      {
+        "sentence": "Several tweets express disappointment with the Patriots, hoping they will not advance to the Super Bowl and suggesting pleasure at their potential defeat.",
+        "tweet_ids": [
+          96,
+          104,
+          109,
+          114,
+          107,
+          111
+        ],
+        "team": "NewEnglandPatriots",
+        "template": false,
+        "polarity": "Negative",
+        "intensity": "Low",
+        "aspect": "game_result"
+      },
+      {
+        "sentence": "Some tweets mention the Patriots without strong sentiment, noting they are part of game lineups but not a primary focus for all viewers.",
+        "tweet_ids": [
+          105,
+          137,
+          151,
+          152,
+          103
+        ],
+        "team": "NewEnglandPatriots",
+        "template": false,
+        "polarity": "Neutral",
+        "intensity": "Low",
+        "aspect": ""
+      },
+      {
+        "sentence": "Many tweets express positive anticipation for the Seahawks' upcoming season, praising their defense and quarterback Russell Wilson.",
+        "tweet_ids": [
+          189,
+          190,
+          185,
+          188,
+          187,
+          200
+        ],
+        "team": "SeattleSeahawks",
+        "template": false,
+        "polarity": "Positive",
+        "intensity": "Low",
+        "aspect": ""
+      },
+      {
+        "sentence": "Several tweets suggest that fans are optimistic about the Seahawks' performance, with many noting their strong season record.",
+        "tweet_ids": [
+          182,
+          193,
+          201,
+          203,
+          198,
+          220
+        ],
+        "team": "SeattleSeahawks",
+        "template": false,
+        "polarity": "Positive",
+        "intensity": "Low",
+        "aspect": "game_result"
+      },
+      {
+        "sentence": "Several tweets express mixed feelings about the Seahawks, noting their defensive struggles and questioning their effort, while also hoping for a win.",
+        "tweet_ids": [
+          221,
+          225,
+          183,
+          210,
+          184,
+          194
+        ],
+        "team": "SeattleSeahawks",
+        "template": false,
+        "polarity": "Negative",
+        "intensity": "Low",
+        "aspect": ""
+      },
+      {
+        "sentence": "Several tweets express disappointment with the Seahawks' recent performance, citing their losses and questioning their execution.",
+        "tweet_ids": [
+          191,
+          212,
+          181,
+          186,
+          208,
+          222
+        ],
+        "team": "SeattleSeahawks",
+        "template": false,
+        "polarity": "Negative",
+        "intensity": "Low",
+        "aspect": "game_result"
+      },
+      {
+        "sentence": "Some tweets discuss the Seattle Seahawks' upcoming game, mention potential player signings, and note the team's presence at a hotel.",
+        "tweet_ids": [
+          207,
+          216,
+          215,
+          244,
+          196,
+          226
+        ],
+        "team": "SeattleSeahawks",
+        "template": false,
+        "polarity": "Neutral",
+        "intensity": "Low",
+        "aspect": ""
+      }
+    ],
+    "violations": [
+      {
+        "kind": "POLARITY_UNSUPPORTED",
+        "message": "Claim \"Several tweets express mixed feelings about the Seahawks, noting their defensive struggles and questioning their effort, while also hoping for a win.\" is Neutral about SeattleSeahawks, but none of the tweets it cites express a Neutral opinion about SeattleSeahawks (cited: [221] \"son they got the nerve to say Seahawks got to corners to stop julio & white soo my question is what about tony && douglas lol\"; [225] \"Would love to see the Seahawks make it but ATL buss'n dem up tomorrow\"; [183] \"With Seahawks DBs ... 49ers gonna struggle on the passing game\"; [210] \"I expected more from the Seahawks. It doesn't look like they want it.\"; [184] \"Seahawks are borrowing the Vikings' clown suit from last night.\"; [194] \"Joe Buck is still a homo. Aikman needs a better sidekick. This should be a good game. #Seahawks. Hope they can win without the 12th man\"). Rewrite it so it matches the cited tweets, fix the citations, or remove it."
+      },
+      {
+        "kind": "INTENSITY_INFLATED",
+        "message": "Claim \"Several tweets express support and enthusiasm for the New England Patriots, highlighting team unity and long-term loyalty.\" sounds High-intensity, but the cited tweets about NewEnglandPatriots are at most Low. Tone it down."
+      },
+      {
+        "kind": "INTENSITY_INFLATED",
+        "message": "Claim \"Some tweets express excitement and support for the Patriots' 4-0 start, with fans looking forward to watching their team play.\" sounds Medium-intensity, but the cited tweets about NewEnglandPatriots are at most Low. Tone it down."
+      },
+      {
+        "kind": "SINGLE_TWEET_DETAIL",
+        "message": "Claim \"Several tweets express disappointment with the San Francisco 49ers, mentioning their underwhelming performance and questioning their strategy.\" relies on details that only one tweet mentions (performance). Describe only what several tweets say; leave out such specific names, scores, places and events."
+      },
+      {
+        "kind": "SINGLE_TWEET_DETAIL",
+        "message": "Claim \"Many tweets express positive anticipation for the Seahawks' upcoming season, praising their defense and quarterback Russell Wilson.\" relies on details that only one tweet mentions (Wilson). Describe only what several tweets say; leave out such specific names, scores, places and events."
+      },
+      {
+        "kind": "SINGLE_TWEET_DETAIL",
+        "message": "Claim \"Several tweets express mixed feelings about the Seahawks, noting their defensive struggles and questioning their effort, while also hoping for a win.\" relies on details that only one tweet mentions (struggles, questioning). Describe only what several tweets say; leave out such specific names, scores, places and events."
+      },
+      {
+        "kind": "SINGLE_TWEET_DETAIL",
+        "message": "Claim \"Several tweets express disappointment with the Seahawks' recent performance, citing their losses and questioning their execution.\" relies on details that only one tweet mentions (execution). Describe only what several tweets say; leave out such specific names, scores, places and events."
+      },
+      {
+        "kind": "SINGLE_TWEET_DETAIL",
+        "message": "Claim \"Some tweets discuss the Seattle Seahawks' upcoming game, mention potential player signings, and note the team's presence at a hotel.\" relies on details that only one tweet mentions (signings, hotel). Describe only what several tweets say; leave out such specific names, scores, places and events."
+      }
+    ]
+  },
+  {
+    "iteration": 2,
+    "score": 12,
+    "metrics": {
+      "n_claims": 15,
+      "group_counts": {
+        "AfricanAmerican": 15,
+        "Hispanic": 15,
+        "White": 15
+      },
+      "group_shares": {
+        "AfricanAmerican": 0.333,
+        "Hispanic": 0.333,
+        "White": 0.333
+      },
+      "group_balance": 1.0,
+      "single_tweet_detail_claims": 4,
+      "report1": {
+        "Q1_Q2_facts_checked": 0,
+        "Q3_facts_checked": 0,
+        "Q5_facts_checked": 0,
+        "Q6_facts_checked": 0,
+        "flagged": []
+      },
+      "q4_summary": {
+        "49ersTopic": {
+          "Hispanic": 10,
+          "AfricanAmerican": 10,
+          "White": 10
+        },
+        "PatriotsTopic": {
+          "Hispanic": 9,
+          "AfricanAmerican": 10,
+          "White": 9
+        },
+        "SeahawksTopic": {
+          "Hispanic": 10,
+          "AfricanAmerican": 10,
+          "White": 10
+        }
+      },
+      "reasoner": "Pellet NOT run: 'java' not found on PATH (install a JDK, reopen the terminal, check `java -version`); SPARQL consistency checks passed",
+      "prompt": {
+        "k": 5,
+        "focus": null,
+        "intensity_focus": false,
+        "equal_weight": false
+      },
+      "intensity_share": {
+        "source_high": 0.149,
+        "summary_high": 0.067
+      }
+    },
+    "claims": [
+      {
+        "sentence": "Many tweets express strong support and excitement for the San Francisco 49ers, celebrating their success and dedicated fan base.",
+        "tweet_ids": [
+          9,
+          17,
+          1,
+          2,
+          5,
+          22
+        ],
+        "team": "SanFrancisco49ers",
+        "template": false,
+        "polarity": "Positive",
+        "intensity": "High",
+        "aspect": ""
+      },
+      {
+        "sentence": "Some tweets suggest the San Francisco 49ers have been performing well, with multiple teams losing to them recently.",
+        "tweet_ids": [
+          18,
+          53,
+          16,
+          65,
+          13,
+          24
+        ],
+        "team": "SanFrancisco49ers",
+        "template": false,
+        "polarity": "Positive",
+        "intensity": "Low",
+        "aspect": "game_result"
+      },
+      {
+        "sentence": "Several tweets express mild disappointment with the San Francisco 49ers, noting their inconsistent performance.",
+        "tweet_ids": [
+          8,
+          25,
+          43,
+          51,
+          7,
+          11
+        ],
+        "team": "SanFrancisco49ers",
+        "template": false,
+        "polarity": "Negative",
+        "intensity": "Low",
+        "aspect": ""
+      },
+      {
+        "sentence": "Some tweets express disappointment with the 49ers' recent performance and predict they may not advance to the Super Bowl.",
+        "tweet_ids": [
+          30,
+          34,
+          10,
+          48,
+          28,
+          68
+        ],
+        "team": "SanFrancisco49ers",
+        "template": false,
+        "polarity": "Negative",
+        "intensity": "Low",
+        "aspect": "game_result"
+      },
+      {
+        "sentence": "Several tweets express mixed opinions about the San Francisco 49ers, mentioning their potential for a good season and the impact of Ray Lewis, while also showing indifference towards other teams.",
+        "tweet_ids": [
+          19,
+          33,
+          3,
+          6,
+          12,
+          26
+        ],
+        "team": "SanFrancisco49ers",
+        "template": false,
+        "polarity": "Neutral",
+        "intensity": "Low",
+        "aspect": ""
+      },
+      {
+        "sentence": "Several tweets show support for the New England Patriots, mentioning team unity and long-term loyalty.",
+        "tweet_ids": [
+          94,
+          97,
+          98,
+          119,
+          123,
+          125
+        ],
+        "team": "NewEnglandPatriots",
+        "template": false,
+        "polarity": "Positive",
+        "intensity": "Low",
+        "aspect": ""
+      },
+      {
+        "sentence": "Some tweets show positive sentiment towards the Patriots' 4-0 record and express interest in watching their upcoming game.",
+        "tweet_ids": [
+          147,
+          175,
+          113,
+          91,
+          101
+        ],
+        "team": "NewEnglandPatriots",
+        "template": false,
+        "polarity": "Positive",
+        "intensity": "Low",
+        "aspect": "game_result"
+      },
+      {
+        "sentence": "Several tweets express mild disappointment with the New England Patriots, mentioning their defense and past experiences with the team.",
+        "tweet_ids": [
+          92,
+          93,
+          138,
+          141,
+          99,
+          100
+        ],
+        "team": "NewEnglandPatriots",
+        "template": false,
+        "polarity": "Negative",
+        "intensity": "Low",
+        "aspect": ""
+      },
+      {
+        "sentence": "Several tweets express disappointment with the Patriots, hoping they will not advance to the Super Bowl and suggesting pleasure at their potential defeat.",
+        "tweet_ids": [
+          96,
+          104,
+          109,
+          114,
+          107,
+          111
+        ],
+        "team": "NewEnglandPatriots",
+        "template": false,
+        "polarity": "Negative",
+        "intensity": "Low",
+        "aspect": "game_result"
+      },
+      {
+        "sentence": "Some tweets mention the Patriots without strong sentiment, noting they are part of game lineups but not a primary focus for all viewers.",
+        "tweet_ids": [
+          105,
+          137,
+          151,
+          152,
+          103
+        ],
+        "team": "NewEnglandPatriots",
+        "template": false,
+        "polarity": "Neutral",
+        "intensity": "Low",
+        "aspect": ""
+      },
+      {
+        "sentence": "Many tweets show positive anticipation for the Seahawks, praising their defense and quarterback.",
+        "tweet_ids": [
+          189,
+          190,
+          185,
+          188,
+          187,
+          200
+        ],
+        "team": "SeattleSeahawks",
+        "template": false,
+        "polarity": "Positive",
+        "intensity": "Low",
+        "aspect": ""
+      },
+      {
+        "sentence": "Several tweets suggest that fans are optimistic about the Seahawks' performance, with many noting their strong season record.",
+        "tweet_ids": [
+          182,
+          193,
+          201,
+          203,
+          198,
+          220
+        ],
+        "team": "SeattleSeahawks",
+        "template": false,
+        "polarity": "Positive",
+        "intensity": "Low",
+        "aspect": "game_result"
+      },
+      {
+        "sentence": "Several tweets express disappointment with the Seahawks, noting their defensive struggles and questioning their effort.",
+        "tweet_ids": [
+          221,
+          225,
+          183,
+          210,
+          184,
+          194
+        ],
+        "team": "SeattleSeahawks",
+        "template": false,
+        "polarity": "Negative",
+        "intensity": "Low",
+        "aspect": ""
+      },
+      {
+        "sentence": "Several tweets express disappointment with the Seahawks' recent performance, noting their losses and questioning their execution.",
+        "tweet_ids": [
+          191,
+          212,
+          181,
+          186,
+          208,
+          222
+        ],
+        "team": "SeattleSeahawks",
+        "template": false,
+        "polarity": "Negative",
+        "intensity": "Low",
+        "aspect": "game_result"
+      },
+      {
+        "sentence": "Some tweets discuss potential Seahawks signings and the team's presence at a hotel.",
+        "tweet_ids": [
+          207,
+          216,
+          215,
+          244,
+          196,
+          226
+        ],
+        "team": "SeattleSeahawks",
+        "template": false,
+        "polarity": "Neutral",
+        "intensity": "Low",
+        "aspect": ""
+      }
+    ],
+    "violations": [
+      {
+        "kind": "POLARITY_UNSUPPORTED",
+        "message": "Claim \"Some tweets show positive sentiment towards the Patriots' 4-0 record and express interest in watching their upcoming game.\" is Positive about SeattleSeahawks, but none of the tweets it cites express a Positive opinion about SeattleSeahawks (cited: [147] \"I have a feeling the Patriots are about to rip the Ravens a new one.\"; [175] \"Woke up and I still can't believe the Patriots won\"; [113] \"I like that my Patriots are 4-0 right now ______\"; [91] \"The cruise tomorrow night better have the Patriots game on\"; [101] \"The Cruise tomorrow night better have the Patriots game on\"). Rewrite it so it matches the cited tweets, fix the citations, or remove it."
+      },
+      {
+        "kind": "INTENSITY_INFLATED",
+        "message": "Claim \"Several tweets show support for the New England Patriots, mentioning team unity and long-term loyalty.\" sounds Medium-intensity, but the cited tweets about NewEnglandPatriots are at most Low. Tone it down."
+      },
+      {
+        "kind": "SINGLE_TWEET_DETAIL",
+        "message": "Claim \"Several tweets express mild disappointment with the San Francisco 49ers, noting their inconsistent performance.\" relies on details that only one tweet mentions (performance). Describe only what several tweets say; leave out such specific names, scores, places and events."
+      },
+      {
+        "kind": "SINGLE_TWEET_DETAIL",
+        "message": "Claim \"Several tweets express disappointment with the Seahawks, noting their defensive struggles and questioning their effort.\" relies on details that only one tweet mentions (struggles, questioning). Describe only what several tweets say; leave out such specific names, scores, places and events."
+      },
+      {
+        "kind": "SINGLE_TWEET_DETAIL",
+        "message": "Claim \"Several tweets express disappointment with the Seahawks' recent performance, noting their losses and questioning their execution.\" relies on details that only one tweet mentions (execution). Describe only what several tweets say; leave out such specific names, scores, places and events."
+      },
+      {
+        "kind": "SINGLE_TWEET_DETAIL",
+        "message": "Claim \"Some tweets discuss potential Seahawks signings and the team's presence at a hotel.\" relies on details that only one tweet mentions (signings, hotel). Describe only what several tweets say; leave out such specific names, scores, places and events."
+      }
+    ]
+  },
+  {
+    "iteration": 3,
+    "score": 0,
+    "metrics": {
+      "n_claims": 15,
+      "group_counts": {
+        "AfricanAmerican": 15,
+        "Hispanic": 15,
+        "White": 15
+      },
+      "group_shares": {
+        "AfricanAmerican": 0.333,
+        "Hispanic": 0.333,
+        "White": 0.333
+      },
+      "group_balance": 1.0,
+      "single_tweet_detail_claims": 0,
+      "report1": {
+        "Q1_Q2_facts_checked": 0,
+        "Q3_facts_checked": 0,
+        "Q5_facts_checked": 0,
+        "Q6_facts_checked": 0,
+        "flagged": []
+      },
+      "q4_summary": {
+        "49ersTopic": {
+          "Hispanic": 10,
+          "AfricanAmerican": 10,
+          "White": 10
+        },
+        "PatriotsTopic": {
+          "Hispanic": 9,
+          "AfricanAmerican": 10,
+          "White": 9
+        },
+        "SeahawksTopic": {
+          "Hispanic": 10,
+          "AfricanAmerican": 10,
+          "White": 10
+        }
+      },
+      "reasoner": "Pellet NOT run: 'java' not found on PATH (install a JDK, reopen the terminal, check `java -version`); SPARQL consistency checks passed",
+      "prompt": {
+        "k": 5,
+        "focus": null,
+        "intensity_focus": false,
+        "equal_weight": false
+      },
+      "intensity_share": {
+        "source_high": 0.149,
+        "summary_high": 0.067
+      }
+    },
+    "claims": [
+      {
+        "sentence": "Many tweets express strong support and excitement for the San Francisco 49ers, celebrating their success and dedicated fan base.",
+        "tweet_ids": [
+          9,
+          17,
+          1,
+          2,
+          5,
+          22
+        ],
+        "team": "SanFrancisco49ers",
+        "template": false,
+        "polarity": "Positive",
+        "intensity": "High",
+        "aspect": ""
+      },
+      {
+        "sentence": "Some tweets suggest the San Francisco 49ers have been performing well, with multiple teams losing to them recently.",
+        "tweet_ids": [
+          18,
+          53,
+          16,
+          65,
+          13,
+          24
+        ],
+        "team": "SanFrancisco49ers",
+        "template": false,
+        "polarity": "Positive",
+        "intensity": "Low",
+        "aspect": "game_result"
+      },
+      {
+        "sentence": "Several tweets express mildly negative views about the San Francisco 49ers.",
+        "tweet_ids": [
+          8,
+          25,
+          43,
+          51,
+          7,
+          11
+        ],
+        "team": "SanFrancisco49ers",
+        "template": true,
+        "polarity": "Negative",
+        "intensity": "Low",
+        "aspect": ""
+      },
+      {
+        "sentence": "Some tweets express disappointment with the 49ers' recent performance and predict they may not advance to the Super Bowl.",
+        "tweet_ids": [
+          30,
+          34,
+          10,
+          48,
+          28,
+          68
+        ],
+        "team": "SanFrancisco49ers",
+        "template": false,
+        "polarity": "Negative",
+        "intensity": "Low",
+        "aspect": "game_result"
+      },
+      {
+        "sentence": "Several tweets express mixed opinions about the San Francisco 49ers, mentioning their potential for a good season and the impact of Ray Lewis, while also showing indifference towards other teams.",
+        "tweet_ids": [
+          19,
+          33,
+          3,
+          6,
+          12,
+          26
+        ],
+        "team": "SanFrancisco49ers",
+        "template": false,
+        "polarity": "Neutral",
+        "intensity": "Low",
+        "aspect": ""
+      },
+      {
+        "sentence": "Several tweets express mildly positive views about the New England Patriots.",
+        "tweet_ids": [
+          94,
+          97,
+          98,
+          119,
+          123,
+          125
+        ],
+        "team": "NewEnglandPatriots",
+        "template": true,
+        "polarity": "Positive",
+        "intensity": "Low",
+        "aspect": ""
+      },
+      {
+        "sentence": "Some tweets express mildly positive views about recent game results of the New England Patriots.",
+        "tweet_ids": [
+          147,
+          175,
+          113,
+          91,
+          101
+        ],
+        "team": "NewEnglandPatriots",
+        "template": true,
+        "polarity": "Positive",
+        "intensity": "Low",
+        "aspect": "game_result"
+      },
+      {
+        "sentence": "Several tweets express mild disappointment with the New England Patriots, mentioning their defense and past experiences with the team.",
+        "tweet_ids": [
+          92,
+          93,
+          138,
+          141,
+          99,
+          100
+        ],
+        "team": "NewEnglandPatriots",
+        "template": false,
+        "polarity": "Negative",
+        "intensity": "Low",
+        "aspect": ""
+      },
+      {
+        "sentence": "Several tweets express disappointment with the Patriots, hoping they will not advance to the Super Bowl and suggesting pleasure at their potential defeat.",
+        "tweet_ids": [
+          96,
+          104,
+          109,
+          114,
+          107,
+          111
+        ],
+        "team": "NewEnglandPatriots",
+        "template": false,
+        "polarity": "Negative",
+        "intensity": "Low",
+        "aspect": "game_result"
+      },
+      {
+        "sentence": "Some tweets mention the Patriots without strong sentiment, noting they are part of game lineups but not a primary focus for all viewers.",
+        "tweet_ids": [
+          105,
+          137,
+          151,
+          152,
+          103
+        ],
+        "team": "NewEnglandPatriots",
+        "template": false,
+        "polarity": "Neutral",
+        "intensity": "Low",
+        "aspect": ""
+      },
+      {
+        "sentence": "Many tweets show positive anticipation for the Seahawks, praising their defense and quarterback.",
+        "tweet_ids": [
+          189,
+          190,
+          185,
+          188,
+          187,
+          200
+        ],
+        "team": "SeattleSeahawks",
+        "template": false,
+        "polarity": "Positive",
+        "intensity": "Low",
+        "aspect": ""
+      },
+      {
+        "sentence": "Several tweets suggest that fans are optimistic about the Seahawks' performance, with many noting their strong season record.",
+        "tweet_ids": [
+          182,
+          193,
+          201,
+          203,
+          198,
+          220
+        ],
+        "team": "SeattleSeahawks",
+        "template": false,
+        "polarity": "Positive",
+        "intensity": "Low",
+        "aspect": "game_result"
+      },
+      {
+        "sentence": "Several tweets express mildly negative views about the Seattle Seahawks.",
+        "tweet_ids": [
+          221,
+          225,
+          183,
+          210,
+          184,
+          194
+        ],
+        "team": "SeattleSeahawks",
+        "template": true,
+        "polarity": "Negative",
+        "intensity": "Low",
+        "aspect": ""
+      },
+      {
+        "sentence": "Several tweets express mildly negative views about recent game results of the Seattle Seahawks.",
+        "tweet_ids": [
+          191,
+          212,
+          181,
+          186,
+          208,
+          222
+        ],
+        "team": "SeattleSeahawks",
+        "template": true,
+        "polarity": "Negative",
+        "intensity": "Low",
+        "aspect": "game_result"
+      },
+      {
+        "sentence": "Some tweets mention the Seattle Seahawks without taking a clear side.",
+        "tweet_ids": [
+          207,
+          216,
+          215,
+          244,
+          196,
+          226
+        ],
+        "team": "SeattleSeahawks",
+        "template": true,
+        "polarity": "Neutral",
+        "intensity": "Low",
+        "aspect": ""
+      }
+    ],
+    "violations": []
+  }
+]
